@@ -1,0 +1,119 @@
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+#pop_up_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    z-index: 99;
+}
+.screen_show {
+    display: block;
+}
+
+.disabled {
+    opacity: 0.25;
+}
+
+.center {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:max-content;
+    height:max-content;
+    margin:auto;
+}
+ 
+#start_grid > h2 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+#start_grid > input {
+    grid-column: 2;
+}
+
+#start_grid > input[type='button'] {
+    grid-column: 1 / span 2 ;
+    grid-row: 6 / span 1;
+    place-self: center;
+}
+
+#start_grid > label {
+    grid-column: 1;
+    font-size: larger;
+    justify-self: right;
+}
+
+#start_grid {
+    display: grid;
+    column-gap: 5px;
+    row-gap:10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.pop_up_container {
+    display: grid;
+    bottom: 10px;
+    right: -600px;
+    position: absolute;
+    column-gap: 5px;
+    grid-template-columns: 75px auto;
+    width: 600px;
+    height: 75px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px grey;
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+}
+
+.pop_up_container.error{
+    box-shadow: 0px 5px 0px red;
+}
+
+.pop_up_container.success{
+    box-shadow: 0px 5px 0px green;
+}
+
+.pop_up_container.info{
+    box-shadow: 0px 5px 0px blue;
+}
+
+
+.pop_up_image {
+    grid-column: 1 / span 1;
+    grid-row: 1 /span 1;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: XX-large;
+}
+
+.pop_up_message {
+    grid-column: 2 / span 1;
+    justify-self: left;
+    align-self: center;
+    grid-row: 1 /span 1;
+}
