@@ -133,6 +133,8 @@ ul.hidden{
 
 .category_title{
     cursor: pointer;
+    border-bottom: 1px solid black;
+    width: 25%;
 }
 
 

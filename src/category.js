@@ -128,12 +128,15 @@ let Categories = (() => {
         title.classList.add('category_title')
         container.appendChild(title);
         container.appendChild(list);
-        title.addEventListener('click', ()=>{
+        let toggleListVisibilitity = () => {
             if(title.nextElementSibling){
                 title.nextElementSibling.classList.toggle('hidden');
                 title.classList.toggle('hidden_content');
             }
-        })
+        }
+        title.addEventListener('click', toggleListVisibilitity);
+        toggleListVisibilitity();
+
         for(let location of category.unclaimedLocations.values()){
             let item = document.createElement('li');
             item.innerText = location;

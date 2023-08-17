@@ -1211,7 +1211,7 @@ let RAW_LOCATION_DATA = {
     "Market Dog Lady House Crate": {
         "type": "Crate",
         "categories": [
-            "Market",
+            "The Market",
             "Market",
             "Crate"
         ]
