@@ -12830,8 +12830,9 @@ let RAW_LOCATION_DATA = {
         "type": "Hint",
         "categories": null
     }
-}
-const DUNGEON_CATEGORIES = new Set([
+};
+
+const DUNGEON_CATEGORIES = [
     "Deku Tree",
     "Dodongo's Cavern",
     "Jabu Jabu's Belly",
@@ -12844,8 +12845,10 @@ const DUNGEON_CATEGORIES = new Set([
     "Bottom of the Well",
     "Gerudo Training Ground",
     "Thieves' Hideout",
-])
-const OVERWORLD_SCENE_CATEGORIES = new Set([
+    "Ganon's Castle",
+];
+
+const OVERWORLD_SCENE_CATEGORIES = [
     "Lon Lon Ranch",
     "Hyrule Field",
     "Sacred Forest Meadow",
@@ -12868,9 +12871,12 @@ const OVERWORLD_SCENE_CATEGORIES = new Set([
     "Gerudo's Fortress",
     "Haunted Wasteland",
     "Desert Colossus",
-])
-const REGION_CATEGORIES_RAW = {
-    "Market":["Hyrule Castle", "Temple of Time", "The Market", "Market Entrance"],
+]
+/**
+ * @type {Object<string, string[]>}
+ */
+const REGION_CATEGORIES = {
+    "Market":["Hyrule Castle", "Temple of Time", "The Market", "Market Entrance", "Outside Ganon's Castle"],
     "Lon Lon Ranch": ["Lon Lon Ranch"],
     "Forest": ["Kokiri Forest", "Lost Woods", "Sacred Forest Meadow"],
     "Kakariko": ["Kakariko Village", "Graveyard"],
@@ -12881,18 +12887,6 @@ const REGION_CATEGORIES_RAW = {
     "Zora": ["Zora's River", "Zora's Domain", "Zora's Fountain"],
     "Gerudo": ["Gerudo Valley", "Gerudo's Fortress"],
 };
-/**
- * @type {Object<string, {scenes:Set<string>}>}
- */
-const REGION_CATEGORIES = {}
-for(let key of Object.getOwnPropertyNames(REGION_CATEGORIES_RAW)){
-    let regions = REGION_CATEGORIES_RAW[key];
-    let regionSet = new Set;
-    for(let i = 0; i < regions.length; i++){
-        regionSet.add(regions[i]);
-    }
-    REGION_CATEGORIES[key] = {scenes:regionSet};
-}
 /**
  * @type {Object<string, {categories:Set<string>, type:string}>}
  */

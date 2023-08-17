@@ -2,6 +2,8 @@
 import { Screens } from "./screen.js"
 import { LOCATION_DATA, DUNGEON_CATEGORIES, REGION_CATEGORIES, OVERWORLD_SCENE_CATEGORIES } from "./locations.js"
 import { Client, SERVER_PACKET_TYPE, CLIENT_PACKET_TYPE } from "archipelago.js";
+import { Categories, buildDungeonDef, buildOverworldDef } from "./category.js";
+import { POPUP_TYPE, Popups } from "./popup.js";
 
 /*
 Settings:
@@ -21,80 +23,24 @@ Use hints on found locations to build ER map (should work for all but overworld 
  * @param {Client} client 
  */
 let getLocationsAsStrings = (client) => {
-    let checked = [];
-    let missing = [];
-    for(let i = 0; i < client.locations.checked.length; i++){
-        let name = client.locations.name(client.players.game(client.data.slot), client.locations.checked[i]);
-        checked.push(name);
-    }
-
+    let locations = new Set();
+    let checkedLocations = new Set();
     for(let i = 0; i < client.locations.missing.length; i++){
         let name = client.locations.name(client.players.game(client.data.slot), client.locations.missing[i]);
-        missing.push(name);
+        locations.add(name);
     }
+
+    for(let i = 0; i < client.locations.checked.length; i++){
+        let name = client.locations.name(client.players.game(client.data.slot), client.locations.checked[i]);
+        locations.add(name);
+        checkedLocations.add(name);
+    }
+   
     return {
-        checked,
-        missing,
-    }
+        locations,
+        checkedLocations,
+    };
 }
-
-/**
- * 
- * @param {"Dungeon" | "Region" | "Scene"} mode 
- * @param {{checked:string[], missing:string[]}} locations
- */
-let buildCheckList = (mode, locations, separateChecked=true) => {
-    let list = document.createElement('ul');
-    switch (mode){
-        case "Region":{
-            for(let region in REGION_CATEGORIES){
-                let subscenes = REGION_CATEGORIES[region].scenes;
-                let regionItem = document.createElement('li');
-                let title = document.createElement('h4');
-                title.innerText = region;
-                regionItem.appendChild(title);
-                for(let scene of subscenes.values()){
-                    let sceneTitle = document.createElement('h5');
-                    sceneTitle.innerText = scene;
-                    let sceneCheckList = buildCategoryList(scene, locations, separateChecked);
-                    regionItem.append(sceneTitle);
-                    regionItem.append(sceneCheckList);
-                }
-                list.append(regionItem);
-            }
-            break;
-        }
-    }
-    return list;
-};
-
-/**
- * @param {string} category
- * @param {{checked:string[], missing:string[]}} locations
- */
-let buildCategoryList = (category, locations, separateChecked=true) => {
-    let list = document.createElement('ul');
-    for(let i = 0; i < locations.missing.length; i++){
-        let locationName = locations.missing[i];
-        if(LOCATION_DATA[locationName].categories.has(category)){
-            let item = document.createElement('li');
-            item.innerText = locationName;
-            item.classList.add('check');
-            list.appendChild(item)
-        }
-    }
-
-    for(let i = 0; i < locations.checked.length; i++){
-        let locationName = locations.checked[i];
-        if(LOCATION_DATA[locationName].categories.has(category)){
-            let item = document.createElement('li');
-            item.innerText = locationName;
-            item.classList.add('check', 'checked');
-            list.appendChild(item)
-        }
-    }
-    return list;
-};
 
 let Checklist = (() => {
     let screen = Screens.createScreen('checklist');
@@ -108,8 +54,24 @@ let Checklist = (() => {
             screen.div.firstChild.remove();
         }
         let locations = getLocationsAsStrings(client);
-        let fullList = buildCheckList("Region", locations);
-        screen.div.appendChild(fullList);
+        let overworldDef = buildOverworldDef(true, true, true, true);
+        let dungeonDef = buildDungeonDef(true);
+        let overworldCategeory = Categories.buildCategory(overworldDef);
+        let dungeonCategeory = Categories.buildCategory(dungeonDef);
+        Categories.populateCategory(overworldCategeory, locations.locations, locations.checkedLocations)
+        Categories.populateCategory(dungeonCategeory, locations.locations, locations.checkedLocations)
+        let overworldElement = Categories.renderCategory(overworldCategeory, true);
+        let dungeonElement = Categories.renderCategory(dungeonCategeory, true);
+        if(overworldElement){
+            screen.div.appendChild(overworldElement);
+        }else{
+            Popups.createPopup(POPUP_TYPE.ERROR, 'An error occured building the over world')
+        }
+        if(dungeonElement){
+            screen.div.appendChild(dungeonElement);
+        }else{
+            Popups.createPopup(POPUP_TYPE.ERROR, 'An error occured building the Dungeon')
+        }
 
     }
     return {
