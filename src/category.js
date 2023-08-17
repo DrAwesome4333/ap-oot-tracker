@@ -125,8 +125,15 @@ let Categories = (() => {
         let title = document.createElement('h4');
         title.innerText = `${category.name} ${category.checkedCount}/${category.locations.size} `;
         let list = document.createElement('ul');
+        title.classList.add('category_title')
         container.appendChild(title);
         container.appendChild(list);
+        title.addEventListener('click', ()=>{
+            if(title.nextElementSibling){
+                title.nextElementSibling.classList.toggle('hidden');
+                title.classList.toggle('hidden_content');
+            }
+        })
         for(let location of category.unclaimedLocations.values()){
             let item = document.createElement('li');
             item.innerText = location;

@@ -126,3 +126,21 @@ li.check.checked{
 li.check{
     color: black;
 }
+
+ul.hidden{
+    display: none;
+}
+
+.category_title{
+    cursor: pointer;
+}
+
+
+.category_title::after{
+    content: '▲'
+}
+
+.category_title.hidden_content::after{
+    content: '▼'
+}
+
