@@ -117,3 +117,12 @@
     align-self: center;
     grid-row: 1 /span 1;
 }
+
+li.check.checked{
+    color:grey;
+    text-decoration: line-through;
+}
+
+li.check{
+    color: black;
+}

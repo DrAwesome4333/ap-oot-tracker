@@ -2,6 +2,7 @@
 import { Screens } from "./screen.js";
 import { Popups, POPUP_TYPE} from "./popup.js";
 import { Client, ITEMS_HANDLING_FLAGS, SERVER_PACKET_TYPE, CREATE_AS_HINT_MODE } from "archipelago.js";
+import { Checklist } from "./checklist.js";
 
 let generateId = (() => {
     let nextIdNumber = 0;
@@ -136,6 +137,7 @@ let connectToServer = (host, port, slot, game, password) => {
             console.log("Connected to the server");
             Popups.createPopup(POPUP_TYPE.SUCCESS, `Succesfully connected as Player ${packet.slot}`);
             saveConnectionInformation(connectionInfo);
+            Checklist.reciveClient(client);
         })
         .catch((error) => {
             console.error("Failed to connect:", error);
