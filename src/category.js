@@ -170,7 +170,7 @@ let Categories = (() => {
  * @param {boolean} separateCows 
  * @param {boolean} separateShops 
  */
-let buildOverworldDef = (separateGrottos, separateSkulls, separateCows, separateShops) => {
+let buildOverworldDef = (separateGrottos, separateSkulls, separateCows, separateShops, divideRegions=true) => {
     /** @type {CategoryDef} */
     let overworldDef = {
         name: "Overworld",
@@ -222,11 +222,23 @@ let buildOverworldDef = (separateGrottos, separateSkulls, separateCows, separate
     }
     for(let region in REGION_CATEGORIES){
         allowed.push(...REGION_CATEGORIES[region]);
+        let requiresRegionDivision = divideRegions && REGION_CATEGORIES[region].length > 1;
+        let regionDivisions = [];
+        if(requiresRegionDivision){
+            for(let scene of REGION_CATEGORIES[region]){
+                regionDivisions.push({
+                    name: scene,
+                    allowFilter: scene,
+                    blockFilter: areaBlocked,
+                    subCategories: sceneSubs,
+                })
+            }
+        }
         overworldDef.subCategories.push({
             name: region,
             allowFilter: REGION_CATEGORIES[region],
             blockFilter: areaBlocked,
-            subCategories:sceneSubs,
+            subCategories: requiresRegionDivision ? regionDivisions : sceneSubs,
         });
     }
     overworldDef.allowFilter = allowed;
