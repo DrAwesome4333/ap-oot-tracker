@@ -121,16 +121,8 @@ let connectToServer = (host, port, slot, game, password) => {
     }
 
     let client = new Client();
-    client.addListener(SERVER_PACKET_TYPE.CONNECTED, (packet) => {
-        console.log("Connected to server: ", packet);
-    });
-
-    client.addListener(SERVER_PACKET_TYPE.ROOM_UPDATE, (packet) => {
-        console.log("Room update: ", packet);
-    });
-
-
     // Connect to the Archipelago server
+    Checklist.setClientListeners(client);
     client
         .connect(connectionInfo)
         .then((packet) => {

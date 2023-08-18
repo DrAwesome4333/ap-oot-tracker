@@ -121,10 +121,12 @@
 li.check.checked{
     color:grey;
     text-decoration: line-through;
+    list-style-type: none;
 }
 
 li.check{
     color: black;
+    
 }
 
 ul.hidden{
@@ -134,7 +136,7 @@ ul.hidden{
 .category_title{
     cursor: pointer;
     border-bottom: 1px solid black;
-    width: 25%;
+    width: 50%;
 }
 
 

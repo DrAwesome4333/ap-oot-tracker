@@ -1,0 +1,278 @@
+#inventory {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    grid-template-rows: repeat(6, 40px);
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: #3c729d;
+    width: fit-content;
+    padding: 20px;
+}
+
+#deku_stick {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#deku_nut {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#bomb_bag {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#bow {
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#slingshot {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#ocarina {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#bombchus {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#hookshot {
+    grid-row: 2 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#boomerang {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#lens {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#magic_beans {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#hammer {
+    grid-row: 3 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#fire_arrows{
+    grid-row: 1 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#ice_arrows {
+    grid-row: 2 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#light_arrows{
+    grid-row: 3 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#dins_fire {
+    grid-row: 1 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#farores_wind {
+    grid-row: 2 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#nayrus_love {
+    grid-row: 3 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#magic_meter {
+    grid-row: 1 / span 1;
+    grid-column: 7 / span 1;
+}
+
+#mirror_shield {
+    grid-row: 1 / span 1;
+    grid-column: 8 / span 1;
+}
+
+#kokiri_sword {
+    grid-row: 2 / span 1;
+    grid-column: 7 / span 1;
+}
+
+#biggoron_sword {
+    grid-row: 2 / span 1;
+    grid-column: 8 / span 1;
+}
+
+#goron_tunic {
+    grid-row: 3 / span 1;
+    grid-column: 7 / span 1;
+}
+
+#zora_tunic {
+    grid-row: 3 / span 1;
+    grid-column: 8 / span 1;
+}
+
+#iron_boots {
+    grid-row: 4 / span 1;
+    grid-column: 7 / span 1;
+}
+
+#hover_boots {
+    grid-row: 4 / span 1;
+    grid-column: 8 / span 1;
+}
+
+#bottle {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#strength {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#scale {
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#wallet {
+    grid-row: 4 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#child_trade {
+    grid-row: 4 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#adult_trade {
+    grid-row: 4 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#hearts {
+    grid-row: 5 / span 1;
+    grid-column: 7 / span 1;
+}
+
+#membership_card {
+    grid-row: 5 / span 1;
+    grid-column: 8 / span 1;
+}
+
+#gold_skulltula_tokens {
+    grid-row: 6 / span 1;
+    grid-column: 7 / span 1;
+}
+
+#triforce {
+    grid-row: 6 / span 1;
+    grid-column: 8 / span 1;
+}
+
+#zeldas_lullaby {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#eponas_song {
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#sarias_song {
+    grid-row: 5 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#suns_song {
+    grid-row: 5 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#song_of_time {
+    grid-row: 5 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#song_of_storms {
+    grid-row: 5 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#minuet {
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#bolero {
+    grid-row: 6 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#serenade {
+    grid-row: 6 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#nocturne {
+    grid-row: 6 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#requiem {
+    grid-row: 6 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#prelude {
+    grid-row: 6 / span 1;
+    grid-column: 6 / span 1;
+}
+
+.inventory_slot{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.inventory_slot > img{
+    max-width: 40px;
+    max-height: 40px;
+    height: 40px;
+}
+
+.inventory_slot.missing > img{
+    filter: grayscale(100%) contrast(75%) brightness(30%);
+}
+
+.inventory_slot > span {
+    position: absolute;
+    color: white;
+    font-size:medium;
+    text-shadow: 2px 1px 5px black;
+    bottom:0;
+    right:0;
+}
+
+

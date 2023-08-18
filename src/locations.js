@@ -12845,7 +12845,7 @@ const DUNGEON_CATEGORIES = [
     "Bottom of the Well",
     "Gerudo Training Ground",
     "Thieves' Hideout",
-    {"Ganon's Castle":["Ganon's Tower"]},
+    "Ganon's Castle",
 ];
 
 const OVERWORLD_SCENE_CATEGORIES = [

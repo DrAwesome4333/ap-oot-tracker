@@ -2,12 +2,14 @@
 /**
  * @typedef Category
  * @prop {string} name
+ * @prop {string} id
  * @prop {Category[]} subCategories
- * @prop {Set<string>} locations
+ * @prop {Set<number>} locations
+ * @prop {Map<number, string>} [locationNames]
  * @prop {Set<string>} allowFilter
  * @prop {Set<string>} blockFilter
- * @prop {Set<string>} unclaimedLocations // Locations not claimed by any sub categories
- * @prop {Set<string>} [checkedLocations]
+ * @prop {Set<number>} unclaimedLocations // Locations not claimed by any sub categories
+ * @prop {Set<number>} [checkedLocations]
  * @prop {Number} checkedCount
  */
 
@@ -21,6 +23,13 @@ import { DUNGEON_CATEGORIES, LOCATION_DATA, REGION_CATEGORIES } from "./location
  * @prop {CategoryDef[]} subCategories
  */
 
+let categoryIdGen = (() => {
+    let nextId = 1;
+    return {
+        get next() {return `category_${nextId++}`}
+    }
+})()
+
 let Categories = (() => {
 
     /**
@@ -30,6 +39,7 @@ let Categories = (() => {
     let buildCategory = (categoryDef) => {
         let locations = new Set();
         let unclaimedLocations = new Set();
+        let id = categoryIdGen.next;
         /** @type {Category[]} */
         let subCategories = [];
         let name = categoryDef.name;
@@ -62,6 +72,7 @@ let Categories = (() => {
             subCategories,
             allowFilter,
             blockFilter,
+            id,
             get checkedCount () {
                 let count = 0;
                 if(this.checkedLocations){
@@ -80,14 +91,17 @@ let Categories = (() => {
     /**
      * 
      * @param {Category} category 
-     * @param {Set<String>} locations 
-     * @param {Set<String>} checkedLocations
+     * @param {Set<Number>} locations 
+     * @param {Set<Number>} checkedLocations
+     * @param {Map<Number, String>} locationNames
      */
-    let populateCategory = (category, locations, checkedLocations) => {
+    let populateCategory = (category, locations, checkedLocations, locationNames) => {
         category.checkedLocations = checkedLocations;
+        category.locationNames = locationNames;
         for(let location of locations.values()){
             let wasBlocked = false;
-            let locationCategories = LOCATION_DATA[location].categories;
+            let locationName = locationNames.get(location) || `Unkown location: ${location.toString()}`;
+            let locationCategories = LOCATION_DATA[locationName].categories;
             for(let locationCategory of locationCategories.values()){
                 if(category.blockFilter.has(locationCategory)){
                     wasBlocked = true;
@@ -106,7 +120,7 @@ let Categories = (() => {
             }
         }
         for(let i = 0; i < category.subCategories.length; i++){
-            populateCategory(category.subCategories[i], category.locations, checkedLocations);
+            populateCategory(category.subCategories[i], category.locations, checkedLocations, locationNames);
             for(let location of category.subCategories[i].locations.values()){
                 category.unclaimedLocations.delete(location);
             }
@@ -126,6 +140,7 @@ let Categories = (() => {
         title.innerText = `${category.name} ${category.checkedCount}/${category.locations.size} `;
         let list = document.createElement('ul');
         title.classList.add('category_title')
+        title.id = `${category.id}_title`
         container.appendChild(title);
         container.appendChild(list);
         let toggleListVisibilitity = () => {
@@ -139,7 +154,8 @@ let Categories = (() => {
 
         for(let location of category.unclaimedLocations.values()){
             let item = document.createElement('li');
-            item.innerText = location;
+            item.id = `${category.id}_${location}`;
+            item.innerText = category.locationNames?.get(location) || `Unkown Location ${location}`;
             item.classList.add('check')
             if(category.checkedLocations?.has(location)){
                 item.classList.add('checked')
@@ -156,10 +172,44 @@ let Categories = (() => {
         }
         return container;
     }
+
+    /**
+     * 
+     * @param {Category} category 
+     */
+    let refreshCategory = (category, separateChecked=true) => {
+        if(category.locations.size == 0){
+            return;
+        }
+        let title = document.querySelector(`#${category.id}_title`);
+        if(title){
+            // @ts-ignore
+            title.innerText = `${category.name} ${category.checkedCount}/${category.locations.size} `;
+        }
+
+        for(let location of category.unclaimedLocations.values()){
+            let item = document.querySelector(`#${category.id}_${location}`);
+            
+            if(category.checkedLocations?.has(location) && item && !item.classList.contains('checked')){
+                item.classList.add('checked')
+                // TODO
+                // if(separateChecked){
+                //     // move check to bottom
+                //     let parent = item.parentElement;
+                //     item.remove();
+                //     parent?.appendChild(item);
+                // }
+            }
+        }
+        for(let subCat = 0; subCat < category.subCategories.length; subCat++){
+            refreshCategory(category.subCategories[subCat], separateChecked);
+        }
+    }
     return {
         populateCategory,
         buildCategory,
         renderCategory,
+        refreshCategory,
     }
 })();
 
