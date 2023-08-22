@@ -53,8 +53,8 @@ let Checklist = (() => {
     let screen = Screens.createScreen('checklist');
 
     screen.div.appendChild(Invetory.div);
-    let overworldDef = buildOverworldDef(false, true, true, false);
-    let dungeonDef = buildDungeonDef(true);
+    let overworldDef = buildOverworldDef(false, true, false, false, false);
+    let dungeonDef = buildDungeonDef(false);
     let overworldCategeory = Categories.buildCategory(overworldDef);
     let dungeonCategeory = Categories.buildCategory(dungeonDef);
     /** @type {null | {checkedLocations:Set<number>, locations:Set<number>, locationNames:Map<number, string>}} */

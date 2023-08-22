@@ -171,6 +171,7 @@ let loadSavedConnectionInformation = () => {
         hostname: 'archipelago.gg',
         port: '',
         slot: '',
+        protocol: 'wss',
     }
     let savedData = localStorage.getItem('archipelagoTrackerLastConnection');
     return savedData ? JSON.parse(savedData) : defaultConnection;
