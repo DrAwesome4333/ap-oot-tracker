@@ -111,6 +111,7 @@ let connectToServer = (host, port, slot, game, password) => {
 
     Popups.createPopup(POPUP_TYPE.INFO, 'Attempting to connect...');
     disableStartScreen();
+    /** @type {import("archipelago.js").ConnectionInformation} */
     let connectionInfo = {
         hostname: host,
         port: Number.parseInt(port),
@@ -118,6 +119,7 @@ let connectToServer = (host, port, slot, game, password) => {
         game: game,
         items_handling: ITEMS_HANDLING_FLAGS.REMOTE_ALL,
         password: password,
+        protocol: 'wss',
     }
 
     let client = new Client();
@@ -171,7 +173,6 @@ let loadSavedConnectionInformation = () => {
         hostname: 'archipelago.gg',
         port: '',
         slot: '',
-        protocol: 'wss',
     }
     let savedData = localStorage.getItem('archipelagoTrackerLastConnection');
     return savedData ? JSON.parse(savedData) : defaultConnection;
