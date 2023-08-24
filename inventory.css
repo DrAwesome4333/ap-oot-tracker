@@ -1,7 +1,7 @@
 #inventory {
     display: grid;
     grid-template-columns: repeat(8, 40px);
-    grid-template-rows: repeat(6, 40px);
+    grid-template-rows: repeat(2, 40px);
     row-gap: 10px;
     column-gap: 10px;
     background-color: #3c729d;
@@ -161,12 +161,12 @@
 
 #child_trade {
     grid-row: 4 / span 1;
-    grid-column: 5 / span 1;
+    grid-column: 6 / span 1;
 }
 
 #adult_trade {
     grid-row: 4 / span 1;
-    grid-column: 6 / span 1;
+    grid-column: 5 / span 1;
 }
 
 #hearts {
@@ -236,18 +236,99 @@
 
 #nocturne {
     grid-row: 6 / span 1;
-    grid-column: 4 / span 1;
+    grid-column: 5 / span 1;
 }
 
 #requiem {
     grid-row: 6 / span 1;
-    grid-column: 5 / span 1;
+    grid-column: 4 / span 1;
 }
 
 #prelude {
     grid-row: 6 / span 1;
     grid-column: 6 / span 1;
 }
+
+#forest_keys {
+    grid-row: 7 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#forest_boss_key {
+    grid-row: 8 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#fire_keys {
+    grid-row: 7 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#fire_boss_key {
+    grid-row: 8 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#water_keys {
+    grid-row: 7 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#water_boss_key {
+    grid-row: 8 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#shadow_keys {
+    grid-row: 7 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#shadow_boss_key {
+    grid-row: 8 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#spirit_keys {
+    grid-row: 7 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#spirit_boss_key {
+    grid-row: 8 / span 1;
+    grid-column: 5 / span 1;
+}
+
+#ganon_keys {
+    grid-row: 7 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#ganon_boss_key {
+    grid-row: 8 / span 1;
+    grid-column: 6 / span 1;
+}
+
+#well_keys {
+    grid-row: 7 / span 1;
+    grid-column: 7 / span 1;
+}
+
+#gtg_keys {
+    grid-row: 8 / span 1;
+    grid-column: 7 / span 1;
+}
+
+#hideout_keys {
+    grid-row: 7 / span 1;
+    grid-column: 8 / span 1;
+}
+
+#stone_of_agony {
+    grid-row: 8 / span 1;
+    grid-column: 8 / span 1;
+}
+
 
 .inventory_slot{
     width: 40px;

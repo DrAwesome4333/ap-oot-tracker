@@ -612,7 +612,7 @@ let Invetory = (() => {
         }], 
         new Set(['Bomb Bag'])),
 
-        'magic_meter': dynamicCountSlot('magic_meter', 'Bomb Bag', 
+        'magic_meter': dynamicCountSlot('magic_meter', 'Magic Meter', 
         [{
             imageSrc:"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/9f/OoT3D_Magic_Jar_Icon.png",
             maxCount: 0,
@@ -851,7 +851,14 @@ let Invetory = (() => {
             priority: 2,
             text: ''
         }]),
-    }
+        'forest_boss_key': singleSlotWithText('forest_boss_key', 'Boss Key (Forest Temple)', 'Forest', 'https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png', new Set(['Boss Key (Forest Temple)'])),
+        'fire_boss_key': singleSlotWithText('fire_boss_key', 'Boss Key (Fire Temple)', 'Fire','https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png', new Set(['Boss Key (Fire Temple)'])),
+        'water_boss_key': singleSlotWithText('water_boss_key', 'Boss Key (Water Temple)', 'Water','https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png', new Set(['Boss Key (Water Temple)'])),
+        'shadow_boss_key': singleSlotWithText('shadow_boss_key', 'Boss Key (Shadow Temple)', 'Shadow', 'https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png', new Set(['Boss Key (Shadow Temple)'])),
+        'spirit_boss_key': singleSlotWithText('spirit_boss_key', 'Boss Key (Spirit Temple)', 'Spirit','https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png', new Set(['Boss Key (Spirit Temple)'])),
+        'ganon_boss_key': singleSlotWithText('ganon_boss_key', 'Boss Key (Ganons Castle)', 'Ganon','https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png', new Set(['Boss Key (Ganons Castle)'])),
+
+    }//https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png
 
     let buildInventory = () => {
         for(let slot in slots){
