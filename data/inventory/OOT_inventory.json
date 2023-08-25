@@ -1,0 +1,123 @@
+{
+    "Main Inventory": {
+        "background_color": "#3c729d",
+        "rows": 8,
+        "columns": 8,
+        "images":{
+            "boomerang": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/d/d5/OoT_Boomerang_Icon.png",
+            "hammer": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/93/OoT_Megaton_Hammer_Icon.png",
+            "bombchus": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/36/OoT_Bombchu_Icon.png",
+            "lens": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/05/OoT_Lens_of_Truth_Icon.png",
+            "dins": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/d/da/OoT_Din%27s_Fire_Icon.png",
+            "farores": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7a/OoT_Farore%27s_Wind_Icon.png",
+            "nayrus": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/be/OoT_Nayru%27s_Love_Icon.png",
+            "fire_arrows": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/1e/OoT_Fire_Arrow_Icon.png",
+            "ice_arrows": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/3c/OoT_Ice_Arrow_Icon.png",
+            "light_arrows": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/76/OoT_Light_Arrow_Icon.png",
+            "kokiri_sword": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/53/OoT_Kokiri_Sword_Icon.png",
+            "mirror_shield": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/b0/OoT_Mirror_Shield_Icon_2.png",
+            "goron_tunic": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/1c/OoT_Goron_Tunic_Icon.png",
+            "zora_tunic": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/2c/OoT_Zora_Tunic_Icon.png",
+            "hover_boots": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/22/OoT_Hover_Boots_Icon.png",
+            "iron_boots": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/34/OoT_Iron_Boots_Icon.png",
+            "gerudo_card": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4e/OoT_Gerudo_Token_Icon.png",
+            
+            "grey_note": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/21/Grey_Note.png",
+            "minuet": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e4/Green_Note.png",
+            "bolero": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/f0/Red_Note.png",
+            "serenade": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0f/Blue_Note.png",
+            "requiem": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/a4/Orange_Note.png",
+            "nocturne": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/97/Purple_Note.png",
+            "prelude": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/90/Yellow_Note.png",
+
+            "gold_skultula_token": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/47/OoT_Token_Icon.png",
+            "heart_container":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/5a/OoT_Heart_Container_Icon.png",
+            
+            "deku_stick": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/2f/OoT_Deku_Stick_Icon.png",
+            "deku_nut": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/d/db/OoT_Deku_Nut_Icon.png",
+            "bow": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/9a/OoT_Fairy_Bow_Icon.png",
+            "slingshot": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/32/OoT_Fairy_Slingshot_Icon.png",
+            "hookshot": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/77/OoT_Hookshot_Icon.png",
+            "longshot": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/a4/OoT_Longshot_Icon.png",
+            "fairy_ocarina": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/97/OoT_Fairy_Ocarina_Icon.png",
+            "ocarina_of_time": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4e/OoT_Ocarina_of_Time_Icon.png",
+
+            "goron_bracelet": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/b7/OoT_Goron%27s_Bracelet_Icon.png",
+            "silver_gauntlets": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/b9/OoT_Silver_Gauntlets_Icon.png",
+            "gold_gauntlets": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/6a/OoT_Golden_Gauntlets_Icon.png",
+            
+            "bombs": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/11/OoT_Bomb_Icon.png",
+            "magic_jar": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/9f/OoT3D_Magic_Jar_Icon.png",
+            "empty_bottle": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/fc/OoT_Bottle_Icon.png",
+            "letter_bottle": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/21/OoT_Letter_Icon.png",
+
+            "goron_sword": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/2e/OoT_Giant%27s_Knife_Icon.png",
+            "giant_knife": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/2e/OoT_Giant%27s_Knife_Icon.png",
+
+            "adult_wallet": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/f9/OoT_Adult%27s_Wallet_Icon.png",
+            "giant_wallet": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/8/87/OoT_Giant%27s_Wallet_Icon.png",
+
+            "silver_scale": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4e/OoT_Silver_Scale_Icon.png",
+            "gold_scale": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/95/OoT_Golden_Scale_Icon.png",
+
+            "magic_beans": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/a7/OoT_Magic_Bean_Icon.png",
+
+            "egg": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/09/OoT_Weird_Egg_Icon.png",
+            "cucco": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/17/OoT_Cucco_Icon.png",
+            "zeldas_letter": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/20/OoT_Zelda%27s_Letter_Icon.png",
+
+            "keaton_mask":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/a9/OoT_Keaton_Mask_Icon.png",
+            "spooky_mask": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/5c/OoT_Spooky_Mask_Icon.png",
+            "bunny_hood": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7b/OoT_Bunny_Hood_Icon.png",
+            "skull_mask":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/d/df/OoT_Skull_Mask_Icon.png",
+            "mask_of_truth": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/ce/OoT_Mask_of_Truth_Icon.png",
+
+            "cojiro" : "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/c8/OoT_Cojiro_Icon.png",
+            "odd_mushroom":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/af/OoT_Odd_Mushroom_Icon.png",
+            "odd_potion":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/5b/OoT_Odd_Potion_Icon.png",
+            "poachers_saw":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/a5/OoT_Poacher%27s_Saw_Icon.png",
+            "broken_sword": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/cc/OoT_Broken_Goron%27s_Sword_Icon.png",
+            "prescription":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/44/OoT_Prescription_Icon.png",
+            "eyball_frog": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/ca/OoT_Eyeball_Frog_Icon.png",
+            "eyedrops": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0b/OoT_World%27s_Finest_Eye_Drops_Icon.png",
+            "claim_check": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/11/OoT_Claim_Check_Icon.png",
+
+            "triforce_piece": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0b/SS_Triforce_Piece_Icon.png",
+            "trifoce": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/68/ALttP_Triforce_Title_Sprite.png",
+
+            "boss_key": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png",
+            "small_key":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e5/OoT_Small_Key_Icon.png"
+        },
+        "slots":{
+            "boomerang": {
+                "row": 3,
+                "column": 1,
+                "show_count":false,
+                "default_count": 0,
+                "default_state": "missing",
+                "items":{
+                    "Boomerang": {
+                        "value": 1,
+                        "target_state":"received"
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"boomerang",
+                        "text": "",
+                        "tool_tip": "Boomerang",
+                        "styles":["missing"]
+                    }, 
+                    "received":{
+                        "image":"boomerang",
+                        "text": "",
+                        "tool_tip": "Boomerang",
+                        "styles":[]
+                    }
+                }
+
+
+            }
+        }
+    }
+}
