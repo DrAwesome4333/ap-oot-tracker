@@ -130,7 +130,7 @@ let connectToServer = (host, port, slot, game, password) => {
             console.log("Connected to the server");
             Popups.createPopup(POPUP_TYPE.SUCCESS, `Succesfully connected as Player ${packet.slot}`);
             saveConnectionInformation(connectionInfo);
-            Checklist.reciveClient(client);
+            Checklist.receiveClient(client);
         })
         .catch((error) => {
             console.error("Failed to connect:", error);

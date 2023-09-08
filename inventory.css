@@ -1,10 +1,8 @@
-#inventory {
+
+.inventory {
     display: grid;
-    grid-template-columns: repeat(8, 40px);
-    grid-template-rows: repeat(2, 40px);
     row-gap: 10px;
     column-gap: 10px;
-    background-color: #3c729d;
     width: fit-content;
     padding: 20px;
 }
@@ -329,6 +327,13 @@
     grid-column: 8 / span 1;
 }
 
+.gold > img {
+    filter: hue-rotate(45deg)
+}
+
+.maxed > span {
+    color: green;
+}
 
 .inventory_slot{
     width: 40px;

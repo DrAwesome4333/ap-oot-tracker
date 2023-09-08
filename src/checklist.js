@@ -72,7 +72,7 @@ let Checklist = (() => {
                 for(let i = 0; i < packet.items.length; i++){
                     items.push(client.items.name(client.players.game(client.data.slot), packet.items[i].item));
                 }
-                Invetory.addItems(items);
+                Invetory.addItems(packet.items);
                 console.log('items added')
             }
         });
@@ -114,10 +114,11 @@ let Checklist = (() => {
      * 
      * @param {Client} client 
      */
-    let reciveClient = (client) => {
+    let receiveClient = (client) => {
         // show and clear checklist
         Screens.show('checklist');
 
+        Invetory.build(client);
         if(!locations){
             locations = getLocationData(client);
         }
@@ -130,7 +131,7 @@ let Checklist = (() => {
         
     }
     return {
-        reciveClient,
+        receiveClient,
         setClientListeners,
     }
 })()
