@@ -327,13 +327,7 @@
     grid-column: 8 / span 1;
 }
 
-.gold > img {
-    filter: hue-rotate(45deg)
-}
 
-.maxed > span {
-    color: green;
-}
 
 .inventory_slot{
     width: 40px;
@@ -361,4 +355,11 @@
     right:0;
 }
 
+.gold > img {
+    filter: hue-rotate(45deg)
+}
+
+.maxed > span {
+    color: lawngreen;
+}
 
