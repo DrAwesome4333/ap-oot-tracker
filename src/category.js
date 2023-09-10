@@ -10,6 +10,7 @@
  * @prop {Set<string>} blockFilter
  * @prop {Set<number>} unclaimedLocations // Locations not claimed by any sub categories
  * @prop {Set<number>} [checkedLocations]
+ * @prop {Map<number, string>} [hintedLocations]
  * @prop {Number} checkedCount
  */
 
@@ -94,10 +95,12 @@ let Categories = (() => {
      * @param {Set<Number>} locations 
      * @param {Set<Number>} checkedLocations
      * @param {Map<Number, String>} locationNames
+     * @param {Map<Number, String>} hintedLocations
      */
-    let populateCategory = (category, locations, checkedLocations, locationNames) => {
+    let populateCategory = (category, locations, checkedLocations, locationNames, hintedLocations) => {
         category.checkedLocations = checkedLocations;
         category.locationNames = locationNames;
+        category.hintedLocations = hintedLocations;
         for(let location of locations.values()){
             let wasBlocked = false;
             let locationName = locationNames.get(location) || `Unkown location: ${location.toString()}`;
@@ -120,7 +123,7 @@ let Categories = (() => {
             }
         }
         for(let i = 0; i < category.subCategories.length; i++){
-            populateCategory(category.subCategories[i], category.locations, checkedLocations, locationNames);
+            populateCategory(category.subCategories[i], category.locations, checkedLocations, locationNames, hintedLocations);
             for(let location of category.subCategories[i].locations.values()){
                 category.unclaimedLocations.delete(location);
             }
@@ -158,7 +161,11 @@ let Categories = (() => {
             item.innerText = category.locationNames?.get(location) || `Unkown Location ${location}`;
             item.classList.add('check')
             if(category.checkedLocations?.has(location)){
-                item.classList.add('checked')
+                item.classList.add('checked');
+            }
+            if(category.hintedLocations?.has(location)){
+                item.classList.add('hinted');
+                item.title = category.hintedLocations.get(location) || "";
             }
             list.appendChild(item);
         }
@@ -199,6 +206,11 @@ let Categories = (() => {
                 //     item.remove();
                 //     parent?.appendChild(item);
                 // }
+            }
+            if(item && category.hintedLocations?.has(location)){
+                item.classList.add('hinted');
+                // @ts-ignore
+                item.title = category.hintedLocations.get(location) || "";
             }
         }
         for(let subCat = 0; subCat < category.subCategories.length; subCat++){

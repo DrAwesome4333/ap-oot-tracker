@@ -21,12 +21,35 @@ Use hints on found locations to build ER map (should work for all but overworld 
 
 /**
  * 
+ * @param {import("archipelago.js").Hint} hint 
+ * @param {Client} client 
+ */
+let hintToText = (hint, client) => {
+    let ownerString = `${client.players.alias(hint.receiving_player)}'s`;
+    if(hint.receiving_player == client.data.slot){
+        ownerString = 'your';
+    }
+    let finderString = `${client.players.alias(hint.finding_player)}'s`;
+    if(hint.finding_player == client.data.slot){
+        ownerString = 'your';
+    }
+
+    let itemString = client.items.name(client.players.game(client.data.slot), hint.item);
+    
+    let locationString = client.locations.name(client.players.game(client.data.slot), hint.location);
+    return `${ownerString} ${itemString} is at ${locationString} in ${finderString} world. (${hint.entrance})`;
+}
+
+/**
+ * 
  * @param {Client} client 
  */
 let getLocationData = (client) => {
     let locations = new Set();
     let checkedLocations = new Set();
     let locationNames = new Map();
+    /** @type {Map<number, string>} */
+    let hintedLocations = new Map();
     for(let i = 0; i < client.locations.missing.length; i++){
         let location = client.locations.missing[i];
         let name = client.locations.name(client.players.game(client.data.slot), client.locations.missing[i]);
@@ -42,10 +65,17 @@ let getLocationData = (client) => {
         locationNames.set(location, name);
     }
    
+    for(let i = 0; i < client.hints.mine.length; i++){
+        let hint = client.hints.mine[i];
+        if(hint.finding_player === client.data.slot){
+            hintedLocations.set(hint.location, hintToText(hint, client))
+        }
+    }
     return {
         locations,
         checkedLocations,
         locationNames,
+        hintedLocations,
     };
 }
 
@@ -57,7 +87,7 @@ let Checklist = (() => {
     let dungeonDef = buildDungeonDef(false);
     let overworldCategeory = Categories.buildCategory(overworldDef);
     let dungeonCategeory = Categories.buildCategory(dungeonDef);
-    /** @type {null | {checkedLocations:Set<number>, locations:Set<number>, locationNames:Map<number, string>}} */
+    /** @type {null | {checkedLocations:Set<number>, locations:Set<number>, locationNames:Map<number, string>, hintedLocations:Map<number, string>}} */
     let locations = null;
     let inventory = [];
 
@@ -89,6 +119,7 @@ let Checklist = (() => {
                 refreshCategories();
             }
         });
+
     }
 
     let renderCategories = () => {
@@ -122,9 +153,9 @@ let Checklist = (() => {
         if(!locations){
             locations = getLocationData(client);
         }
-        Categories.populateCategory(overworldCategeory, locations.locations, locations.checkedLocations, locations.locationNames)
-        Categories.populateCategory(dungeonCategeory, locations.locations, locations.checkedLocations, locations.locationNames)
-        
+        Categories.populateCategory(overworldCategeory, locations.locations, locations.checkedLocations, locations.locationNames, locations.hintedLocations)
+        Categories.populateCategory(dungeonCategeory, locations.locations, locations.checkedLocations, locations.locationNames, locations.hintedLocations)
+        console.log(client.hints.mine)
         
         renderCategories();
         

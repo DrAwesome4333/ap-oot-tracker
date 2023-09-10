@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 .screen {
     position: absolute;
     top: 0;
@@ -124,9 +129,23 @@ li.check.checked{
     list-style-type: none;
 }
 
+li.check.hinted {
+    color: red;
+    content:"🡆"
+}
+
+li.check.hinted.checked::before {
+    color: grey;   
+}
+
 li.check{
     color: black;
-    
+    list-style-type: disc;
+    font-size: medium;
+}
+
+ul > li {
+    list-style-type: none;
 }
 
 ul.hidden{
@@ -138,7 +157,6 @@ ul.hidden{
     border-bottom: 1px solid black;
     width: 50%;
 }
-
 
 .category_title::after{
     content: '▲'

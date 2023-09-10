@@ -128,7 +128,7 @@ let connectToServer = (host, port, slot, game, password) => {
         .connect(connectionInfo)
         .then((packet) => {
             console.log("Connected to the server");
-            Popups.createPopup(POPUP_TYPE.SUCCESS, `Succesfully connected as Player ${packet.slot}`);
+            Popups.createPopup(POPUP_TYPE.SUCCESS, `Succesfully connected as ${client.players.alias(packet.slot)}`);
             saveConnectionInformation(connectionInfo);
             Checklist.receiveClient(client);
         })
@@ -197,53 +197,3 @@ let enableStartScreen = () => {
 
 buildStartScreen();
 Screens.show('start');
-
-// /** @type {import("archipelago.js").ConnectionInformation} */
-// let connection = {
-//     hostname: 'archipelago.gg',
-//     port: 49352,
-//     name: 'Dr.OOT-Test',
-//     game: 'Ocarina of Time',
-//     items_handling: ITEMS_HANDLING_FLAGS.REMOTE_ALL,
-// }
-
-// let client = new Client();
-// client.addListener(SERVER_PACKET_TYPE.CONNECTED, (packet) => {
-//     console.log("Connected to server: ", packet);
-// });
-
-// client.addListener(SERVER_PACKET_TYPE.ROOM_UPDATE, (packet) => {
-//     console.log("Room update: ", packet);
-// });
-
-
-// // Connect to the Archipelago server
-// client
-//     .connect(connection)
-//     .then(() => {
-//         console.log("Connected to the server");
-//         client.addListener('LocationInfo', p => {
-//             console.log(`LP: ${client.locations.name(player.game, p.locations[0].location) } has ${client.items.name(connection.game, p.locations[0].item)}`)
-//         })
-//         /** @type {import("archipelago.js").Player}*/
-//         // @ts-ignore
-//         let player = client.data.players.get(client.data.slot);
-//         console.log(player);
-//         let locationId = client.locations.id(player.game, 'Graveyard Shield Grave Chest')
-//         // @ts-ignore
-
-//         client.locations.scout(CREATE_AS_HINT_MODE.NO_HINT, locationId);
-//         // client.locations.check(locationId)
-//         // let name = client.locations.name(connection.game, client.locations.missing[0]);
-//         // console.log(name);
-//     })
-//     .catch((error) => {
-//         console.error("Failed to connect:", error);
-//         // Handle the connection error.
-//     });
-// // @ts-ignore
-// window.apClient = client;
-
-// window.addEventListener("beforeunload", () => {
-//     client.disconnect();
-// });
