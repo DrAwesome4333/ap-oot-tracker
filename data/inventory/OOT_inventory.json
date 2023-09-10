@@ -1,7 +1,7 @@
 {
     "Main Inventory": {
         "background_color": "#3c729d",
-        "rows": 8,
+        "rows": 6,
         "columns": 8,
         "images":{
             "boomerang": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/d/d5/OoT_Boomerang_Icon.png",
@@ -83,10 +83,7 @@
             "claim_check": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/11/OoT_Claim_Check_Icon.png",
 
             "triforce_piece": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0b/SS_Triforce_Piece_Icon.png",
-            "triforce": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/68/ALttP_Triforce_Title_Sprite.png",
-
-            "boss_key": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png",
-            "small_key":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e5/OoT_Small_Key_Icon.png"
+            "triforce": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/68/ALttP_Triforce_Title_Sprite.png"
         },
         "slots":{
             "boomerang": {
@@ -120,8 +117,6 @@
                         }
                     }
                 }
-
-
             },
             "hammer": {
                 "row": 3,
@@ -2122,6 +2117,701 @@
                         }
                     }
                 }
+            }
+        }
+    },
+    "Keys":{
+        "background_color": "#1ccb5b",
+        "rows":3,
+        "columns": 5,
+        "images":{
+            "boss_key": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png",
+            "small_key":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e5/OoT_Small_Key_Icon.png"
+        },
+        "slots":{
+            
+            "botw_small_keys":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Bottom of the Well)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Bottom of the Well)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Bottom of the Well Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Bottom of the Well Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Bottom of the Well Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Bottom of the Well)"]
+                        }
+                    }
+                }
+            },
+            "hideout_small_keys":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Thieves Hideout)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Thieves Hideout)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Thieves Hideout Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Thieves Hideout Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Thieves Hideout Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Thieves Hideout)"]
+                        }
+                    }
+                }
+            },
+            "gtg_small_keys":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Gerudo Training Ground)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Gerudo Training Ground)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Gerudo Training Ground Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Gerudo Training Ground Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Gerudo Training Ground Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Gerudo Training Ground)"]
+                        }
+                    }
+                }
+            },
+            "forest_boss_key":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Boss Key (Forest Temple)": {
+                        "value": 1
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"boss_key",
+                        "tool_tip": "Forest Boss Key",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"boss_key",
+                        "tool_tip": "Forest Boss Key",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }
+                }
+            },
+            "forest_small_keys":{
+                "row": 1,
+                "column": 2,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Forest Temple)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Forest Temple)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Forest Temple Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Forest Temple Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Forest Temple Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Forest Temple)"]
+                        }
+                    }
+                }
+            },
+            "fire_boss_key":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Boss Key (Fire Temple)": {
+                        "value": 1
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"boss_key",
+                        "tool_tip": "Fire Boss Key",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"boss_key",
+                        "tool_tip": "Fire Boss Key",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }
+                }
+            },
+            "fire_small_keys":{
+                "row": 1,
+                "column": 2,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Fire Temple)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Fire Temple)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Fire Temple Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Fire Temple Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Fire Temple Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Fire Temple)"]
+                        }
+                    }
+                }
+            },
+            "water_boss_key":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Boss Key (Water Temple)": {
+                        "value": 1
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"boss_key",
+                        "tool_tip": "Water Boss Key",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"boss_key",
+                        "tool_tip": "Water Boss Key",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }
+                }
+            },
+            "water_small_keys":{
+                "row": 1,
+                "column": 2,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Water Temple)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Water Temple)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Water Temple Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Water Temple Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Water Temple Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Water Temple)"]
+                        }
+                    }
+                }
+            },
+            "shadow_boss_key":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Boss Key (Shadow Temple)": {
+                        "value": 1
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"boss_key",
+                        "tool_tip": "Shadow Boss Key",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"boss_key",
+                        "tool_tip": "Shadow Boss Key",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }
+                }
+            },
+            "shadow_small_keys":{
+                "row": 1,
+                "column": 2,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Shadow Temple)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Shadow Temple)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Shadow Temple Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Shadow Temple Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Shadow Temple Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Shadow Temple)"]
+                        }
+                    }
+                }
+            },
+            "spirit_boss_key":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Boss Key (Spirit Temple)": {
+                        "value": 1
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"boss_key",
+                        "tool_tip": "Spirit Boss Key",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"boss_key",
+                        "tool_tip": "Spirit Boss Key",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }
+                }
+            },
+            "spirit_small_keys":{
+                "row": 1,
+                "column": 2,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Spirit Temple)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Spirit Temple)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Spirit Temple Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Spirit Temple Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Spirit Temple Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Spirit Temple)"]
+                        }
+                    }
+                }
+            },
+            "ganon_boss_key":{
+                "row": 1,
+                "column": 1,
+                "starting_state": "missing",
+                "items":{
+                    "Boss Key (Ganons Castle)": {
+                        "value": 1
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"boss_key",
+                        "tool_tip": "Ganon Boss Key",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"boss_key",
+                        "tool_tip": "Ganon Boss Key",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }
+                }
+            },
+            "ganon_small_keys":{
+                "row": 1,
+                "column": 2,
+                "starting_state": "missing",
+                "items":{
+                    "Small Key (Ganons Castle)": {
+                        "value": 1
+                    },
+                    "Small Key Ring (Ganons Castle)": {
+                        "value": 0
+                    }
+                },
+                "states":{
+                    "missing":{
+                        "image":"small_key",
+                        "tool_tip": "Ganon's Castle Small Keys",
+                        "styles":["missing"],
+                        "priority": 0,
+                        "condition":{
+                            "type":"always"
+                        }
+                    }, 
+                    "received":{
+                        "image":"small_key",
+                        "tool_tip": "Ganon's Castle Small Keys",
+                        "text_mode":"count",
+                        "styles":[],
+                        "priority": 1,
+                        "condition":{
+                            "type":"count",
+                            "greater_than_equal": 1
+                        }
+                    }, 
+                    "ring":{
+                        "image":"small_key",
+                        "tool_tip": "Ganon's Castle Small Keys",
+                        "text_mode":"text",
+                        "text":"✔",
+                        "styles":[],
+                        "priority": 2,
+                        "condition":{
+                            "type":"item",
+                            "items":["Small Key Ring (Ganons Castle)"]
+                        }
+                    }
+                }
+            }
+        },
+        "subsections":{
+            "forest_keys": {
+                "row": 1,
+                "column": 1,
+                "row_span": 1,
+                "column_span": 2, 
+                "slots":["forest_boss_key", "forest_small_keys"],
+                "label":"Forest"
+            },
+            "fire_keys": {
+                "row": 2,
+                "column": 1,
+                "row_span": 1,
+                "column_span": 2, 
+                "slots":["fire_boss_key", "fire_small_keys"],
+                "label":"Fire"
+            },
+            "water_keys": {
+                "row": 3,
+                "column": 1,
+                "row_span": 1,
+                "column_span": 2, 
+                "slots":["water_boss_key", "water_small_keys"],
+                "label":"Water"
+            },
+            "shadow_keys": {
+                "row": 1,
+                "column": 3,
+                "row_span": 1,
+                "column_span": 2, 
+                "slots":["shadow_boss_key", "shadow_small_keys"],
+                "label":"Shadow"
+            },
+            "spirit_keys": {
+                "row": 2,
+                "column": 3,
+                "row_span": 1,
+                "column_span": 2, 
+                "slots":["spirit_boss_key", "spirit_small_keys"],
+                "label":"Spirit"
+            },
+            "ganons_castle_keys": {
+                "row": 3,
+                "column": 3,
+                "row_span": 1,
+                "column_span": 2, 
+                "slots":["ganon_boss_key", "ganon_small_keys"],
+                "label":"Ganon"
+            },
+            "botw_keys": {
+                "row": 1,
+                "column": 5,
+                "row_span": 1,
+                "column_span": 1, 
+                "slots":["botw_small_keys"],
+                "label":"BotW"
+            },
+            "gtg_keys": {
+                "row": 2,
+                "column": 5,
+                "row_span": 1,
+                "column_span": 1, 
+                "slots":["gtg_small_keys"],
+                "label":"GTG"
+            },
+            "hideout_keys": {
+                "row": 3,
+                "column": 5,
+                "row_span": 1,
+                "column_span": 1, 
+                "slots":["hideout_small_keys"],
+                "label":"Thieves"
             }
         }
     }

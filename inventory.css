@@ -1,3 +1,11 @@
+#inventory{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inventory_wrapper {
+    width: fit-content;
+    padding: 20px;
+}
 
 .inventory {
     display: grid;
@@ -5,329 +13,27 @@
     column-gap: 10px;
     width: fit-content;
     padding: 20px;
+    color: white;
+}
+
+.inventory_subsection {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    position: relative;
+}
+
+.inventory_subsection > span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color:white;
+    font-size:medium;
+    text-shadow: 2px 1px 5px black;
 }
-
-#deku_stick {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#deku_nut {
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-}
-
-#bomb_bag {
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 1;
-}
-
-#bow {
-    grid-row: 1 / span 1;
-    grid-column: 4 / span 1;
-}
-
-#slingshot {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#ocarina {
-    grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
-}
-
-#bombchus {
-    grid-row: 2 / span 1;
-    grid-column: 3 / span 1;
-}
-
-#hookshot {
-    grid-row: 2 / span 1;
-    grid-column: 4 / span 1;
-}
-
-#boomerang {
-    grid-row: 3 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#lens {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 1;
-}
-
-#magic_beans {
-    grid-row: 3 / span 1;
-    grid-column: 3 / span 1;
-}
-
-#hammer {
-    grid-row: 3 / span 1;
-    grid-column: 4 / span 1;
-}
-
-#fire_arrows{
-    grid-row: 1 / span 1;
-    grid-column: 5 / span 1;
-}
-
-#ice_arrows {
-    grid-row: 2 / span 1;
-    grid-column: 5 / span 1;
-}
-
-#light_arrows{
-    grid-row: 3 / span 1;
-    grid-column: 5 / span 1;
-}
-
-#dins_fire {
-    grid-row: 1 / span 1;
-    grid-column: 6 / span 1;
-}
-
-#farores_wind {
-    grid-row: 2 / span 1;
-    grid-column: 6 / span 1;
-}
-
-#nayrus_love {
-    grid-row: 3 / span 1;
-    grid-column: 6 / span 1;
-}
-
-#magic_meter {
-    grid-row: 1 / span 1;
-    grid-column: 7 / span 1;
-}
-
-#mirror_shield {
-    grid-row: 1 / span 1;
-    grid-column: 8 / span 1;
-}
-
-#kokiri_sword {
-    grid-row: 2 / span 1;
-    grid-column: 7 / span 1;
-}
-
-#biggoron_sword {
-    grid-row: 2 / span 1;
-    grid-column: 8 / span 1;
-}
-
-#goron_tunic {
-    grid-row: 3 / span 1;
-    grid-column: 7 / span 1;
-}
-
-#zora_tunic {
-    grid-row: 3 / span 1;
-    grid-column: 8 / span 1;
-}
-
-#iron_boots {
-    grid-row: 4 / span 1;
-    grid-column: 7 / span 1;
-}
-
-#hover_boots {
-    grid-row: 4 / span 1;
-    grid-column: 8 / span 1;
-}
-
-#bottle {
-    grid-row: 4 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#strength {
-    grid-row: 4 / span 1;
-    grid-column: 2 / span 1;
-}
-
-#scale {
-    grid-row: 4 / span 1;
-    grid-column: 3 / span 1;
-}
-
-#wallet {
-    grid-row: 4 / span 1;
-    grid-column: 4 / span 1;
-}
-
-#child_trade {
-    grid-row: 4 / span 1;
-    grid-column: 6 / span 1;
-}
-
-#adult_trade {
-    grid-row: 4 / span 1;
-    grid-column: 5 / span 1;
-}
-
-#hearts {
-    grid-row: 5 / span 1;
-    grid-column: 7 / span 1;
-}
-
-#membership_card {
-    grid-row: 5 / span 1;
-    grid-column: 8 / span 1;
-}
-
-#gold_skulltula_tokens {
-    grid-row: 6 / span 1;
-    grid-column: 7 / span 1;
-}
-
-#triforce {
-    grid-row: 6 / span 1;
-    grid-column: 8 / span 1;
-}
-
-#zeldas_lullaby {
-    grid-row: 5 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#eponas_song {
-    grid-row: 5 / span 1;
-    grid-column: 2 / span 1;
-}
-
-#sarias_song {
-    grid-row: 5 / span 1;
-    grid-column: 3 / span 1;
-}
-
-#suns_song {
-    grid-row: 5 / span 1;
-    grid-column: 4 / span 1;
-}
-
-#song_of_time {
-    grid-row: 5 / span 1;
-    grid-column: 5 / span 1;
-}
-
-#song_of_storms {
-    grid-row: 5 / span 1;
-    grid-column: 6 / span 1;
-}
-
-#minuet {
-    grid-row: 6 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#bolero {
-    grid-row: 6 / span 1;
-    grid-column: 2 / span 1;
-}
-
-#serenade {
-    grid-row: 6 / span 1;
-    grid-column: 3 / span 1;
-}
-
-#nocturne {
-    grid-row: 6 / span 1;
-    grid-column: 5 / span 1;
-}
-
-#requiem {
-    grid-row: 6 / span 1;
-    grid-column: 4 / span 1;
-}
-
-#prelude {
-    grid-row: 6 / span 1;
-    grid-column: 6 / span 1;
-}
-
-#forest_keys {
-    grid-row: 7 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#forest_boss_key {
-    grid-row: 8 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#fire_keys {
-    grid-row: 7 / span 1;
-    grid-column: 2 / span 1;
-}
-
-#fire_boss_key {
-    grid-row: 8 / span 1;
-    grid-column: 2 / span 1;
-}
-
-#water_keys {
-    grid-row: 7 / span 1;
-    grid-column: 3 / span 1;
-}
-
-#water_boss_key {
-    grid-row: 8 / span 1;
-    grid-column: 3 / span 1;
-}
-
-#shadow_keys {
-    grid-row: 7 / span 1;
-    grid-column: 4 / span 1;
-}
-
-#shadow_boss_key {
-    grid-row: 8 / span 1;
-    grid-column: 4 / span 1;
-}
-
-#spirit_keys {
-    grid-row: 7 / span 1;
-    grid-column: 5 / span 1;
-}
-
-#spirit_boss_key {
-    grid-row: 8 / span 1;
-    grid-column: 5 / span 1;
-}
-
-#ganon_keys {
-    grid-row: 7 / span 1;
-    grid-column: 6 / span 1;
-}
-
-#ganon_boss_key {
-    grid-row: 8 / span 1;
-    grid-column: 6 / span 1;
-}
-
-#well_keys {
-    grid-row: 7 / span 1;
-    grid-column: 7 / span 1;
-}
-
-#gtg_keys {
-    grid-row: 8 / span 1;
-    grid-column: 7 / span 1;
-}
-
-#hideout_keys {
-    grid-row: 7 / span 1;
-    grid-column: 8 / span 1;
-}
-
-#stone_of_agony {
-    grid-row: 8 / span 1;
-    grid-column: 8 / span 1;
-}
-
-
 
 .inventory_slot{
     width: 40px;

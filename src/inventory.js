@@ -6,6 +6,7 @@
  * @prop {number} columns
  * @prop {Object.<string, string>} images
  * @prop {Object.<string, InventorySlotDef>} slots
+ * @prop {Object.<string, InventorySubsectionDef>} [subsections]
  */
 /**
  * @typedef InventoryItemDef
@@ -46,7 +47,16 @@
  * @prop {string[]}[item_groups]
  * 
  */
-
+/**
+ * @typedef InventorySubsectionDef
+ * @prop {number} row
+ * @prop {number} row_span
+ * @prop {number} column
+ * @prop {number} column_span
+ * @prop {string} [label]
+ * @prop {string[]} slots
+ *  
+ */
 import { Client } from "archipelago.js";
 
 /** @type {Object.<string,InventoryDef>} */
@@ -267,13 +277,14 @@ let createInventory = (def, client) => {
 
         let container = document.createElement('div');
         container.style.backgroundColor = sectionDef.background_color || "#020202";
+        container.classList.add('inventory_wrapper');
         let title = document.createElement('h2');
         title.innerText = name;
         container.appendChild(title);
         let inventorySlotContainer = document.createElement('div');
         inventorySlotContainer.classList.add('inventory')
-        inventorySlotContainer.style.gridTemplateColumns = `repeat(${sectionDef.columns}, 40px)`
-        inventorySlotContainer.style.gridTemplateRows = `repeat(${sectionDef.rows}, 40px)`
+        inventorySlotContainer.style.gridTemplateColumns = `repeat(${sectionDef.columns}, 45px)`
+        inventorySlotContainer.style.gridTemplateRows = `repeat(${sectionDef.rows}, 45px)`
         container.appendChild(inventorySlotContainer);
         // Load images
         /** @type {Map<string, HTMLImageElement>} */
@@ -287,13 +298,42 @@ let createInventory = (def, client) => {
         }
 
         // Create Slots
-        /** @type {InventorySlot[]} */
-        let slots = [];
+        /** @type {Map<string, InventorySlot>} */
+        let slots = new Map();
         let slotNames = Object.getOwnPropertyNames(sectionDef.slots);
         for(let s = 0; s < slotNames.length; s++){
             let slotName = slotNames[s];
             let slotDef = sectionDef.slots[slotName];
-            slots.push(createInventorySlot(slotDef));
+            let slot = createInventorySlot(slotDef);
+            slots.set(slotName, slot);
+        }
+
+        // setup sub sections
+        if(sectionDef.subsections){
+            let subsectionNames = Object.getOwnPropertyNames(sectionDef.subsections);
+            for(let s = 0; s < subsectionNames.length; s++){
+                let subSecDef = sectionDef.subsections[subsectionNames[s]];
+                let subsectionContainer = document.createElement('div');
+                subsectionContainer.classList.add("inventory_subsection");
+                subsectionContainer.style.gridRowStart = subSecDef.row.toString();
+                subsectionContainer.style.gridColumnStart = subSecDef.column.toString();
+                subsectionContainer.style.gridRowEnd = (subSecDef.row + subSecDef.row_span).toString();
+                subsectionContainer.style.gridColumnEnd = (subSecDef.column + subSecDef.column_span).toString();
+
+                inventorySlotContainer.appendChild(subsectionContainer);
+
+                subSecDef.slots.forEach(slotName => {
+                    let slot = slots.get(slotName);
+                    if(slot){
+                        subsectionContainer.appendChild(slot.div);
+                    }
+                });
+                if(subSecDef.label){
+                    let label = document.createElement('span');
+                    label.innerText = subSecDef.label;
+                    subsectionContainer.appendChild(label);
+                }
+            }
         }
         /**
          * 
