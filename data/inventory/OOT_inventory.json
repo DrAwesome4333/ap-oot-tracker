@@ -1602,7 +1602,7 @@
                         }
                     }, 
                     "silver_scale":{
-                        "image":"sliver_scale",
+                        "image":"silver_scale",
                         "tool_tip": "Silver Scale",
                         "text_mode":"text",
                         "text":"",
