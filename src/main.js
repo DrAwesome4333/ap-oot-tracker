@@ -119,6 +119,7 @@ let connectToServer = (host, port, slot, game, password) => {
         game: game,
         items_handling: ITEMS_HANDLING_FLAGS.REMOTE_ALL,
         password: password,
+        tags: ['Tracker'],
     }
 
     let client = new Client();
