@@ -13,6 +13,7 @@ let Screens = (() => {
      */
     let createScreen = (name) => {
         let div = document.createElement('div');
+        div.id = name;
         div.classList.add('screen');
         document.body.appendChild(div);
 

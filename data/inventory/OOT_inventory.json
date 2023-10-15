@@ -83,7 +83,9 @@
             "claim_check": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/11/OoT_Claim_Check_Icon.png",
 
             "triforce_piece": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0b/SS_Triforce_Piece_Icon.png",
-            "triforce": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/68/ALttP_Triforce_Title_Sprite.png"
+            "triforce": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/68/ALttP_Triforce_Title_Sprite.png",
+            "boss_key": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png",
+            "small_key":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e5/OoT_Small_Key_Icon.png"
         },
         "slots":{
             "boomerang": {
@@ -2117,19 +2119,7 @@
                         }
                     }
                 }
-            }
-        }
-    },
-    "Keys":{
-        "background_color": "#1ccb5b",
-        "rows":3,
-        "columns": 5,
-        "images":{
-            "boss_key": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/40/OoT_Boss_Key_Icon.png",
-            "small_key":"https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e5/OoT_Small_Key_Icon.png"
-        },
-        "slots":{
-            
+            },
             "botw_small_keys":{
                 "row": 1,
                 "column": 1,
@@ -2742,7 +2732,7 @@
         },
         "subsections":{
             "forest_keys": {
-                "row": 1,
+                "row": 7,
                 "column": 1,
                 "row_span": 1,
                 "column_span": 2, 
@@ -2750,31 +2740,31 @@
                 "label":"Forest"
             },
             "fire_keys": {
-                "row": 2,
-                "column": 1,
+                "row": 7,
+                "column": 3,
                 "row_span": 1,
                 "column_span": 2, 
                 "slots":["fire_boss_key", "fire_small_keys"],
                 "label":"Fire"
             },
             "water_keys": {
-                "row": 3,
-                "column": 1,
+                "row": 7,
+                "column": 5,
                 "row_span": 1,
                 "column_span": 2, 
                 "slots":["water_boss_key", "water_small_keys"],
                 "label":"Water"
             },
             "shadow_keys": {
-                "row": 1,
-                "column": 3,
+                "row": 8,
+                "column": 1,
                 "row_span": 1,
                 "column_span": 2, 
                 "slots":["shadow_boss_key", "shadow_small_keys"],
                 "label":"Shadow"
             },
             "spirit_keys": {
-                "row": 2,
+                "row": 8,
                 "column": 3,
                 "row_span": 1,
                 "column_span": 2, 
@@ -2782,32 +2772,32 @@
                 "label":"Spirit"
             },
             "ganons_castle_keys": {
-                "row": 3,
-                "column": 3,
+                "row": 8,
+                "column": 5,
                 "row_span": 1,
                 "column_span": 2, 
                 "slots":["ganon_boss_key", "ganon_small_keys"],
                 "label":"Ganon"
             },
             "botw_keys": {
-                "row": 1,
-                "column": 5,
+                "row": 7,
+                "column": 7,
                 "row_span": 1,
                 "column_span": 1, 
                 "slots":["botw_small_keys"],
                 "label":"BotW"
             },
             "gtg_keys": {
-                "row": 2,
-                "column": 5,
+                "row": 7,
+                "column": 8,
                 "row_span": 1,
                 "column_span": 1, 
                 "slots":["gtg_small_keys"],
                 "label":"GTG"
             },
             "hideout_keys": {
-                "row": 3,
-                "column": 5,
+                "row": 8,
+                "column": 7,
                 "row_span": 1,
                 "column_span": 1, 
                 "slots":["hideout_small_keys"],

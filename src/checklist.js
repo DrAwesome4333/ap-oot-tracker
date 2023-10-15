@@ -80,16 +80,15 @@ let getLocationData = (client) => {
 }
 
 let Checklist = (() => {
-    let screen = Screens.createScreen('checklist');
+    let container = document.createElement('div');
+    container.id = "checklist"
 
-    screen.div.appendChild(Invetory.div);
     let overworldDef = buildOverworldDef(false, true, false, false, false);
     let dungeonDef = buildDungeonDef(false);
     let overworldCategeory = Categories.buildCategory(overworldDef);
     let dungeonCategeory = Categories.buildCategory(dungeonDef);
     /** @type {null | {checkedLocations:Set<number>, locations:Set<number>, locationNames:Map<number, string>, hintedLocations:Map<number, string>}} */
     let locations = null;
-    let inventory = [];
 
     /**
      * 
@@ -126,12 +125,12 @@ let Checklist = (() => {
         let overworldElement = Categories.renderCategory(overworldCategeory, true);
         let dungeonElement = Categories.renderCategory(dungeonCategeory, true);
         if(overworldElement){
-            screen.div.appendChild(overworldElement);
+            container.appendChild(overworldElement);
         }else{
             Popups.createPopup(POPUP_TYPE.ERROR, 'An error occured building the over world')
         }
         if(dungeonElement){
-            screen.div.appendChild(dungeonElement);
+            container.appendChild(dungeonElement);
         }else{
             Popups.createPopup(POPUP_TYPE.ERROR, 'An error occured building the Dungeon')
         }
@@ -147,7 +146,7 @@ let Checklist = (() => {
      */
     let receiveClient = (client) => {
         // show and clear checklist
-        Screens.show('checklist');
+        Screens.show('gameView');
 
         Invetory.build(client);
         if(!locations){
@@ -164,6 +163,7 @@ let Checklist = (() => {
     return {
         receiveClient,
         setClientListeners,
+        container,
     }
 })()
 

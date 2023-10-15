@@ -3,7 +3,7 @@ import { Screens } from "./screen.js";
 import { Popups, POPUP_TYPE} from "./popup.js";
 import { Client, ITEMS_HANDLING_FLAGS, SERVER_PACKET_TYPE, CREATE_AS_HINT_MODE } from "archipelago.js";
 import { Checklist } from "./checklist.js";
-
+import {GameView } from "./gameScreen.js"
 let generateId = (() => {
     let nextIdNumber = 0;
     return {

@@ -278,13 +278,13 @@ let createInventory = (def, client) => {
         let container = document.createElement('div');
         container.style.backgroundColor = sectionDef.background_color || "#020202";
         container.classList.add('inventory_wrapper');
-        let title = document.createElement('h2');
-        title.innerText = name;
-        container.appendChild(title);
+        // let title = document.createElement('h4');
+        // title.innerText = name;
+        // container.appendChild(title);
         let inventorySlotContainer = document.createElement('div');
         inventorySlotContainer.classList.add('inventory')
-        inventorySlotContainer.style.gridTemplateColumns = `repeat(${sectionDef.columns}, 45px)`
-        inventorySlotContainer.style.gridTemplateRows = `repeat(${sectionDef.rows}, 45px)`
+        inventorySlotContainer.style.gridTemplateColumns = `repeat(${sectionDef.columns}, auto)`
+        inventorySlotContainer.style.gridTemplateRows = `repeat(${sectionDef.rows}, auto)`
         container.appendChild(inventorySlotContainer);
         // Load images
         /** @type {Map<string, HTMLImageElement>} */
