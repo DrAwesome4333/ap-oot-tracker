@@ -1,7 +1,6 @@
 // @ts-check
 import { Categories, buildDungeonDef, buildOverworldDef } from "./category.js";
 import { POPUP_TYPE, Popups } from "./popup.js";
-import { Invetory } from "./inventory.js";
 import { GameData } from "./gameData.js";
 
 /*

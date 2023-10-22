@@ -1,4 +1,6 @@
 // @ts-check
+import { GameData } from "./gameData.js";
+
 /**
  * @typedef InventoryDef
  * @prop {string} [background_color]
@@ -7,6 +9,7 @@
  * @prop {Object.<string, string>} images
  * @prop {Object.<string, InventorySlotDef>} slots
  * @prop {Object.<string, InventorySubsectionDef>} [subsections]
+ * @prop {Object.<string, string[]>} [item_groups]
  */
 /**
  * @typedef InventoryItemDef
@@ -57,21 +60,20 @@
  * @prop {string[]} slots
  *  
  */
-import { Client } from "archipelago.js";
 
 /** @type {Object.<string,InventoryDef>} */
 let testJSON = await fetch("./data/OOT/OOT_inventory.json").then(r => r.json());
 
 /**
  * @typedef InventorySlot
- * @prop {(items:import("archipelago.js").NetworkItem[]) => void} addItems
+ * @prop {(items:string[]) => void} addItems
  * @prop {() => void} reset
  * @prop {HTMLDivElement} div 
  */
 
 /**
  * @typedef InventorySection
- * @prop {(items:import("archipelago.js").NetworkItem[]) => void} addItems
+ * @prop {(items:string[]) => void} addItems
  * @prop {() => void} reset
  * @prop {HTMLDivElement} div 
  */
@@ -85,10 +87,8 @@ let elementIdGen = (()=>{
 /**
  * 
  * @param {Object.<string,InventoryDef>} def
- * @param {Client} client
  */
-let createInventory = (def, client) => {
-    let gameName = client.players.game(client.data.slot);
+let createInventory = (def) => {
     /** @type {InventorySection[]}*/
     let sections = [];
     /** 
@@ -123,7 +123,7 @@ let createInventory = (def, client) => {
             for(let item in slotDef.items){
                 let details = slotDef.items[item];
                 if(details.is_item_group){
-                    let itemsInGroup = client.items.group(gameName, item);
+                    let itemsInGroup = sectionDef.item_groups ? sectionDef.item_groups[item] : [];
                     itemsInGroup.forEach(itemName => triggerItems.set(itemName, details.value));
                 }else{
                     triggerItems.set(item, details.value);
@@ -133,16 +133,15 @@ let createInventory = (def, client) => {
             let currentState = slotDef.starting_state;
             /**
              * 
-             * @param {import("archipelago.js").NetworkItem[]} items 
+             * @param {string[]} items 
              */
             let addItems = (items) => {
                 let hasTriggered = false;
                 for(let i = 0; i < items.length; i++){
                     let item = items[i];
-                    let itemName = client.items.name(gameName, item.item);
-                    if(triggerItems.has(itemName)){
-                        itemCount += triggerItems.get(itemName) || 0;
-                        collectedItems.add(itemName)
+                    if(triggerItems.has(item)){
+                        itemCount += triggerItems.get(item) || 0;
+                        collectedItems.add(item)
                         hasTriggered = true;
                     }
                 }
@@ -180,7 +179,7 @@ let createInventory = (def, client) => {
                                 })
                             } else if (state.condition.item_groups){
                                 state.condition.item_groups.forEach(groupName => {
-                                    let items = client.items.group(gameName, groupName);
+                                    let items = sectionDef.item_groups ? sectionDef.item_groups[groupName] : [];
                                     items.forEach(item => {
                                         if(collectedItems.has(item)){
                                             setState();
@@ -337,7 +336,7 @@ let createInventory = (def, client) => {
         }
         /**
          * 
-        * @param {import("archipelago.js").NetworkItem[]} items 
+        * @param {string[]} items 
         */
         let addItems = (items) => {
             slots.forEach(slot => {
@@ -363,7 +362,7 @@ let createInventory = (def, client) => {
         sections.push(createInventorySection(name, def[name]));
     })
     /**
-     * @param {import("archipelago.js").NetworkItem[]} items
+     * @param {string[]} items
      */
     let addItems = (items) => {
         sections.forEach(section => {
@@ -384,20 +383,17 @@ let createInventory = (def, client) => {
     }
 }
 
-let Invetory = (() => {
+let Inventory = (() => {
     let div = document.createElement('div');
     div.id='inventory';
-    /** @type {{reset:()=>void, addItems:(items:import("archipelago.js").NetworkItem[])=>void, sections:InventorySection[]} | null} */
+    /** @type {{reset:()=>void, addItems:(items:string[])=>void, sections:InventorySection[]} | null} */
     let inventorySlots = null;
-    /** @type {import("archipelago.js").NetworkItem[]} */
+    /** @type {string[]} */
     let inventory = [];
 
-    /**
-     * 
-     * @param {Client} client 
-     */
-    let build = (client) => {
-        inventorySlots = createInventory(testJSON, client);
+
+    let build = () => {
+        inventorySlots = createInventory(testJSON);
         while(div.firstChild){
             div.firstChild.remove();
         }
@@ -419,7 +415,7 @@ let Invetory = (() => {
 
     /**
      * 
-     * @param {import("archipelago.js").NetworkItem[]} items 
+     * @param {string[]} items 
      */
     let addItems = (items) => {
         if(inventorySlots){
@@ -432,14 +428,23 @@ let Invetory = (() => {
         })
     }
 
+    let inventoryIndex = 0;
+    let refresh = () => {
+        let newItems = [];
+        while(inventoryIndex < GameData.inventory.length){
+            newItems.push(GameData.inventory[inventoryIndex].name);
+            inventoryIndex ++;
+        }
+        addItems(newItems);
+    }
 
 
     return {
         reset,
         div,
-        addItems,
         build,
+        refresh,
     }
 })()
 
-export {Invetory}
+export {Inventory}

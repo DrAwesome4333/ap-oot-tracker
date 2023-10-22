@@ -2803,6 +2803,48 @@
                 "slots":["hideout_small_keys"],
                 "label":"Thieves"
             }
+        },
+        "item_groups":{
+            "Adult Trade Item": [
+                "Broken Sword",
+                "Claim Check",
+                "Eyeball Frog",
+                "Eyedrops",
+                "Odd Mushroom",
+                "Odd Potion",
+                "Poachers Saw",
+                "Pocket Cucco",
+                "Pocket Egg",
+                "Prescription"
+            ],
+            "Bottles": [
+                "Bottle",
+                "Bottle with Big Poe",
+                "Bottle with Blue Fire",
+                "Bottle with Blue Potion",
+                "Bottle with Bugs",
+                "Bottle with Fairy",
+                "Bottle with Fish",
+                "Bottle with Green Potion",
+                "Bottle with Milk",
+                "Bottle with Poe",
+                "Bottle with Red Potion",
+                "Rutos Letter"
+            ],
+            "logic_bottles": [
+                "Bottle",
+                "Bottle with Blue Fire",
+                "Bottle with Blue Potion",
+                "Bottle with Bugs",
+                "Bottle with Fairy",
+                "Bottle with Fish",
+                "Bottle with Green Potion",
+                "Bottle with Milk",
+                "Bottle with Poe",
+                "Bottle with Red Potion",
+                "Deliver Letter",
+                "Sell Big Poe"
+            ]
         }
     }
 }

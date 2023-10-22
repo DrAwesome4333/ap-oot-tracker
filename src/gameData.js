@@ -3,6 +3,7 @@ import { Popups, POPUP_TYPE} from "./popup.js";
 import { Client, ITEMS_HANDLING_FLAGS, SERVER_PACKET_TYPE} from "archipelago.js";
 
 import { Checklist } from "./checklist.js";
+import { Inventory } from "./inventory.js";
 
 /**
  * @typedef ItemLocation
@@ -128,10 +129,10 @@ let GameData = (()=>{
                     name: client.items.name(client.players.game(client.data.slot), packet.items[i].item),
                     isProgressive: (packet.items[i].flags & 1) ? true : false,
                 }
-                item.push
+                inventory.push(item);
             }
             console.log('items added');
-            // todo add callback to listeners
+            Inventory.refresh();
         }
     });
 
@@ -204,6 +205,8 @@ let GameData = (()=>{
                 hints = loadHintData();
                 Checklist.buildChecklist();
                 Checklist.refresh();
+                Inventory.build();
+                Inventory.refresh();
             })
             .catch((error) => {
                 console.error("Failed to connect:", error);
@@ -257,6 +260,7 @@ let GameData = (()=>{
         connectToServer,
         loadSavedConnectionInformation,
         get playerName(){return playerName()},
+        get gameName(){return client.players.game(client.data.slot)},
         get inventory() {return inventory},
         get checkedLocations() {return checkedLocations},
         get locations() {return locations},
