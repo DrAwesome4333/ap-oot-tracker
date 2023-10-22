@@ -43,7 +43,7 @@ let GameData = (()=>{
     let hintToText = (hint) => {
         let ownerString = `${client.players.alias(hint.receiving_player)}'s`;
         if(hint.receiving_player == client.data.slot){
-            ownerString = 'your';
+            ownerString = 'Your';
         }
         let finderString = `${client.players.alias(hint.finding_player)}'s`;
         if(hint.finding_player == client.data.slot){
@@ -53,7 +53,9 @@ let GameData = (()=>{
         let itemString = client.items.name(client.players.game(client.data.slot), hint.item);
         
         let locationString = client.locations.name(client.players.game(client.data.slot), hint.location);
-        return `${ownerString} ${itemString} is at ${locationString} in ${finderString} world. (${hint.entrance})`;
+
+        let entranceString = hint.entrance ? `(${hint.entrance})` : '';
+        return `${ownerString} ${itemString} is at ${locationString} in ${finderString} world. ${entranceString}`;
     }
 
     let loadLocationData = async () => {
@@ -111,14 +113,13 @@ let GameData = (()=>{
 
     let loadHintData = () => {
         /** @type {Map<number, string>} */
-        let hintedLocations = new Map();
+        hints = new Map();
         for(let i = 0; i < client.hints.mine.length; i++){
             let hint = client.hints.mine[i];
             if(hint.finding_player === client.data.slot){
-                hintedLocations.set(hint.location, hintToText(hint))
+                hints.set(hint.location, hintToText(hint))
             }
         }
-        return hintedLocations;
     }
 
     client.addListener(SERVER_PACKET_TYPE.RECEIVED_ITEMS, (packet) => {
@@ -146,6 +147,27 @@ let GameData = (()=>{
             Checklist.refresh();
         }
     });
+
+    // These packets are called and trigger the hint list to update, since there is no way to directly listen
+    // for the hint list update, I listen for the same events as it does
+    client.addListener(SERVER_PACKET_TYPE.SET_REPLY, (packet) => {
+        if (packet.key === `_read_hints_${client.data.team}_${client.data.slot}`) {
+            loadHintData();
+            Checklist.refresh();
+        }
+    });
+
+    client.addListener(SERVER_PACKET_TYPE.RETRIEVED, (packet) => {
+        for (const key in packet.keys) {
+            if (key !== `_read_hints_${client.data.team}_${client.data.slot}`) {
+                continue;
+            }
+
+            loadHintData();
+            Checklist.refresh();
+        }
+    });
+
 
     window.addEventListener("beforeunload", () => {
         client.disconnect();
@@ -202,7 +224,7 @@ let GameData = (()=>{
             })
             .then(_ => loadLocationData())
             .then(_ => {
-                hints = loadHintData();
+                loadHintData();
                 Checklist.buildChecklist();
                 Checklist.refresh();
                 Inventory.build();

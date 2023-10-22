@@ -26,8 +26,8 @@ let Checklist = (() => {
     let dungeonCategeory = Categories.buildCategory(dungeonDef);
 
     let renderCategories = () => {
-        let overworldElement = Categories.renderCategory(overworldCategeory, true);
-        let dungeonElement = Categories.renderCategory(dungeonCategeory, true);
+        let overworldElement = Categories.renderCategory(overworldCategeory, true, GameData.hints);
+        let dungeonElement = Categories.renderCategory(dungeonCategeory, true, GameData.hints);
         if(overworldElement){
             container.appendChild(overworldElement);
         }else{
@@ -41,8 +41,8 @@ let Checklist = (() => {
     }
 
     let refreshCategories = () => {
-        Categories.refreshCategory(overworldCategeory, true);
-        Categories.refreshCategory(dungeonCategeory, true);
+        Categories.refreshCategory(overworldCategeory, true, GameData.hints);
+        Categories.refreshCategory(dungeonCategeory, true, GameData.hints);
     }
 
     let buildChecklist = () => {

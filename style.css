@@ -131,11 +131,14 @@ li.check.checked{
 
 li.check.hinted {
     color: red;
-    content:"🡆"
+}
+li.check.hinted::before {
+    color: red;
+    content:"🔍"
 }
 
 li.check.hinted.checked::before {
-    color: grey;   
+    color: grey;
 }
 
 li.check{

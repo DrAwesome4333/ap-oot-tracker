@@ -9,7 +9,6 @@
  * @prop {Set<string>} blockFilter
  * @prop {Set<number>} unclaimedLocations // Locations not claimed by any sub categories
  * @prop {Set<number>} [checkedLocations]
- * @prop {Map<number, string>} [hintedLocations]
  * @prop {Number} checkedCount
  */
 
@@ -98,7 +97,6 @@ let Categories = (() => {
      */
     let populateCategory = (category, locations, checkedLocations, hintedLocations) => {
         category.checkedLocations = checkedLocations;
-        category.hintedLocations = hintedLocations;
         for(let location of locations.values()){
             let wasBlocked = false;
             for(let locationCategory of location.categories.values()){
@@ -129,8 +127,9 @@ let Categories = (() => {
     /**
      * 
      * @param {Category} category 
+     * @param {Map<Number, String>} hintedLocations
      */
-    let renderCategory = (category, separateChecked=true) => {
+    let renderCategory = (category, separateChecked=true, hintedLocations) => {
         if(category.locations.size == 0){
             return null;
         }
@@ -159,14 +158,14 @@ let Categories = (() => {
             if(category.checkedLocations?.has(location)){
                 item.classList.add('checked');
             }
-            if(category.hintedLocations?.has(location)){
+            if(hintedLocations.has(location)){
                 item.classList.add('hinted');
-                item.title = category.hintedLocations.get(location) || "";
+                item.title = hintedLocations.get(location) || "";
             }
             list.appendChild(item);
         }
         for(let subCat = 0; subCat < category.subCategories.length; subCat++){
-            let subList = renderCategory(category.subCategories[subCat], separateChecked);
+            let subList = renderCategory(category.subCategories[subCat], separateChecked, hintedLocations);
             if(subList){
                 let item = document.createElement('li');
                 item.appendChild(subList)
@@ -179,8 +178,10 @@ let Categories = (() => {
     /**
      * 
      * @param {Category} category 
+     * @param {Map<Number, String>} hintedLocations
+     * 
      */
-    let refreshCategory = (category, separateChecked=true) => {
+    let refreshCategory = (category, separateChecked=true, hintedLocations) => {
         if(category.locations.size == 0){
             return;
         }
@@ -203,14 +204,14 @@ let Categories = (() => {
                 //     parent?.appendChild(item);
                 // }
             }
-            if(item && category.hintedLocations?.has(location)){
+            if(item && hintedLocations.has(location)){
                 item.classList.add('hinted');
                 // @ts-ignore
-                item.title = category.hintedLocations.get(location) || "";
+                item.title = hintedLocations.get(location) || "";
             }
         }
         for(let subCat = 0; subCat < category.subCategories.length; subCat++){
-            refreshCategory(category.subCategories[subCat], separateChecked);
+            refreshCategory(category.subCategories[subCat], separateChecked, hintedLocations);
         }
     }
     return {
