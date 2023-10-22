@@ -60,7 +60,7 @@
 import { Client } from "archipelago.js";
 
 /** @type {Object.<string,InventoryDef>} */
-let testJSON = await fetch("./data/inventory/OOT_inventory.json").then(r => r.json());
+let testJSON = await fetch("./data/OOT/OOT_inventory.json").then(r => r.json());
 
 /**
  * @typedef InventorySlot

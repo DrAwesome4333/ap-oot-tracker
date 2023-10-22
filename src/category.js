@@ -4,8 +4,7 @@
  * @prop {string} name
  * @prop {string} id
  * @prop {Category[]} subCategories
- * @prop {Set<number>} locations
- * @prop {Map<number, string>} [locationNames]
+ * @prop {Map<number, import("./gameData.js").ItemLocation>} locations
  * @prop {Set<string>} allowFilter
  * @prop {Set<string>} blockFilter
  * @prop {Set<number>} unclaimedLocations // Locations not claimed by any sub categories
@@ -14,7 +13,7 @@
  * @prop {Number} checkedCount
  */
 
-import { DUNGEON_CATEGORIES, LOCATION_DATA, REGION_CATEGORIES } from "./locations.js";
+import { DUNGEON_CATEGORIES, REGION_CATEGORIES } from "./locations.js";
 
 /**
  * @typedef CategoryDef
@@ -38,7 +37,8 @@ let Categories = (() => {
      * @returns {Category}
      */
     let buildCategory = (categoryDef) => {
-        let locations = new Set();
+        /** @type {Map<number, import("./gameData.js").ItemLocation>} */
+        let locations = new Map();
         let unclaimedLocations = new Set();
         let id = categoryIdGen.next;
         /** @type {Category[]} */
@@ -78,7 +78,7 @@ let Categories = (() => {
                 let count = 0;
                 if(this.checkedLocations){
                     for(let location of locations.values()){
-                        if(this.checkedLocations.has(location)){
+                        if(this.checkedLocations.has(location.id)){
                             count++;
                         }
                     }
@@ -92,20 +92,16 @@ let Categories = (() => {
     /**
      * 
      * @param {Category} category 
-     * @param {Set<Number>} locations 
+     * @param {Map<Number, import("./gameData.js").ItemLocation>} locations 
      * @param {Set<Number>} checkedLocations
-     * @param {Map<Number, String>} locationNames
      * @param {Map<Number, String>} hintedLocations
      */
-    let populateCategory = (category, locations, checkedLocations, locationNames, hintedLocations) => {
+    let populateCategory = (category, locations, checkedLocations, hintedLocations) => {
         category.checkedLocations = checkedLocations;
-        category.locationNames = locationNames;
         category.hintedLocations = hintedLocations;
         for(let location of locations.values()){
             let wasBlocked = false;
-            let locationName = locationNames.get(location) || `Unkown location: ${location.toString()}`;
-            let locationCategories = LOCATION_DATA[locationName].categories;
-            for(let locationCategory of locationCategories.values()){
+            for(let locationCategory of location.categories.values()){
                 if(category.blockFilter.has(locationCategory)){
                     wasBlocked = true;
                     break;
@@ -114,18 +110,18 @@ let Categories = (() => {
             if(wasBlocked){
                 continue;
             }
-            for(let locationCategory of locationCategories.values()){
+            for(let locationCategory of location.categories.values()){
                 if(category.allowFilter.has(locationCategory)){
-                    category.locations.add(location);
-                    category.unclaimedLocations.add(location);
+                    category.locations.set(location.id, location);
+                    category.unclaimedLocations.add(location.id);
                     break;
                 }
             }
         }
         for(let i = 0; i < category.subCategories.length; i++){
-            populateCategory(category.subCategories[i], category.locations, checkedLocations, locationNames, hintedLocations);
+            populateCategory(category.subCategories[i], category.locations, checkedLocations, hintedLocations);
             for(let location of category.subCategories[i].locations.values()){
-                category.unclaimedLocations.delete(location);
+                category.unclaimedLocations.delete(location.id);
             }
         };
     }
@@ -158,7 +154,7 @@ let Categories = (() => {
         for(let location of category.unclaimedLocations.values()){
             let item = document.createElement('li');
             item.id = `${category.id}_${location}`;
-            item.innerText = category.locationNames?.get(location) || `Unkown Location ${location}`;
+            item.innerText = category.locations.get(location)?.name || `Unkown Location ${location}`;
             item.classList.add('check')
             if(category.checkedLocations?.has(location)){
                 item.classList.add('checked');

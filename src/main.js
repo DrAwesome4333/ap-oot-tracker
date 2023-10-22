@@ -1,9 +1,9 @@
 // @ts-check
 import { Screens } from "./screen.js";
 import { Popups, POPUP_TYPE} from "./popup.js";
-import { Client, ITEMS_HANDLING_FLAGS, SERVER_PACKET_TYPE, CREATE_AS_HINT_MODE } from "archipelago.js";
 import { Checklist } from "./checklist.js";
-import {GameView } from "./gameScreen.js"
+import { GameView } from "./gameScreen.js"
+import { GameData } from "./gameData.js";
 let generateId = (() => {
     let nextIdNumber = 0;
     return {
@@ -39,7 +39,7 @@ let buildStartScreen = () => {
     // create a simple form for filling out connection info
     let title = document.createElement('h2');
 
-    let savedData = loadSavedConnectionInformation();
+    let savedData = GameData.loadSavedConnectionInformation();
     title.innerHTML = 'Enter Archipelago Connection Details';
     let ipInput = createTextInputWithLabel('Host address:', 'ip_input', 2);
     ipInput.input.value = savedData.hostname;
@@ -72,111 +72,24 @@ let buildStartScreen = () => {
 
     startScreen.div.appendChild(centeredContainer);
     connectButton.onclick = () => {
-        connectToServer(
+        disableStartScreen();
+        GameData.connectToServer(
             ipInput.input.value, 
             portInput.input.value,
             slotInput.input.value,
             'Ocarina of Time',
             passwordInput.input.value,
-            );
+            )
+            .then(()=> {
+                Screens.show('gameView');
+            })
+            .catch(e => {
+                Popups.createPopup(POPUP_TYPE.ERROR, e);
+                enableStartScreen();
+            });
     }
 }
 
-/**
- * 
- * @param {string} host 
- * @param {string} port 
- * @param {string} slot 
- * @param {string} game 
- * @param {string} password 
- */
-let connectToServer = (host, port, slot, game, password) => {
-// verify
-    if(host === ''){
-        Popups.createPopup(POPUP_TYPE.ERROR, 'Please specify a host address');
-        return;
-    }
-    if(port === '' || isNaN(parseInt(port))){
-        Popups.createPopup(POPUP_TYPE.ERROR, 'Invalid port number');
-        return;
-    }
-    if(slot === ''){
-        Popups.createPopup(POPUP_TYPE.ERROR, 'Please specify a slot name');
-        return;
-    }
-    if(game === ''){
-        Popups.createPopup(POPUP_TYPE.ERROR, 'Please specify a game');
-        return;
-    }
-
-    Popups.createPopup(POPUP_TYPE.INFO, 'Attempting to connect...');
-    disableStartScreen();
-    /** @type {import("archipelago.js").ConnectionInformation} */
-    let connectionInfo = {
-        hostname: host,
-        port: Number.parseInt(port),
-        name: slot,
-        game: game,
-        items_handling: ITEMS_HANDLING_FLAGS.REMOTE_ALL,
-        password: password,
-        tags: ['Tracker'],
-    }
-
-    let client = new Client();
-    // Connect to the Archipelago server
-    Checklist.setClientListeners(client);
-    client
-        .connect(connectionInfo)
-        .then((packet) => {
-            console.log("Connected to the server");
-            Popups.createPopup(POPUP_TYPE.SUCCESS, `Succesfully connected as ${client.players.alias(packet.slot)}`);
-            saveConnectionInformation(connectionInfo);
-            Checklist.receiveClient(client);
-        })
-        .catch((error) => {
-            console.error("Failed to connect:", error);
-            if(typeof error[0] === 'string'){
-                let e = error[0];
-                if(e == 'InvalidSlot'){
-                    Popups.createPopup(POPUP_TYPE.ERROR, `Failed to connect to slot, the slot name was invalid.`)
-                }else if(e == 'InvalidGame'){
-                    Popups.createPopup(POPUP_TYPE.ERROR, `Failed to connect to slot, the game name was invalid.`)
-                }else {
-                    Popups.createPopup(POPUP_TYPE.ERROR, `Failed to connect to slot, reason given by server: ${e}`)
-                }
-            }else{
-                Popups.createPopup(POPUP_TYPE.ERROR, `Failed to connect to server, please verify connection details are correct and the server is running. ${host=='archipelago.gg' ? 'You can restart the server on archipelago.gg by reloading the room page.': 'Check with the server host for server status.'}`)
-            }
-            enableStartScreen();
-            
-        });
-        window.addEventListener("beforeunload", () => {
-            client.disconnect();
-        });
-}
-
-/**
- * 
- * @param {import("archipelago.js").ConnectionInformation} connectionInfo 
- */
-let saveConnectionInformation = (connectionInfo) => {
-    let savedInformation = {
-        hostname: connectionInfo.hostname,
-        port: connectionInfo.port,
-        slot: connectionInfo.name,
-    }
-    localStorage.setItem('archipelagoTrackerLastConnection', JSON.stringify(savedInformation));
-}
-
-let loadSavedConnectionInformation = () => {
-    let defaultConnection = {
-        hostname: 'archipelago.gg',
-        port: '',
-        slot: '',
-    }
-    let savedData = localStorage.getItem('archipelagoTrackerLastConnection');
-    return savedData ? JSON.parse(savedData) : defaultConnection;
-}
 
 let disableStartScreen = () => {
     let elements = document.querySelectorAll('#start_grid>input');
