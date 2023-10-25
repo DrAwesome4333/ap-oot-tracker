@@ -1,0 +1,62 @@
+
+.category_title{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    width: 50%;
+    font-size: medium;
+}
+
+.category_title::after{
+    content: '▲'
+}
+
+.category_title.hidden_content::after{
+    content: '▼'
+}
+
+.category_root{
+    cursor: default
+}
+
+.category_root::after{
+    content:'';
+}
+
+.category_container{
+    border-left: 1px dashed gray;
+    padding-left: 1em;
+    /* margin-left:1em; */
+}
+.category_container.hidden{
+    display: none;
+}
+
+.check.checked{
+    color:grey;
+    text-decoration: line-through;
+    list-style-type: none;
+}
+
+.check.hinted {
+    color: red;
+}
+.check.hinted::before {
+    color: red;
+    content:"🔍"
+}
+
+.check.hinted.checked::before {
+    color: grey;
+}
+
+.check{
+    color: black;
+    list-style-type: disc;
+    font-size: medium;
+}
+
+#checklist {
+    grid-area:checklist;
+    overflow: auto;
+    /* height: 100%; */
+}

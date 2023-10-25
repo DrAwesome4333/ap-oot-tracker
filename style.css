@@ -123,56 +123,6 @@ body{
     grid-row: 1 /span 1;
 }
 
-.check.checked{
-    color:grey;
-    text-decoration: line-through;
-    list-style-type: none;
-}
-
-.check.hinted {
-    color: red;
-}
-.check.hinted::before {
-    color: red;
-    content:"🔍"
-}
-
-.check.hinted.checked::before {
-    color: grey;
-}
-
-.check{
-    color: black;
-    list-style-type: disc;
-    font-size: medium;
-}
-
-
-ul > li {
-    list-style-type: none;
-}
-
-.category_title{
-    cursor: pointer;
-    border-bottom: 1px solid black;
-    width: 50%;
-    font-size: medium;
-}
-
-.category_title::after{
-    content: '▲'
-}
-
-.category_title.hidden_content::after{
-    content: '▼'
-}
-.category_container{
-    margin-left:2em;
-}
-.category_container.hidden{
-    display: none;
-}
-
 #gameView {
     display: grid;
     align-content: start;
@@ -180,12 +130,6 @@ ul > li {
     "inventory" auto
     "checklist" 1fr
     / 1fr;
-}
-
-#checklist {
-    grid-area:checklist;
-    overflow: auto;
-    /* height: 100%; */
 }
 
 @media only screen and (orientation: landscape) {

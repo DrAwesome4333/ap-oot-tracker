@@ -3,13 +3,16 @@ import { POPUP_TYPE, Popups } from "./popup.js";
 import { GameData } from "./gameData.js";
 
 /**
- * @typedef CategoryDef
- * @prop {string[]} areas
+ * @typedef Category
+ * @prop {number} checkCount
+ * @prop {HTMLDivElement} container
  */
 
 /**
  * @param {string} areaName The name of the area
- * @param {{}} context The name of the category
+ * @param {{}} context Object containing options 
+ * 
+ * @returns {Category}
  */
 let Category = (areaName, context) => {
     let area = GameData.areaMetaData[areaName];
@@ -17,12 +20,11 @@ let Category = (areaName, context) => {
         debugger;
         throw `Failed to build Category ${areaName}, it could not be found`;
     }
-    /** @type {{container:HTMLDivElement, readonly checkCount:number}[]} */
+    /** @type {Category[]} */
     let subAreas = [];
     let checkCount = 0;
     let container = document.createElement('div');
     let title = document.createElement('h3');
-    title.innerText = areaName;
     title.classList.add("category_title")
     container.appendChild(title);
     let categoryContainer = document.createElement('div');
@@ -32,14 +34,18 @@ let Category = (areaName, context) => {
     let locationContainer = document.createElement('div');
     categoryContainer.appendChild(locationContainer);
 
-    let toggleListVisibilitity = () => {
-        if(title.nextElementSibling){
-            title.nextElementSibling.classList.toggle('hidden');
-            title.classList.toggle('hidden_content');
+    if(areaName != "root"){
+        let toggleListVisibilitity = () => {
+            if(title.nextElementSibling){
+                title.nextElementSibling.classList.toggle('hidden');
+                title.classList.toggle('hidden_content');
+            }
         }
+        title.addEventListener('click', toggleListVisibilitity);
+        toggleListVisibilitity();
+    }else{
+        title.classList.add("category_root");
     }
-    title.addEventListener('click', toggleListVisibilitity);
-    toggleListVisibilitity();
 
     if(area['sub_areas']){
         for(let subAreaName of area['sub_areas']){
@@ -61,38 +67,16 @@ let Category = (areaName, context) => {
         }
     }
     for(let area of subAreas){
-        categoryContainer.appendChild(area.container);
+        if(area.checkCount > 0){
+            categoryContainer.appendChild(area.container);
+        }
     }
-    title.innerText = `${areaName} --/${checkCount}`;
+    title.innerText = areaName == "root" ? `Total --/${checkCount}` : `${areaName} --/${checkCount}`;
 
     return {
         container,
         get checkCount(){return checkCount},
     }
-}
-
-/**
- * 
- * @param {string} name 
- * @returns 
- */
-let expandCategory = (name) => {
-    let categoryDef = GameData.categoryData[name];
-    if(!categoryDef){
-        throw `Failed to build Category ${name}, it could not be found`;
-    }
-    /** @type {string[]} */
-    let areas = [];
-    for(let areaDef of categoryDef.areas){
-        if(areaDef.area_type){
-            for(let area in GameData.areaMetaData){
-                if(GameData.areaMetaData[area]["type"] == areaDef.area_type){
-                    areas.push(area);
-                }
-            }
-        }
-    }
-    return areas;
 }
 
 
@@ -101,10 +85,12 @@ let Checklist = (() => {
     container.id = "checklist"
     
     let categories = [];
+    /** @type {null | Category} */
+    let rootCategory = null;
 
     let build = () => {
         // TODO clean up
-        let rootCategory = Category("root", {});
+        rootCategory = Category("root", {});
         container.appendChild(rootCategory.container);
     }
 
