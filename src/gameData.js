@@ -9,6 +9,7 @@ import { Inventory } from "./inventory.js";
  * @typedef ItemLocation
  * @prop {string} name
  * @prop {string} type
+ * @prop {string} area
  * @prop {number} id
  * @prop {Set<string>} categories
  */
@@ -20,6 +21,52 @@ import { Inventory } from "./inventory.js";
  * @prop {boolean} isProgressive
  */
 
+/**
+ * @typedef CategoryOption
+ * @prop {"checkbox"|"dropdown"} type
+ * @prop {string} category
+ * @prop {string} tag
+ * @prop {string|boolean} default
+ * @prop {string[]} options
+ */
+
+/**
+ * @typedef AreaCondition
+ * @prop {string} rule The name of the category option tag to refer to
+ * @prop {string|boolean} value The value the option must be to activate
+ */
+
+/**
+ * @typedef AreaSwapRule
+ * @prop {string} label Used for identifying the uncategorized section by name
+ * @prop {string} type Types of sub areas the rule will swap out
+ * @prop {AreaCondition} condition When should this option be available
+ * 
+ */
+
+/**
+ * @typedef AreaSeparationRule
+ * @prop {string} label Used for identifying the uncategorized section by name
+ * @prop {string} type Types of sub areas the rule will be separated
+ * @prop {AreaCondition} condition When should this option be available
+ * 
+ */
+
+/**
+ * @typedef AreaDef
+ * @prop {string} area_type
+ * @prop {AreaSwapRule[]} area_swap_rules
+ * @prop {AreaSeparationRule[]} area_separate_locations
+ *  
+ */
+
+/**
+ * @typedef CategoryData
+ * @prop {Object.<string, CategoryOption>} options
+ * @prop {AreaDef[]} areas
+ * 
+ */
+
 // GameData is meant to be an abstraction of game data so the UI doesn't need to care about archipelago.js and how it works
 let GameData = (()=>{
     let client = new Client();
@@ -27,8 +74,16 @@ let GameData = (()=>{
     /** @type {Item[]} */
     let inventory = [];
 
+    let areaData = {};
+
     /** @type {Map<number, ItemLocation>} */
     let locations = new Map();
+
+    /** @type {Map<string, number>} */
+    let locationIdLookup = new Map();
+
+    /** @type {Map<string, CategoryData>} */
+    let categoryData = new Map();
 
     /** @type {Set<number>} */
     let checkedLocations = new Set();
@@ -58,16 +113,42 @@ let GameData = (()=>{
         return `${ownerString} ${itemString} is at ${locationString} in ${finderString} world. ${entranceString}`;
     }
 
+    let loadCategoryData = async () => {
+        categoryData = new Map();
+        await fetch("./data/OOT/category.json")
+        .then(r => r.json())
+        .then(data => {
+            for(let key in data){
+                categoryData.set(key, data[key]);
+            }
+        })
+    };
+
     let loadLocationData = async () => {
         locations = new Map();
+        locationIdLookup = new Map();
 
         // Load location meta data
-        let locationMetaData = await fetch("./data/OOT/OOT_location.json")
+        let locationMetaData = await fetch("./data/OOT/location.json")
             .then(r => r.json())
+            .then(data => {
+                areaData = data;
+                let metaData = {};
+                for(let areaName in data){
+                    let area = data[areaName];
+                    if(area.locations){
+                        for(let location in area.locations){
+                            metaData[location] = area.locations[location];
+                        }
+                    }
+                }
+                return metaData;
+            })
             .catch(e => {
                 Popups.createPopup(POPUP_TYPE.ERROR, "Could not load location data. See dev console for details");
                 throw e;
             });
+        
         
         // Get locations in current game
         /** @param {number} id */
@@ -80,6 +161,7 @@ let GameData = (()=>{
                         name: locationName,
                         id,
                         type: "Unknown",
+                        area: "Uncategorized",
                         categories: new Set(),
                     });
             } else {
@@ -87,6 +169,7 @@ let GameData = (()=>{
                     name: locationName,
                     id,
                     type: locationMetaData[locationName]["type"],
+                    area: locationMetaData[locationName]["area"],
                     categories: new Set(),
                 }
                 if(locationMetaData[locationName]["categories"]){
@@ -97,6 +180,7 @@ let GameData = (()=>{
                     }
                 }
                 locations.set(id, itemLocation);
+                locationIdLookup.set(locationName, id);
             }
 
         }
@@ -144,7 +228,7 @@ let GameData = (()=>{
             for(let location of packet.checked_locations){
                 checkedLocations.add(location);
             }
-            Checklist.refresh();
+            // Checklist.refresh();
         }
     });
 
@@ -153,7 +237,7 @@ let GameData = (()=>{
     client.addListener(SERVER_PACKET_TYPE.SET_REPLY, (packet) => {
         if (packet.key === `_read_hints_${client.data.team}_${client.data.slot}`) {
             loadHintData();
-            Checklist.refresh();
+            // Checklist.refresh();
         }
     });
 
@@ -164,7 +248,7 @@ let GameData = (()=>{
             }
 
             loadHintData();
-            Checklist.refresh();
+            // Checklist.refresh();
         }
     });
 
@@ -223,10 +307,12 @@ let GameData = (()=>{
                 saveConnectionInformation(connectionInfo);
             })
             .then(_ => loadLocationData())
+            .then(_ => loadCategoryData())
             .then(_ => {
                 loadHintData();
-                Checklist.buildChecklist();
-                Checklist.refresh();
+                Checklist.build();
+                // Checklist.buildChecklist();
+                // Checklist.refresh();
                 Inventory.build();
                 Inventory.refresh();
             })
@@ -286,6 +372,9 @@ let GameData = (()=>{
         get inventory() {return inventory},
         get checkedLocations() {return checkedLocations},
         get locations() {return locations},
+        get locationIdLookup() {return locationIdLookup},
+        get areaMetaData() {return areaData},
+        get categoryData() {return categoryData},
         get hints() {return hints},
 
     }

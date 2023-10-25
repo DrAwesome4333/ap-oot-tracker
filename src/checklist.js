@@ -1,61 +1,120 @@
 // @ts-check
-import { Categories, buildDungeonDef, buildOverworldDef } from "./category.js";
 import { POPUP_TYPE, Popups } from "./popup.js";
 import { GameData } from "./gameData.js";
 
-/*
-Settings:
-Separate checked and not checked (forces checked locations to bottom of the list)
-Separate Grottos (puts grottos into their own category)
-Separate skulls (separates skulls into their own category)
-Separate cows (separates cows into their own sub-category)
-Separate shops (separates shops into their own category)
+/**
+ * @typedef CategoryDef
+ * @prop {string[]} areas
+ */
 
-Future feature options:
-Use hints on found locations to build ER map (should work for all but overworld rando)
+/**
+ * @param {string} areaName The name of the area
+ * @param {{}} context The name of the category
+ */
+let Category = (areaName, context) => {
+    let area = GameData.areaMetaData[areaName];
+    if(!area){
+        debugger;
+        throw `Failed to build Category ${areaName}, it could not be found`;
+    }
+    /** @type {{container:HTMLDivElement, readonly checkCount:number}[]} */
+    let subAreas = [];
+    let checkCount = 0;
+    let container = document.createElement('div');
+    let title = document.createElement('h3');
+    title.innerText = areaName;
+    title.classList.add("category_title")
+    container.appendChild(title);
+    let categoryContainer = document.createElement('div');
+    container.appendChild(categoryContainer);
+    categoryContainer.classList.add("category_container")
 
-*/
+    let locationContainer = document.createElement('div');
+    categoryContainer.appendChild(locationContainer);
+
+    let toggleListVisibilitity = () => {
+        if(title.nextElementSibling){
+            title.nextElementSibling.classList.toggle('hidden');
+            title.classList.toggle('hidden_content');
+        }
+    }
+    title.addEventListener('click', toggleListVisibilitity);
+    toggleListVisibilitity();
+
+    if(area['sub_areas']){
+        for(let subAreaName of area['sub_areas']){
+            let newCategory = Category(subAreaName, context);
+            checkCount += newCategory.checkCount;
+            subAreas.push(newCategory);
+        }
+    }
+
+    if(area["locations"]){
+        for(let location in area["locations"]){
+            if(!GameData.locationIdLookup.get(location)){
+                continue;
+            }
+            let locContainer = document.createElement("div");
+            locContainer.innerText = location;
+            locationContainer.appendChild(locContainer);
+            checkCount++;
+        }
+    }
+    for(let area of subAreas){
+        categoryContainer.appendChild(area.container);
+    }
+    title.innerText = `${areaName} --/${checkCount}`;
+
+    return {
+        container,
+        get checkCount(){return checkCount},
+    }
+}
+
+/**
+ * 
+ * @param {string} name 
+ * @returns 
+ */
+let expandCategory = (name) => {
+    let categoryDef = GameData.categoryData[name];
+    if(!categoryDef){
+        throw `Failed to build Category ${name}, it could not be found`;
+    }
+    /** @type {string[]} */
+    let areas = [];
+    for(let areaDef of categoryDef.areas){
+        if(areaDef.area_type){
+            for(let area in GameData.areaMetaData){
+                if(GameData.areaMetaData[area]["type"] == areaDef.area_type){
+                    areas.push(area);
+                }
+            }
+        }
+    }
+    return areas;
+}
+
 
 let Checklist = (() => {
     let container = document.createElement('div');
     container.id = "checklist"
+    
+    let categories = [];
 
-    let overworldDef = buildOverworldDef(false, true, false, false, false);
-    let dungeonDef = buildDungeonDef(false);
-    let overworldCategeory = Categories.buildCategory(overworldDef);
-    let dungeonCategeory = Categories.buildCategory(dungeonDef);
-
-    let renderCategories = () => {
-        let overworldElement = Categories.renderCategory(overworldCategeory, true, GameData.hints);
-        let dungeonElement = Categories.renderCategory(dungeonCategeory, true, GameData.hints);
-        if(overworldElement){
-            container.appendChild(overworldElement);
-        }else{
-            Popups.createPopup(POPUP_TYPE.ERROR, 'An error occured building the over world')
-        }
-        if(dungeonElement){
-            container.appendChild(dungeonElement);
-        }else{
-            Popups.createPopup(POPUP_TYPE.ERROR, 'An error occured building the Dungeon')
-        }
+    let build = () => {
+        // TODO clean up
+        let rootCategory = Category("root", {});
+        container.appendChild(rootCategory.container);
     }
 
-    let refreshCategories = () => {
-        Categories.refreshCategory(overworldCategeory, true, GameData.hints);
-        Categories.refreshCategory(dungeonCategeory, true, GameData.hints);
-    }
+    let refresh = () => {
 
-    let buildChecklist = () => {
-        // Invetory.build(client);
-        Categories.populateCategory(overworldCategeory, GameData.locations, GameData.checkedLocations, GameData.hints);
-        Categories.populateCategory(dungeonCategeory, GameData.locations, GameData.checkedLocations, GameData.hints);
-        // console.log(client.hints.mine)
-        renderCategories();
-        
     }
+    
     return {
-        buildChecklist,
-        refresh: refreshCategories,
+        build,
+        refresh,
         container,
     }
 })()

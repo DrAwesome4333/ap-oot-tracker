@@ -1,0 +1,97 @@
+{
+    "Overworld":{
+        "options":{
+            "Grotto/Grave Shuffle":{
+                "type":"checkbox",
+                "category":"entrance",
+                "tag":"grave/grotto_shuffle",
+                "default": false
+            },
+            "Interior Shuffle":{
+                "type":"checkbox",
+                "category":"entrance",
+                "tag":"interior_shuffle",
+                "default": false
+            },
+            "Separate Skulls":{
+                "type":"checkbox",
+                "category":"preference",
+                "tag":"separate_skulls",
+                "default": true
+            }
+        },
+        "areas":[
+            {
+                "area_type":"overworld",
+                "area_swap_rules":[
+                    {
+                        "label": "Interiors",
+                        "type":"interior",
+                        "condition":{
+                            "rule":"interior_shuffle",
+                            "value": true
+                        }
+                    },
+                    {
+                        "label": "Graves and Grottos",
+                        "type":"grave/grotto",
+                        "condition":{
+                            "rule":"grave/grotto_shuffle",
+                            "value": true
+                        }
+                    }
+                ],
+                "separate_locations":[
+                    {
+                        "type":"GS Token",
+                        "condition":{
+                            "rule": "separate_skulls",
+                            "value": true
+                        },
+                        "label":"Skulltulas"
+                    }
+                ]
+            }
+        ]
+    },
+    "Dungeons":{
+        "options":{
+            "Boss Shuffle":{
+                "type":"checkbox",
+                "category":"entrance",
+                "tag":"boss_shuffle",
+                "default": false
+            },
+            "Separate Skulls":{
+                "type":"checkbox",
+                "category":"preference",
+                "tag":"separate_skulls_dungeon",
+                "default": true
+            }
+        },
+        "areas":[
+            {
+                "area_type":"overworld",
+                "area_swap_rules":[
+                    {
+                        "type":"boss",
+                        "condition":{
+                            "rule":"boss_shuffle",
+                            "value": true
+                        }
+                    }
+                ],
+                "separate_locations":[
+                    {
+                        "type":"GS Token",
+                        "condition":{
+                            "rule": "separate_skulls_dungeon",
+                            "value": true
+                        },
+                        "label":"Skulltulas"
+                    }
+                ]
+            }
+        ]
+    }
+}

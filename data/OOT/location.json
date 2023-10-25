@@ -1,0 +1,6227 @@
+{
+    "Bottom of the Well": {
+        "type": "dungeon",
+        "locations": {
+            "Bottom of the Well MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well MQ Dead Hand Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Bottom of the Well MQ Bombable Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well MQ Bombable Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well MQ Basement Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well MQ Basement Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well MQ Basement Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well MQ Coffin Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well MQ Coffin Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well MQ GS Basement": {
+                "type": "GS Token"
+            },
+            "Bottom of the Well MQ GS Coffin Room": {
+                "type": "GS Token"
+            },
+            "Wall Fairy": {
+                "type": "Drop"
+            },
+            "Bottom of the Well MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well MQ East Inner Room Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Bottom of the Well MQ Lens of Truth Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well MQ Center Room Right Pot 1": {
+                "type": "Pot"
+            },
+            "Bottom of the Well MQ Center Room Right Pot 2": {
+                "type": "Pot"
+            },
+            "Bottom of the Well MQ Center Room Right Pot 3": {
+                "type": "Pot"
+            },
+            "Bottom of the Well MQ East Inner Room Pot 1": {
+                "type": "Pot"
+            },
+            "Bottom of the Well MQ East Inner Room Pot 2": {
+                "type": "Pot"
+            },
+            "Bottom of the Well MQ East Inner Room Pot 3": {
+                "type": "Pot"
+            },
+            "Bottom of the Well MQ GS West Inner Room": {
+                "type": "GS Token"
+            },
+            "Bottom of the Well Front Center Bombable Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Bottom of the Well Underwater Left Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Underwater Front Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Map Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Invisible Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Lens of Truth Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Coffin Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well Coffin Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well Near Entrance Pot 1": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Near Entrance Pot 2": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Underwater Pot": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 1": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 2": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 3": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 4": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 5": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 6": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 7": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 8": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 9": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 10": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 11": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Basement Pot 12": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Left Side Pot 1": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Left Side Pot 2": {
+                "type": "Pot"
+            },
+            "Bottom of the Well Left Side Pot 3": {
+                "type": "Pot"
+            },
+            "Stick Pot": {
+                "type": "Drop"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            },
+            "Bottom of the Well Front Left Fake Wall Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Right Bottom Fake Wall Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Compass Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Center Skulltula Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Back Left Bombable Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Center Room Pit Fall Blue Rupee 1": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well Center Room Pit Fall Blue Rupee 2": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well Center Room Pit Fall Blue Rupee 3": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well Center Room Pit Fall Blue Rupee 4": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well Center Room Pit Fall Blue Rupee 5": {
+                "type": "Freestanding"
+            },
+            "Bottom of the Well Fire Keese Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well Like Like Chest": {
+                "type": "Chest"
+            },
+            "Bottom of the Well West Inner Room Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Bottom of the Well West Inner Room Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Bottom of the Well West Inner Room Flying Pot 3": {
+                "type": "FlyingPot"
+            },
+            "Bottom of the Well Fire Keese Pot": {
+                "type": "Pot"
+            },
+            "Bottom of the Well GS West Inner Room": {
+                "type": "GS Token"
+            },
+            "Bottom of the Well GS East Inner Room": {
+                "type": "GS Token"
+            },
+            "Bottom of the Well GS Like Like Cage": {
+                "type": "GS Token"
+            }
+        }
+    },
+    "Deku Tree": {
+        "type": "dungeon",
+        "locations": {
+            "Deku Tree MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree MQ Slingshot Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree MQ Slingshot Room Back Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree MQ Basement Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree MQ Lower Lobby Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Deku Tree MQ Slingshot Room Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Deku Tree MQ Lobby Crate": {
+                "type": "Crate"
+            },
+            "Deku Tree MQ Slingshot Room Crate 1": {
+                "type": "Crate"
+            },
+            "Deku Tree MQ Slingshot Room Crate 2": {
+                "type": "Crate"
+            },
+            "Deku Tree MQ GS Lobby": {
+                "type": "GS Token"
+            },
+            "Deku Baba Sticks": {
+                "type": "Drop"
+            },
+            "Deku Baba Nuts": {
+                "type": "Drop"
+            },
+            "Deku Tree MQ Near Compass Room Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Deku Tree MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree MQ Compass Room Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Deku Tree MQ GS Compass Room": {
+                "type": "GS Token"
+            },
+            "Deku Tree MQ Before Spinning Log Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree MQ After Spinning Log Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree MQ GS Basement Graves Room": {
+                "type": "GS Token"
+            },
+            "Deku Tree MQ GS Basement Back Room": {
+                "type": "GS Token"
+            },
+            "Deku Tree MQ Deku Scrub": {
+                "type": "Scrub"
+            },
+            "Deku Tree MQ Basement Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Deku Tree MQ Basement Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Deku Tree MQ Basement Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Deku Tree Map Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree Compass Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree Compass Room Side Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree Lower Lobby Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Deku Tree Upper Lobby Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Deku Tree GS Compass Room": {
+                "type": "GS Token"
+            },
+            "Deku Tree Slingshot Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree Slingshot Room Side Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree Basement Chest": {
+                "type": "Chest"
+            },
+            "Deku Tree GS Basement Gate": {
+                "type": "GS Token"
+            },
+            "Deku Tree GS Basement Vines": {
+                "type": "GS Token"
+            },
+            "Deku Tree GS Basement Back Room": {
+                "type": "GS Token"
+            },
+            "Deku Tree Basement Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Deku Tree Basement Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Deku Tree Basement Recovery Heart 3": {
+                "type": "Freestanding"
+            }
+        },
+        "sub_areas":[
+            "Deku Tree Boss"
+        ]
+    },
+    "Dodongos Cavern": {
+        "type": "dungeon",
+        "locations": {
+            "Dodongos Cavern MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern MQ Deku Scrub Lobby Rear": {
+                "type": "Scrub"
+            },
+            "Dodongos Cavern MQ Deku Scrub Lobby Front": {
+                "type": "Scrub"
+            },
+            "Dodongos Cavern Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Dodongos Cavern MQ Deku Scrub Staircase": {
+                "type": "Scrub"
+            },
+            "Dodongos Cavern MQ Staircase Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Staircase Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Staircase Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Staircase Pot 4": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Staircase Crate Bottom Left": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Staircase Crate Bottom Right": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Staircase Crate Mid Left": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Staircase Crate Mid Right": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Staircase Crate Top Left": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Staircase Crate Top Right": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ GS Song of Time Block Room": {
+                "type": "GS Token"
+            },
+            "Deku Baba Sticks": {
+                "type": "Drop"
+            },
+            "Dodongos Cavern MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern MQ Torch Puzzle Room Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Dodongos Cavern MQ Torch Puzzle Room Pot Pillar": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Larvae Room Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern MQ Larvae Room Crate 1": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Larvae Room Crate 2": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Larvae Room Crate 3": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Larvae Room Crate 4": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Larvae Room Crate 5": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Larvae Room Crate 6": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ GS Larvae Room": {
+                "type": "GS Token"
+            },
+            "Dodongos Cavern MQ Before Upper Lizalfos Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Before Upper Lizalfos Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Torch Puzzle Room Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern MQ Upper Lizalfos Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Upper Lizalfos Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Upper Lizalfos Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Upper Lizalfos Pot 4": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ After Upper Lizalfos Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ After Upper Lizalfos Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Torch Puzzle Room Pot Corner": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ After Upper Lizalfos Crate 1": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ After Upper Lizalfos Crate 2": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ GS Lizalfos Room": {
+                "type": "GS Token"
+            },
+            "Dodongos Cavern MQ Deku Scrub Side Room Near Lower Lizalfos": {
+                "type": "Scrub"
+            },
+            "Dodongos Cavern MQ Right Side Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Right Side Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Right Side Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Right Side Pot 4": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Lower Lizalfos Hidden Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Dodongos Cavern MQ Bomb Bag Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern MQ Poes Room Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Poes Room Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Poes Room Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Poes Room Pot 4": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Poes Room Crate 1": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Poes Room Crate 2": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Poes Room Crate 3": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Poes Room Crate 4": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Poes Room Crate 5": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Poes Room Crate 6": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Poes Room Crate 7": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ Poes Room Crate Near Bomb Flower": {
+                "type": "Crate"
+            },
+            "Dodongos Cavern MQ GS Scrub Room": {
+                "type": "GS Token"
+            },
+            "Dodongos Cavern MQ Under Grave Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern MQ Room Before Boss Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Room Before Boss Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Armos Army Room Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Armos Army Room Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Back Poe Room Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ Back Poe Room Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern MQ GS Back Area": {
+                "type": "GS Token"
+            },
+            "Dodongos Cavern MQ Armos Army Room Upper Pot": {
+                "type": "Pot"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Dodongos Cavern Map Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern Deku Scrub Lobby": {
+                "type": "Scrub"
+            },
+            "Dodongos Cavern Right Side Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Right Side Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Right Side Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Right Side Pot 4": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Right Side Pot 5": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Right Side Pot 6": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Lower Lizalfos Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Lower Lizalfos Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Lower Lizalfos Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Lower Lizalfos Pot 4": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern GS Side Room Near Lower Lizalfos": {
+                "type": "GS Token"
+            },
+            "Dodongos Cavern GS Scarecrow": {
+                "type": "GS Token"
+            },
+            "Dodongos Cavern Deku Scrub Side Room Near Dodongos": {
+                "type": "Scrub"
+            },
+            "Dodongos Cavern Torch Room Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Torch Room Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Torch Room Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Torch Room Pot 4": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Compass Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern GS Vines Above Stairs": {
+                "type": "GS Token"
+            },
+            "Dodongos Cavern Bomb Flower Platform Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern Deku Scrub Near Bomb Bag Right": {
+                "type": "Scrub"
+            },
+            "Dodongos Cavern Deku Scrub Near Bomb Bag Left": {
+                "type": "Scrub"
+            },
+            "Dodongos Cavern Blade Room Behind Block Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Dodongos Cavern Staircase Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Staircase Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Staircase Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Staircase Pot 4": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Blade Room Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Blade Room Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Single Eye Switch Room Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Single Eye Switch Room Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Lizalfos Upper Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Dodongos Cavern Lizalfos Upper Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Dodongos Cavern Bomb Bag Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern End of Bridge Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern Double Eye Switch Room Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Double Eye Switch Room Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern GS Alcove Above Stairs": {
+                "type": "GS Token"
+            },
+            "Dodongos Cavern Last Block Pot 1": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Last Block Pot 2": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern Last Block Pot 3": {
+                "type": "Pot"
+            },
+            "Dodongos Cavern GS Back Room": {
+                "type": "GS Token"
+            }
+        },
+        "sub_areas":[
+            "Dodongos Cavern Boss"
+        ]
+    },
+    "Fire Temple": {
+        "type": "dungeon",
+        "locations": {
+            "Fire Temple MQ Map Room Side Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ First Room Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ First Room Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Near Boss Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Near Boss Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Near Boss Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Near Boss Left Crate 1": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Near Boss Left Crate 2": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Near Boss Right Lower Crate 1": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Near Boss Right Lower Crate 2": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Near Boss Right Mid Crate": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Near Boss Right Upper Crate": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Megaton Hammer Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Iron Knuckle Room Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Iron Knuckle Room Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Iron Knuckle Room Pot 3": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Iron Knuckle Room Pot 4": {
+                "type": "Pot"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Fire Temple MQ Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Big Lava Room Blocked Door Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Big Lava Room Left Pot": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Big Lava Room Right Pot": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Big Lava Room Alcove Pot": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Boss Key Chest Room Pot": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ GS Big Lava Room Open Door": {
+                "type": "GS Token"
+            },
+            "Fire Temple MQ Elevator Room Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Fire Temple MQ Elevator Room Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Fire Temple MQ Elevator Room Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Fire Temple MQ Lizalfos Maze Lower Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Lizalfos Maze Side Room Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Lower Lizalfos Maze Crate 1": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Lower Lizalfos Maze Crate 2": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Lower Lizalfos Maze Crate 3": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Lizalfos Maze Upper Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Upper Lizalfos Maze Crate 1": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Upper Lizalfos Maze Crate 2": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Upper Lizalfos Maze Crate 3": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Shortcut Crate 1": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shortcut Crate 2": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shortcut Crate 3": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shortcut Crate 4": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shortcut Crate 5": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shortcut Crate 6": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ GS Skull On Fire": {
+                "type": "GS Token"
+            },
+            "Wall Fairy": {
+                "type": "Drop"
+            },
+            "Fire Temple MQ Narrow Path Room Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Narrow Path Room Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Shoot Torch On Wall Room Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Shoot Torch On Wall Room Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Shoot Torch On Wall Room Right Crate 1": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shoot Torch On Wall Room Right Crate 2": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shoot Torch On Wall Room Center Crate": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shoot Torch On Wall Room Left Crate 1": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Shoot Torch On Wall Room Left Crate 2": {
+                "type": "Crate"
+            },
+            "Fire Temple MQ Flame Maze Left Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ GS Flame Maze Center": {
+                "type": "GS Token"
+            },
+            "Fire Temple MQ GS Above Flame Maze": {
+                "type": "GS Token"
+            },
+            "Fire Temple MQ Flame Maze Right Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Flame Maze Right Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ GS Flame Maze Side Room": {
+                "type": "GS Token"
+            },
+            "Fire Temple MQ Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Fire Temple MQ Chest On Fire": {
+                "type": "Chest"
+            },
+            "Fire Temple MQ Flame Maze Right Upper Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple MQ Flame Maze Right Upper Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple Near Boss Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Near Boss Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple Near Boss Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple Flare Dancer Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple GS Boss Key Loop": {
+                "type": "GS Token"
+            },
+            "Fire Temple Big Lava Room Lower Open Door Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Big Lava Room Blocked Door Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Big Lava Room Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple Big Lava Room Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple Big Lava Room Pot 3": {
+                "type": "Pot"
+            },
+            "Fire Temple GS Song of Time Room": {
+                "type": "GS Token"
+            },
+            "Fire Temple Elevator Room Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Fire Temple Elevator Room Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Fire Temple Elevator Room Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Fire Temple Boulder Maze Lower Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Boulder Maze Side Room Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple GS Boulder Maze": {
+                "type": "GS Token"
+            },
+            "Fire Temple Map Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Narrow Path Room Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Fire Temple Narrow Path Room Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Fire Temple Narrow Path Room Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Fire Temple Boulder Maze Upper Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Boulder Maze Shortcut Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Scarecrow Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Moving Fire Room Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Fire Temple Moving Fire Room Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Fire Temple Moving Fire Room Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Fire Temple GS Scarecrow Climb": {
+                "type": "GS Token"
+            },
+            "Fire Temple GS Scarecrow Top": {
+                "type": "GS Token"
+            },
+            "Fire Temple Compass Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Flame Maze Left Side Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple Flame Maze Left Side Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple Flame Maze Left Side Pot 3": {
+                "type": "Pot"
+            },
+            "Fire Temple Flame Maze Left Side Pot 4": {
+                "type": "Pot"
+            },
+            "Fire Temple Highest Goron Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Megaton Hammer Chest": {
+                "type": "Chest"
+            },
+            "Fire Temple Flame Maze Right Side Pot 1": {
+                "type": "Pot"
+            },
+            "Fire Temple Flame Maze Right Side Pot 2": {
+                "type": "Pot"
+            },
+            "Fire Temple Flame Maze Right Side Pot 3": {
+                "type": "Pot"
+            },
+            "Fire Temple Flame Maze Right Side Pot 4": {
+                "type": "Pot"
+            }
+        },
+        "sub_areas":[
+            "Fire Temple Boss"
+        ]
+    },
+    "Forest Temple": {
+        "type": "dungeon",
+        "locations": {
+            "Forest Temple MQ First Room Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ GS First Hallway": {
+                "type": "GS Token"
+            },
+            "Forest Temple MQ Wolfos Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Center Room Right Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Center Room Right Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Center Room Right Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Center Room Left Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Center Room Left Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Center Room Left Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Wolfos Room Pot": {
+                "type": "Pot"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Forest Temple MQ GS Block Push Room": {
+                "type": "GS Token"
+            },
+            "Forest Temple MQ Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Redead Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Courtyard Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Forest Temple MQ Courtyard Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Forest Temple MQ Courtyard Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Forest Temple MQ GS Level Island Courtyard": {
+                "type": "GS Token"
+            },
+            "Forest Temple MQ Well Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Well Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Forest Temple MQ Well Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Forest Temple MQ Well Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Forest Temple MQ GS Raised Island Courtyard": {
+                "type": "GS Token"
+            },
+            "Forest Temple MQ GS Well": {
+                "type": "GS Token"
+            },
+            "Deku Baba Sticks": {
+                "type": "Drop"
+            },
+            "Deku Baba Nuts": {
+                "type": "Drop"
+            },
+            "Forest Temple MQ Raised Island Courtyard Upper Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Raised Island Courtyard Lower Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Bow Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Upper Stalfos Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Upper Stalfos Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Upper Stalfos Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Upper Stalfos Pot 4": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Blue Poe Room Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Blue Poe Room Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Blue Poe Room Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 1": {
+                "type": "SmallCrate"
+            },
+            "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 2": {
+                "type": "SmallCrate"
+            },
+            "Forest Temple MQ Frozen Eye Switch Room Small Wooden Crate 3": {
+                "type": "SmallCrate"
+            },
+            "Forest Temple MQ Falling Ceiling Room Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Green Poe Room Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Green Poe Room Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Basement Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple MQ Basement Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Basement Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Basement Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple MQ Basement Pot 4": {
+                "type": "Pot"
+            },
+            "Forest Temple First Room Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple GS First Room": {
+                "type": "GS Token"
+            },
+            "Forest Temple First Stalfos Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Center Room Right Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple Center Room Right Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple Center Room Right Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple Center Room Left Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple Center Room Left Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple Center Room Left Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple Lower Stalfos Pot": {
+                "type": "Pot"
+            },
+            "Forest Temple GS Lobby": {
+                "type": "GS Token"
+            },
+            "Forest Temple GS Level Island Courtyard": {
+                "type": "GS Token"
+            },
+            "Forest Temple Well Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Map Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Well Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Forest Temple Well Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Forest Temple Raised Island Courtyard Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple GS Raised Island Courtyard": {
+                "type": "GS Token"
+            },
+            "Forest Temple Eye Switch Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Floormaster Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Courtyard Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Forest Temple Courtyard Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Forest Temple Bow Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Red Poe Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Blue Poe Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Upper Stalfos Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple Upper Stalfos Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple Upper Stalfos Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple Upper Stalfos Pot 4": {
+                "type": "Pot"
+            },
+            "Forest Temple Blue Poe Room Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple Blue Poe Room Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple Blue Poe Room Pot 3": {
+                "type": "Pot"
+            },
+            "Forest Temple Frozen Eye Switch Room Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple Frozen Eye Switch Room Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple Falling Ceiling Room Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple Green Poe Room Pot 1": {
+                "type": "Pot"
+            },
+            "Forest Temple Green Poe Room Pot 2": {
+                "type": "Pot"
+            },
+            "Forest Temple Basement Chest": {
+                "type": "Chest"
+            },
+            "Forest Temple GS Basement": {
+                "type": "GS Token"
+            }
+        },
+        "sub_areas":[
+            "Forest Temple Boss"
+        ]
+    },
+    "Ganons Castle": {
+        "type": "dungeon",
+        "locations": {
+            "Ganons Castle MQ Forest Trial Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Ganons Castle MQ Forest Trial Eye Switch Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Forest Trial Frozen Eye Switch Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Forest Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Forest Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Water Trial Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Water Trial Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Blue Fire": {
+                "type": "Drop"
+            },
+            "Ganons Castle MQ Water Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Water Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Shadow Trial Bomb Flower Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Shadow Trial Eye Switch Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Shadow Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Shadow Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Fire Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Fire Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Light Trial Lullaby Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Light Trial Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Ganons Castle MQ Light Trial Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Ganons Castle MQ Light Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Light Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Spirit Trial First Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Spirit Trial Invisible Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Spirit Trial Sun Front Left Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Spirit Trial Sun Back Left Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Spirit Trial Golden Gauntlets Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Spirit Trial Sun Back Right Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle MQ Spirit Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle MQ Spirit Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            },
+            "Ganons Castle MQ Deku Scrub Center-Left": {
+                "type": "Scrub"
+            },
+            "Ganons Castle MQ Deku Scrub Center": {
+                "type": "Scrub"
+            },
+            "Ganons Castle MQ Deku Scrub Center-Right": {
+                "type": "Scrub"
+            },
+            "Ganons Castle MQ Deku Scrub Left": {
+                "type": "Scrub"
+            },
+            "Ganons Castle MQ Deku Scrub Right": {
+                "type": "Scrub"
+            },
+            "Free Fairies": {
+                "type": "Drop"
+            },
+            "Ganons Castle Forest Trial Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Forest Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle Forest Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle Water Trial Left Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Water Trial Right Chest": {
+                "type": "Chest"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Ganons Castle Water Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle Water Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle Shadow Trial Front Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Shadow Trial Like Like Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle Shadow Trial Like Like Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle Shadow Trial Golden Gauntlets Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Shadow Trial Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Ganons Castle Shadow Trial Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Ganons Castle Shadow Trial Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Ganons Castle Shadow Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle Shadow Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle Fire Trial Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Ganons Castle Fire Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle Fire Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle Light Trial First Left Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Light Trial Second Left Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Light Trial Third Left Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Light Trial First Right Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Light Trial Second Right Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Light Trial Third Right Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Light Trial Invisible Enemies Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Light Trial Lullaby Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Light Trial Boulder Pot": {
+                "type": "Pot"
+            },
+            "Ganons Castle Light Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle Light Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle Spirit Trial Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Ganons Castle Spirit Trial Crystal Switch Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Spirit Trial Invisible Chest": {
+                "type": "Chest"
+            },
+            "Ganons Castle Spirit Trial Pot 1": {
+                "type": "Pot"
+            },
+            "Ganons Castle Spirit Trial Pot 2": {
+                "type": "Pot"
+            },
+            "Ganons Castle Deku Scrub Center-Left": {
+                "type": "Scrub"
+            },
+            "Ganons Castle Deku Scrub Center-Right": {
+                "type": "Scrub"
+            },
+            "Ganons Castle Deku Scrub Right": {
+                "type": "Scrub"
+            },
+            "Ganons Castle Deku Scrub Left": {
+                "type": "Scrub"
+            },
+            "Ganons Tower Boss Key Chest":{
+                "type":"Chest"
+            },
+            "Ganons Tower Pot 1": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 2": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 3": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 4": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 5": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 6": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 7": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 8": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 9": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 10": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 11": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 12": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 13": {
+                "type":"Pot"
+            },
+            "Ganons Tower Pot 14": {
+                "type":"Pot"
+            }
+        }
+    },
+    "Gerudo Training Ground": {
+        "type": "dungeon",
+        "locations": {
+            "Gerudo Training Ground MQ Lobby Left Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Lobby Right Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Hidden Ceiling Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Maze Path First Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Maze Path Second Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Maze Path Third Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Lobby Left Pot 1": {
+                "type": "Pot"
+            },
+            "Gerudo Training Ground MQ Lobby Left Pot 2": {
+                "type": "Pot"
+            },
+            "Gerudo Training Ground MQ Lobby Right Pot 1": {
+                "type": "Pot"
+            },
+            "Gerudo Training Ground MQ Lobby Right Pot 2": {
+                "type": "Pot"
+            },
+            "Gerudo Training Ground MQ Maze Crate": {
+                "type": "Crate"
+            },
+            "Gerudo Training Ground MQ Dinolfos Chest": {
+                "type": "Chest"
+            },
+            "Wall Fairy": {
+                "type": "Drop"
+            },
+            "Gerudo Training Ground MQ Underwater Silver Rupee Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ First Iron Knuckle Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Before Heavy Block Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Heavy Block Chest": {
+                "type": "Chest"
+            },
+            "Blue Fire": {
+                "type": "Drop"
+            },
+            "Gerudo Training Ground MQ Ice Arrows Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Eye Statue Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Second Iron Knuckle Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Flame Circle Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Maze Right Central Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground MQ Maze Right Side Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Lobby Left Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Lobby Right Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Stalfos Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Beamos Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Hidden Ceiling Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Maze Path First Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Maze Path Second Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Maze Path Third Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Maze Path Final Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Beamos Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Gerudo Training Ground Beamos Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Gerudo Training Ground Underwater Silver Rupee Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Maze Right Central Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Maze Right Side Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Gerudo Training Ground Before Heavy Block Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Near Scarecrow Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Heavy Block First Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Heavy Block Second Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Heavy Block Third Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Heavy Block Fourth Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Eye Statue Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Hammer Room Clear Chest": {
+                "type": "Chest"
+            },
+            "Gerudo Training Ground Hammer Room Switch Chest": {
+                "type": "Chest"
+            }
+        }
+    },
+    "Ice Cavern": {
+        "type": "dungeon",
+        "locations": {
+            "Ice Cavern MQ First Hall Pot": {
+                "type": "Pot"
+            },
+            "Ice Cavern MQ Tektite Room Pot 1": {
+                "type": "Pot"
+            },
+            "Ice Cavern MQ Tektite Room Pot 2": {
+                "type": "Pot"
+            },
+            "Ice Cavern MQ Center Room Pot 1": {
+                "type": "Pot"
+            },
+            "Ice Cavern MQ Center Room Pot 2": {
+                "type": "Pot"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Ice Cavern MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Blue Fire": {
+                "type": "Drop"
+            },
+            "Ice Cavern MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Ice Cavern MQ Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "Ice Cavern MQ Compass Room Pot 1": {
+                "type": "Pot"
+            },
+            "Ice Cavern MQ Compass Room Pot 2": {
+                "type": "Pot"
+            },
+            "Ice Cavern MQ GS Red Ice": {
+                "type": "GS Token"
+            },
+            "Ice Cavern MQ Iron Boots Chest": {
+                "type": "Chest"
+            },
+            "Sheik in Ice Cavern": {
+                "type": "Song"
+            },
+            "Ice Cavern MQ Near End Pot": {
+                "type": "Pot"
+            },
+            "Ice Cavern MQ GS Ice Block": {
+                "type": "GS Token"
+            },
+            "Ice Cavern MQ GS Scarecrow": {
+                "type": "GS Token"
+            },
+            "Ice Cavern Frozen Blue Rupee": {
+                "type": "Freestanding"
+            },
+            "Ice Cavern Hall Pot 1": {
+                "type": "Pot"
+            },
+            "Ice Cavern Hall Pot 2": {
+                "type": "Pot"
+            },
+            "Ice Cavern Spinning Blade Pot 1": {
+                "type": "Pot"
+            },
+            "Ice Cavern Spinning Blade Pot 2": {
+                "type": "Pot"
+            },
+            "Ice Cavern Spinning Blade Pot 3": {
+                "type": "Pot"
+            },
+            "Ice Cavern Spinning Blade Flying Pot": {
+                "type": "FlyingPot"
+            },
+            "Ice Cavern GS Spinning Scythe Room": {
+                "type": "GS Token"
+            },
+            "Ice Cavern Map Chest": {
+                "type": "Chest"
+            },
+            "Ice Cavern Map Room Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Ice Cavern Map Room Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Ice Cavern Map Room Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Ice Cavern Frozen Pot": {
+                "type": "Pot"
+            },
+            "Ice Cavern Compass Chest": {
+                "type": "Chest"
+            },
+            "Ice Cavern Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "Ice Cavern Iron Boots Chest": {
+                "type": "Chest"
+            },
+            "Ice Cavern Block Room Red Rupee 1": {
+                "type": "Freestanding"
+            },
+            "Ice Cavern Block Room Red Rupee 2": {
+                "type": "Freestanding"
+            },
+            "Ice Cavern Block Room Red Rupee 3": {
+                "type": "Freestanding"
+            },
+            "Ice Cavern Near End Pot 1": {
+                "type": "Pot"
+            },
+            "Ice Cavern Near End Pot 2": {
+                "type": "Pot"
+            },
+            "Ice Cavern GS Heart Piece Room": {
+                "type": "GS Token"
+            },
+            "Ice Cavern GS Push Block Room": {
+                "type": "GS Token"
+            }
+        }
+    },
+    "Jabu Jabus Belly": {
+        "type": "dungeon",
+        "locations": {
+            "Jabu Jabus Belly MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ First Room Side Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ First Room Pot 1": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly MQ First Room Pot 2": {
+                "type": "Pot"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            },
+            "Jabu Jabus Belly MQ Second Room Lower Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ Second Room Upper Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Jabu Jabus Belly MQ Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Jabu Jabus Belly MQ Underwater Green Rupee 1": {
+                "type": "Freestanding"
+            },
+            "Jabu Jabus Belly MQ Underwater Green Rupee 2": {
+                "type": "Freestanding"
+            },
+            "Jabu Jabus Belly MQ Underwater Green Rupee 3": {
+                "type": "Freestanding"
+            },
+            "Jabu Jabus Belly MQ Elevator Room Pot 1": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly MQ Elevator Room Pot 2": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly MQ Basement Near Vines Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ Basement Near Switches Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ Boomerang Room Small Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ Boomerang Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ Boomerang Room Pot 1": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly MQ Boomerang Room Pot 2": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly MQ GS Boomerang Chest Room": {
+                "type": "GS Token"
+            },
+            "Jabu Jabus Belly MQ GS Invisible Enemies Room": {
+                "type": "GS Token"
+            },
+            "Jabu Jabus Belly MQ Falling Like Like Room Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ Falling Like Like Room Pot 1": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly MQ Falling Like Like Room Pot 2": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly MQ GS Tailpasaran Room": {
+                "type": "GS Token"
+            },
+            "Jabu Jabus Belly MQ Cow": {
+                "type": "NPC"
+            },
+            "Jabu Jabus Belly MQ Near Boss Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly MQ GS Near Boss": {
+                "type": "GS Token"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Jabu Jabus Belly Boomerang Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly Deku Scrub": {
+                "type": "Scrub"
+            },
+            "Jabu Jabus Belly Small Wooden Crate": {
+                "type": "SmallCrate"
+            },
+            "Jabu Jabus Belly Basement 2 Octoroks Pot 1": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Basement 2 Octoroks Pot 2": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Basement 2 Octoroks Pot 3": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Basement 2 Octoroks Pot 4": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Basement Switch Room Pot 1": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Basement Switch Room Pot 2": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly GS Water Switch Room": {
+                "type": "GS Token"
+            },
+            "Jabu Jabus Belly GS Lobby Basement Lower": {
+                "type": "GS Token"
+            },
+            "Jabu Jabus Belly GS Lobby Basement Upper": {
+                "type": "GS Token"
+            },
+            "Jabu Jabus Belly Map Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly Compass Chest": {
+                "type": "Chest"
+            },
+            "Jabu Jabus Belly Above Big Octo Pot 1": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Above Big Octo Pot 2": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly GS Near Boss": {
+                "type": "GS Token"
+            }
+        },
+        "sub_areas":[
+            "Jabu Jabus Belly Boss"
+        ]
+    },
+    "Shadow Temple": {
+        "type": "dungeon",
+        "locations": {
+            "Shadow Temple MQ Truth Spinner Small Wooden Crate 1": {
+                "type": "SmallCrate"
+            },
+            "Shadow Temple MQ Truth Spinner Small Wooden Crate 2": {
+                "type": "SmallCrate"
+            },
+            "Shadow Temple MQ Truth Spinner Small Wooden Crate 3": {
+                "type": "SmallCrate"
+            },
+            "Shadow Temple MQ Truth Spinner Small Wooden Crate 4": {
+                "type": "SmallCrate"
+            },
+            "Shadow Temple MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Hover Boots Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Whispering Walls Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Whispering Walls Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Compass Room Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Compass Room Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Whispering Walls Before Time Block Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple MQ Whispering Walls Before Time Block Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple MQ Whispering Walls After Time Block Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple MQ Whispering Walls After Time Block Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Early Gibdos Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Near Ship Invisible Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Invisible Blades Visible Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Invisible Blades Invisible Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Invisible Blades Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple MQ Invisible Blades Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple MQ Beamos Silver Rupees Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Falling Spikes Lower Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Falling Spikes Upper Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Falling Spikes Switch Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Falling Spikes Lower Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Falling Spikes Lower Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Falling Spikes Upper Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Falling Spikes Upper Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ GS Falling Spikes Room": {
+                "type": "GS Token"
+            },
+            "Shadow Temple MQ Invisible Spikes Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Stalfos Room Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Wind Hint Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ GS Wind Hint Room": {
+                "type": "GS Token"
+            },
+            "Shadow Temple MQ After Wind Enemy Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ After Wind Hidden Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ After Wind Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ After Wind Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ After Wind Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple MQ After Wind Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple MQ GS After Wind": {
+                "type": "GS Token"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            },
+            "Shadow Temple MQ Before Boat Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple MQ Before Boat Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple MQ After Boat Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ After Boat Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ GS After Ship": {
+                "type": "GS Token"
+            },
+            "Shadow Temple MQ After Boat Lower Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple MQ Near Boss Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Near Boss Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Bomb Flower Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Shadow Temple MQ Spike Walls Left Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple MQ After Boat Upper Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple MQ After Boat Upper Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple MQ Bomb Flower Room Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Bomb Flower Room Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ Spike Walls Pot": {
+                "type": "Pot"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 1": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 2": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 3": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 4": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 5": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 6": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 7": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 8": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ 3 Spinning Pots Rupee 9": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple MQ GS Near Boss": {
+                "type": "GS Token"
+            },
+            "Shadow Temple Map Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Hover Boots Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Whispering Walls Front Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple Whispering Walls Front Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple Whispering Walls Left Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple Whispering Walls Left Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple Whispering Walls Left Pot 3": {
+                "type": "Pot"
+            },
+            "Shadow Temple Whispering Walls Flying Pot": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple Whispering Walls Near Dead Hand Pot": {
+                "type": "Pot"
+            },
+            "Shadow Temple Map Chest Room Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple Map Chest Room Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple Compass Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Early Silver Rupee Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Invisible Blades Visible Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Invisible Blades Invisible Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Falling Spikes Lower Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Falling Spikes Upper Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Falling Spikes Switch Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Invisible Blades Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple Invisible Blades Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple Falling Spikes Lower Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple Falling Spikes Lower Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple Falling Spikes Upper Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple Falling Spikes Upper Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple GS Invisible Blades Room": {
+                "type": "GS Token"
+            },
+            "Shadow Temple GS Falling Spikes Room": {
+                "type": "GS Token"
+            },
+            "Shadow Temple Invisible Spikes Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Shadow Temple GS Single Giant Pot": {
+                "type": "GS Token"
+            },
+            "Shadow Temple Wind Hint Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple After Wind Enemy Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple After Wind Hidden Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple After Wind Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple After Wind Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple After Wind Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple After Wind Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Shadow Temple Before Boat Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple Before Boat Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple GS Near Ship": {
+                "type": "GS Token"
+            },
+            "Shadow Temple Invisible Floormaster Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Spike Walls Left Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Shadow Temple After Boat Pot": {
+                "type": "Pot"
+            },
+            "Shadow Temple Invisible Floormaster Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple Invisible Floormaster Pot 2": {
+                "type": "Pot"
+            },
+            "Shadow Temple Spike Walls Pot": {
+                "type": "Pot"
+            },
+            "Shadow Temple GS Triple Giant Pot": {
+                "type": "GS Token"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 1": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 2": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 3": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 4": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 5": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 6": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 7": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 8": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple 3 Spinning Pots Rupee 9": {
+                "type": "RupeeTower"
+            },
+            "Shadow Temple After Boat Upper Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple After Boat Upper Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple After Boat Lower Recovery Heart": {
+                "type": "Freestanding"
+            },
+            "Shadow Temple Near Boss Pot 1": {
+                "type": "Pot"
+            },
+            "Shadow Temple Near Boss Pot 2": {
+                "type": "Pot"
+            }
+        },
+        "sub_areas":[
+            "Shadow Temple Boss"
+        ]
+    },
+    "Spirit Temple": {
+        "type": "dungeon",
+        "locations": {
+            "Spirit Temple MQ Entrance Front Left Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Entrance Back Left Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Entrance Back Right Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Lobby Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Lobby Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Lobby Pot 3": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Lobby Pot 4": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Child Hammer Switch Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Map Room Enemy Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Silver Block Hallway Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Child Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Spirit Temple MQ Child Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Spirit Temple MQ Child Torch Slugs Room Pot": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Child 3 Gibdo Room Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Child 3 Gibdo Room Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Child Stalfos Fight Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Child Stalfos Fight Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Child Stalfos Fight Pot 3": {
+                "type": "Pot"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Spirit Temple MQ Child Climb South Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Statue Room Lullaby Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Statue Room Invisible Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Child Climb North Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Sun Block Room Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Silver Gauntlets Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Child Climb Pot": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Central Chamber Floor Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Central Chamber Floor Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Central Chamber Floor Pot 3": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Central Chamber Top Left Pot (Left)": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Central Chamber Top Left Pot (Right)": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Sun Block Room Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Sun Block Room Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Central Chamber Crate 1": {
+                "type": "Crate"
+            },
+            "Spirit Temple MQ Central Chamber Crate 2": {
+                "type": "Crate"
+            },
+            "Spirit Temple MQ GS Sun Block Room": {
+                "type": "GS Token"
+            },
+            "Spirit Temple MQ Leever Room Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Symphony Room Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Entrance Front Right Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Below 4 Wallmasters Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Below 4 Wallmasters Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ GS Leever Room": {
+                "type": "GS Token"
+            },
+            "Spirit Temple MQ GS Symphony Room": {
+                "type": "GS Token"
+            },
+            "Spirit Temple MQ Beamos Room Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Chest Switch Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Mirror Shield Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple MQ Shifting Wall Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Shifting Wall Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ After Shifting Wall Room Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ After Shifting Wall Room Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ GS Nine Thrones Room West": {
+                "type": "GS Token"
+            },
+            "Spirit Temple MQ GS Nine Thrones Room North": {
+                "type": "GS Token"
+            },
+            "Spirit Temple MQ Big Mirror Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Big Mirror Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Big Mirror Pot 3": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Big Mirror Pot 4": {
+                "type": "Pot"
+            },
+            "Spirit Temple MQ Big Mirror Crate 1": {
+                "type": "Crate"
+            },
+            "Spirit Temple MQ Big Mirror Crate 2": {
+                "type": "Crate"
+            },
+            "Spirit Temple MQ Big Mirror Crate 3": {
+                "type": "Crate"
+            },
+            "Spirit Temple MQ Big Mirror Crate 4": {
+                "type": "Crate"
+            },
+            "Spirit Temple MQ Mirror Puzzle Invisible Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Lobby Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple Lobby Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple Lobby Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Lobby Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Child Bridge Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Child Early Torches Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Child Bridge Flying Pot": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Child Anubis Pot": {
+                "type": "Pot"
+            },
+            "Spirit Temple GS Metal Fence": {
+                "type": "GS Token"
+            },
+            "Deku Shield Pot": {
+                "type": "Drop"
+            },
+            "Spirit Temple Before Child Climb Small Wooden Crate 1": {
+                "type": "SmallCrate"
+            },
+            "Spirit Temple Before Child Climb Small Wooden Crate 2": {
+                "type": "SmallCrate"
+            },
+            "Nut Crate": {
+                "type": "Drop"
+            },
+            "Spirit Temple Compass Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Early Adult Right Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple GS Boulder Room": {
+                "type": "GS Token"
+            },
+            "Spirit Temple Child Climb North Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Child Climb East Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Child Climb Pot": {
+                "type": "Pot"
+            },
+            "Spirit Temple GS Sun on Floor Room": {
+                "type": "GS Token"
+            },
+            "Spirit Temple Map Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Sun Block Room Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Central Chamber Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Central Chamber Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Hall After Sun Block Room Pot 1": {
+                "type": "Pot"
+            },
+            "Spirit Temple Hall After Sun Block Room Pot 2": {
+                "type": "Pot"
+            },
+            "Spirit Temple GS Lobby": {
+                "type": "GS Token"
+            },
+            "Spirit Temple GS Hall After Sun Block Room": {
+                "type": "GS Token"
+            },
+            "Spirit Temple First Mirror Left Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple First Mirror Right Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Statue Room Hand Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Statue Room Northeast Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Adult Climb Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Adult Climb Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Beamos Hall Pot": {
+                "type": "Pot"
+            },
+            "Spirit Temple Near Four Armos Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Hallway Left Invisible Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Hallway Right Invisible Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Topmost Chest": {
+                "type": "Chest"
+            },
+            "Spirit Temple Shifting Wall Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Spirit Temple Shifting Wall Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Spirit Temple Big Mirror Flying Pot 1": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Big Mirror Flying Pot 2": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Big Mirror Flying Pot 3": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Big Mirror Flying Pot 4": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Big Mirror Flying Pot 5": {
+                "type": "FlyingPot"
+            },
+            "Spirit Temple Big Mirror Flying Pot 6": {
+                "type": "FlyingPot"
+            }
+        },
+        "sub_areas":[
+            "Spirit Temple Boss"
+        ]
+    },
+    "Water Temple": {
+        "type": "dungeon",
+        "locations": {
+            "Water Temple MQ Map Chest": {
+                "type": "Chest"
+            },
+            "Water Temple MQ L1 Torch Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple MQ L1 Torch Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Lizalfos Hallway Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Lizalfos Hallway Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Lizalfos Hallway Pot 3": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Central Pillar Upper Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Upper Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Hall Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Hall Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Hall Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Room Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Room Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Room Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Room Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Room Crate 5": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Chest": {
+                "type": "Chest"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 5": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 6": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 7": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 8": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 9": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 10": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 11": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 12": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 13": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Central Pillar Lower Crate 14": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Storage Room Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Storage Room Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Storage Room Pot 3": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Storage Room Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Storage Room Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Storage Room Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Storage Room Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Storage Room Crate 5": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Storage Room Crate 6": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Storage Room Crate 7": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Compass Chest": {
+                "type": "Chest"
+            },
+            "Water Temple MQ Longshot Chest": {
+                "type": "Chest"
+            },
+            "Water Temple MQ Lizalfos Hallway Gate Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Lizalfos Hallway Gate Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Lizalfos Hallway Gate Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Lizalfos Hallway Gate Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ GS Lizalfos Hallway": {
+                "type": "GS Token"
+            },
+            "Water Temple MQ Before Upper Water Switch Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Before Upper Water Switch Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Before Upper Water Switch Pot 3": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Before Upper Water Switch Lower Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Before Upper Water Switch Lower Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Before Upper Water Switch Lower Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Before Upper Water Switch Lower Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Before Upper Water Switch Lower Crate 5": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Before Upper Water Switch Lower Crate 6": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Before Upper Water Switch Upper Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Before Upper Water Switch Upper Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ GS Before Upper Water Switch": {
+                "type": "GS Token"
+            },
+            "Water Temple MQ Before Dark Link Lower Pot": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Before Dark Link Top Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Before Dark Link Top Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Room After Dark Link Pot": {
+                "type": "Pot"
+            },
+            "Water Temple MQ River Pot": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Dragon Statue Near Door Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dragon Statue Near Door Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ GS River": {
+                "type": "GS Token"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            },
+            "Water Temple MQ Dragon Statue By Torches Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dragon Statue By Torches Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dragon Statue Submerged Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dragon Statue Submerged Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dragon Statue Submerged Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dragon Statue Submerged Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Water Temple MQ Boss Key Chest Room Pot": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Boss Key Chest Room Upper Crate": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Boss Key Chest Room Lower Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Boss Key Chest Room Lower Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Boss Key Chest Room Lower Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Boss Key Chest Room Lower Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Front Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Front Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Submerged Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Submerged Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Submerged Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Submerged Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Submerged Crate 5": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Submerged Crate 6": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Triple Wall Torch Submerged Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Triple Wall Torch Submerged Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Triple Wall Torch Submerged Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Triple Wall Torch Submerged Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Triple Wall Torch Submerged Crate 5": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Triple Wall Torch Submerged Crate 6": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key": {
+                "type": "Collectable"
+            },
+            "Water Temple MQ Freestanding Key Room Pot": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Freestanding Key Room Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Room Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Room Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Room Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Room Crate 5": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dodongo Room Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Dodongo Room Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Dodongo Room Lower Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dodongo Room Lower Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dodongo Room Lower Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dodongo Room Upper Crate": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Dodongo Room Hall Crate": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Behind Gate Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Behind Gate Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Behind Gate Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Freestanding Key Area Behind Gate Crate 4": {
+                "type": "Crate"
+            },
+            "Water Temple MQ GS Freestanding Key Area": {
+                "type": "GS Token"
+            },
+            "Water Temple MQ Triple Wall Torch Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Triple Wall Torch Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Triple Wall Torch Pot 3": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Triple Wall Torch Pot 4": {
+                "type": "Pot"
+            },
+            "Water Temple MQ Triple Wall Torch Behind Gate Crate 1": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Triple Wall Torch Behind Gate Crate 2": {
+                "type": "Crate"
+            },
+            "Water Temple MQ Triple Wall Torch Behind Gate Crate 3": {
+                "type": "Crate"
+            },
+            "Water Temple MQ GS Triple Wall Torch": {
+                "type": "GS Token"
+            },
+            "Water Temple Main Room L2 Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple Main Room L2 Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple Map Chest": {
+                "type": "Chest"
+            },
+            "Water Temple Compass Chest": {
+                "type": "Chest"
+            },
+            "Water Temple L1 Torch Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple L1 Torch Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple Near Compass Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple Near Compass Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple Near Compass Pot 3": {
+                "type": "Pot"
+            },
+            "Water Temple Torches Chest": {
+                "type": "Chest"
+            },
+            "Water Temple GS Central Pillar": {
+                "type": "GS Token"
+            },
+            "Water Temple Behind Gate Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple Behind Gate Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple Behind Gate Pot 3": {
+                "type": "Pot"
+            },
+            "Water Temple Behind Gate Pot 4": {
+                "type": "Pot"
+            },
+            "Water Temple GS Behind Gate": {
+                "type": "GS Token"
+            },
+            "Water Temple Central Pillar Chest": {
+                "type": "Chest"
+            },
+            "Water Temple Cracked Wall Chest": {
+                "type": "Chest"
+            },
+            "Water Temple Central Bow Target Chest": {
+                "type": "Chest"
+            },
+            "Water Temple Central Bow Target Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple Central Bow Target Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple North Basement Block Puzzle Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple North Basement Block Puzzle Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple GS Near Boss Key Chest": {
+                "type": "GS Token"
+            },
+            "Water Temple Boss Key Chest": {
+                "type": "Chest"
+            },
+            "Water Temple GS Falling Platform Room": {
+                "type": "GS Token"
+            },
+            "Water Temple Longshot Chest": {
+                "type": "Chest"
+            },
+            "Water Temple Like Like Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple Like Like Pot 2": {
+                "type": "Pot"
+            },
+            "Water Temple River Chest": {
+                "type": "Chest"
+            },
+            "Water Temple River Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "Water Temple River Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "Water Temple River Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "Water Temple River Recovery Heart 4": {
+                "type": "Freestanding"
+            },
+            "Water Temple River Pot 1": {
+                "type": "Pot"
+            },
+            "Water Temple GS River": {
+                "type": "GS Token"
+            },
+            "Water Temple Dragon Chest": {
+                "type": "Chest"
+            }
+        },
+        "sub_areas":[
+            "Water Temple Boss"
+        ]
+    },
+    "Theives Hideout":{
+        "type":"overworld",
+        "locations": {
+            "Hideout 1 Torch Jail Gerudo Key": {
+                "type": "Collectable"
+            },
+            "Hideout Gerudo Membership Card": {
+                "type": "NPC"
+            },
+            "Hideout 1 Torch Jail Pot 1": {
+                "type": "Pot"
+            },
+            "Hideout 1 Torch Jail Pot 2": {
+                "type": "Pot"
+            },
+            "Hideout 1 Torch Jail Pot 3": {
+                "type": "Pot"
+            },
+            "Hideout 1 Torch Jail Crate": {
+                "type": "Crate"
+            },
+            "Hideout 2 Torches Jail Gerudo Key": {
+                "type": "Collectable"
+            },
+            "Hideout 2 Torch Jail Pot 1": {
+                "type": "Pot"
+            },
+            "Hideout 2 Torch Jail Pot 2": {
+                "type": "Pot"
+            },
+            "Hideout 2 Torch Jail Pot 3": {
+                "type": "Pot"
+            },
+            "Hideout 2 Torch Jail In Cell Pot 1": {
+                "type": "Pot"
+            },
+            "Hideout 2 Torch Jail In Cell Pot 2": {
+                "type": "Pot"
+            },
+            "Hideout 2 Torch Jail In Cell Pot 3": {
+                "type": "Pot"
+            },
+            "Hideout 2 Torch Jail In Cell Pot 4": {
+                "type": "Pot"
+            },
+            "Hideout 2 Torch Jail Crate 1": {
+                "type": "Crate"
+            },
+            "Hideout 2 Torch Jail Crate 2": {
+                "type": "Crate"
+            },
+            "Hideout 4 Torches Jail Gerudo Key": {
+                "type": "Collectable"
+            },
+            "Hideout 4 Torch Jail Pot 1": {
+                "type": "Pot"
+            },
+            "Hideout 4 Torch Jail Pot 2": {
+                "type": "Pot"
+            },
+            "Hideout Near Kitchen Crate 1": {
+                "type": "Crate"
+            },
+            "Hideout Near Kitchen Crate 2": {
+                "type": "Crate"
+            },
+            "Hideout Near Kitchen Crate 3": {
+                "type": "Crate"
+            },
+            "Hideout Near Kitchen Crate 4": {
+                "type": "Crate"
+            },
+            "Hideout Near Kitchen Crate 5": {
+                "type": "Crate"
+            },
+            "Hideout Kitchen Pot 1": {
+                "type": "Pot"
+            },
+            "Hideout Kitchen Pot 2": {
+                "type": "Pot"
+            },
+            "Hideout Break Room Pot 1": {
+                "type": "Pot"
+            },
+            "Hideout Break Room Pot 2": {
+                "type": "Pot"
+            },
+            "Hideout Break Room Hallway Crate 1": {
+                "type": "Crate"
+            },
+            "Hideout Break Room Hallway Crate 2": {
+                "type": "Crate"
+            },
+            "Hideout Break Room Crate 1": {
+                "type": "Crate"
+            },
+            "Hideout Break Room Crate 2": {
+                "type": "Crate"
+            },
+            "Hideout 3 Torches Jail Gerudo Key": {
+                "type": "Collectable"
+            },
+            "Hideout 3 Torch Jail Crate": {
+                "type": "Crate"
+            }
+        }
+    },
+    "Kokiri Forest": {
+        "type": "overworld",
+        "locations": {
+            "KF Kokiri Sword Chest": {
+                "type": "Chest"
+            },
+            "KF Grass Near Ramp Green Rupee 1": {
+                "type": "Freestanding"
+            },
+            "KF Grass Near Ramp Green Rupee 2": {
+                "type": "Freestanding"
+            },
+            "KF Grass Near Midos Green Rupee 1": {
+                "type": "Freestanding"
+            },
+            "KF Grass Near Midos Green Rupee 2": {
+                "type": "Freestanding"
+            },
+            "KF Behind Midos Blue Rupee": {
+                "type": "Freestanding"
+            },
+            "KF Top of Sarias Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "KF Top of Sarias Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "KF Top of Sarias Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "KF End of Bridge Blue Rupee": {
+                "type": "Freestanding"
+            },
+            "KF Boulder Maze Blue Rupee 1": {
+                "type": "Freestanding"
+            },
+            "KF Boulder Maze Blue Rupee 2": {
+                "type": "Freestanding"
+            },
+            "KF Bean Platform Green Rupee 1": {
+                "type": "RupeeTower"
+            },
+            "KF Bean Platform Green Rupee 2": {
+                "type": "RupeeTower"
+            },
+            "KF Bean Platform Green Rupee 3": {
+                "type": "RupeeTower"
+            },
+            "KF Bean Platform Green Rupee 4": {
+                "type": "RupeeTower"
+            },
+            "KF Bean Platform Green Rupee 5": {
+                "type": "RupeeTower"
+            },
+            "KF Bean Platform Green Rupee 6": {
+                "type": "RupeeTower"
+            },
+            "KF Bean Platform Red Rupee": {
+                "type": "RupeeTower"
+            },
+            "KF GS Know It All House": {
+                "type": "GS Token"
+            },
+            "KF GS Bean Patch": {
+                "type": "GS Token"
+            },
+            "KF GS House of Twins": {
+                "type": "GS Token"
+            },
+            "KF Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Bean Plant Fairy": {
+                "type": "Drop"
+            },
+            "Deku Baba Sticks": {
+                "type": "Drop"
+            },
+            "Deku Baba Nuts": {
+                "type": "Drop"
+            },
+            "KF Deku Tree Gossip Stone (Left)": {
+                "type": "HintStone"
+            },
+            "KF Deku Tree Gossip Stone (Right)": {
+                "type": "HintStone"
+            }
+        },
+        "sub_areas": [
+            "KF Links House",
+            "KF Midos House",
+            "KF Sarias House",
+            "KF House of Twins",
+            "KF Know It All House",
+            "KF Kokiri Shop",
+            "KF Storms Grotto"
+        ]
+    },
+    "KF Links House": {
+        "type": "interior",
+        "locations": {
+            "KF Links House Cow": {
+                "type": "NPC"
+            },
+            "KF Links House Pot": {
+                "type": "Pot"
+            }
+        }
+    },
+    "KF Midos House": {
+        "type": "interior",
+        "locations": {
+            "KF Midos Top Left Chest": {
+                "type": "Chest"
+            },
+            "KF Midos Top Right Chest": {
+                "type": "Chest"
+            },
+            "KF Midos Bottom Left Chest": {
+                "type": "Chest"
+            },
+            "KF Midos Bottom Right Chest": {
+                "type": "Chest"
+            }
+        }
+    },
+    "KF Sarias House": {
+        "type": "interior",
+        "locations": {
+            "KF Sarias House Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "KF Sarias House Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "KF Sarias House Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "KF Sarias House Recovery Heart 4": {
+                "type": "Freestanding"
+            }
+        }
+    },
+    "KF House of Twins": {
+        "type": "interior",
+        "locations": {
+            "KF House of Twins Pot 1": {
+                "type": "Pot"
+            },
+            "KF House of Twins Pot 2": {
+                "type": "Pot"
+            }
+        }
+    },
+    "KF Know It All House": {
+        "type": "interior",
+        "locations": {
+            "KF Know it All House Pot 1": {
+                "type": "Pot"
+            },
+            "KF Know it All House Pot 2": {
+                "type": "Pot"
+            }
+        }
+    },
+    "KF Kokiri Shop": {
+        "type": "interior",
+        "locations": {
+            "KF Shop Blue Rupee": {
+                "type": "ActorOverride"
+            },
+            "KF Shop Item 1": {
+                "type": "Shop"
+            },
+            "KF Shop Item 2": {
+                "type": "Shop"
+            },
+            "KF Shop Item 3": {
+                "type": "Shop"
+            },
+            "KF Shop Item 4": {
+                "type": "Shop"
+            },
+            "KF Shop Item 5": {
+                "type": "Shop"
+            },
+            "KF Shop Item 6": {
+                "type": "Shop"
+            },
+            "KF Shop Item 7": {
+                "type": "Shop"
+            },
+            "KF Shop Item 8": {
+                "type": "Shop"
+            }
+        }
+    },
+    "Lost Woods": {
+        "type": "overworld",
+        "locations": {
+            "LW Skull Kid": {
+                "type": "NPC"
+            },
+            "LW Ocarina Memory Game": {
+                "type": "NPC"
+            },
+            "LW Target in Woods": {
+                "type": "NPC"
+            },
+            "LW Deku Scrub Near Bridge": {
+                "type": "Scrub"
+            },
+            "LW Underwater Green Rupee 1": {
+                "type": "Freestanding"
+            },
+            "LW Underwater Green Rupee 2": {
+                "type": "Freestanding"
+            },
+            "LW Underwater Green Rupee 3": {
+                "type": "Freestanding"
+            },
+            "LW Underwater Green Rupee 4": {
+                "type": "Freestanding"
+            },
+            "LW Underwater Green Rupee 5": {
+                "type": "Freestanding"
+            },
+            "LW Underwater Green Rupee 6": {
+                "type": "Freestanding"
+            },
+            "LW Underwater Green Rupee 7": {
+                "type": "Freestanding"
+            },
+            "LW GS Bean Patch Near Bridge": {
+                "type": "GS Token"
+            },
+            "LW Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Bean Plant Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "LW Deku Scrub Near Deku Theater Right": {
+                "type": "Scrub"
+            },
+            "LW Deku Scrub Near Deku Theater Left": {
+                "type": "Scrub"
+            },
+            "LW Under Boulder Blue Rupee": {
+                "type": "Freestanding"
+            },
+            "LW GS Above Theater": {
+                "type": "GS Token"
+            },
+            "LW GS Bean Patch Near Theater": {
+                "type": "GS Token"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "LW Underwater Shortcut Green Rupee": {
+                "type": "Freestanding"
+            },
+            "LW Gift from Saria": {
+                "type": "Cutscene"
+            }
+        },
+        "sub_areas": [
+            "LW Near Shortcuts Grotto",
+            "Deku Theater",
+            "LW Scrubs Grotto"
+        ]
+    },
+    "Sacred Forest Meadow": {
+        "type": "overworld",
+        "locations": {
+            "Song from Saria": {
+                "type": "Song"
+            },
+            "Sheik in Forest": {
+                "type": "Song"
+            },
+            "SFM GS": {
+                "type": "GS Token"
+            },
+            "SFM Maze Gossip Stone (Lower)": {
+                "type": "HintStone"
+            },
+            "SFM Maze Gossip Stone (Upper)": {
+                "type": "HintStone"
+            },
+            "SFM Saria Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            }
+        },
+        "sub_areas": [
+            "SFM Wolfos Grotto",
+            "SFM Fairy Grotto",
+            "SFM Storms Grotto"
+        ]
+    },
+    "Hyrule Field": {
+        "type": "overworld",
+        "locations": {
+            "HF Ocarina of Time Item": {
+                "type": "NPC"
+            },
+            "Song from Ocarina of Time": {
+                "type": "Song"
+            },
+            "Big Poe Kill": {
+                "type": "Drop"
+            }
+        },
+        "sub_areas": [
+            "HF Southeast Grotto",
+            "HF Open Grotto",
+            "HF Inside Fence Grotto",
+            "HF Cow Grotto",
+            "HF Near Market Grotto",
+            "HF Fairy Grotto",
+            "HF Near Kak Grotto",
+            "HF Tektite Grotto"
+        ]
+    },
+    "Lake Hylia": {
+        "type": "overworld",
+        "locations": {
+            "Pierre": {
+                "type": "Event"
+            },
+            "LH Sun": {
+                "type": "NPC"
+            },
+            "LH Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "LH Underwater Item": {
+                "type": "NPC"
+            },
+            "LH Underwater Near Shore Green Rupee": {
+                "type": "Freestanding"
+            },
+            "LH Underwater Green Rupee 1": {
+                "type": "Freestanding"
+            },
+            "LH Underwater Green Rupee 2": {
+                "type": "Freestanding"
+            },
+            "LH GS Bean Patch": {
+                "type": "GS Token"
+            },
+            "LH GS Lab Wall": {
+                "type": "GS Token"
+            },
+            "LH GS Small Island": {
+                "type": "GS Token"
+            },
+            "LH GS Tree": {
+                "type": "GS Token"
+            },
+            "LH Lab Gossip Stone": {
+                "type": "HintStone"
+            },
+            "LH Gossip Stone (Southeast)": {
+                "type": "HintStone"
+            },
+            "LH Gossip Stone (Southwest)": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Bean Plant Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            }
+        },
+        "sub_areas": [
+            "LH Lab",
+            "LH Grotto",
+            "LH Fishing Hole"
+        ]
+    },
+    "LH Lab": {
+        "type": "interior",
+        "locations": {
+            "LH Lab Dive": {
+                "type": "NPC"
+            },
+            "LH Lab Dive Red Rupee 1": {
+                "type": "Freestanding"
+            },
+            "LH Lab Dive Red Rupee 2": {
+                "type": "Freestanding"
+            },
+            "LH Lab Dive Red Rupee 3": {
+                "type": "Freestanding"
+            },
+            "LH GS Lab Crate": {
+                "type": "GS Token"
+            }
+        }
+    },
+    "LH Fishing Hole": {
+        "type": "interior",
+        "locations": {
+            "LH Child Fishing": {
+                "type": "NPC"
+            },
+            "LH Adult Fishing": {
+                "type": "NPC"
+            }
+        }
+    },
+    "Gerudo Valley": {
+        "type": "overworld",
+        "locations": {
+            "GV GS Small Bridge": {
+                "type": "GS Token"
+            },
+            "Bug Rock": {
+                "type": "Drop"
+            },
+            "GV Waterfall Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "GV GS Bean Patch": {
+                "type": "GS Token"
+            },
+            "GV Cow": {
+                "type": "NPC"
+            },
+            "GV Crate Near Cow": {
+                "type": "Crate"
+            },
+            "GV Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Bean Plant Fairy": {
+                "type": "Drop"
+            },
+            "GV Crate Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "GV Freestanding PoH Crate": {
+                "type": "Crate"
+            },
+            "GV Chest": {
+                "type": "Chest"
+            },
+            "GV GS Behind Tent": {
+                "type": "GS Token"
+            },
+            "GV GS Pillar": {
+                "type": "GS Token"
+            }
+        },
+        "sub_areas": [
+            "GV Octorok Grotto",
+            "GV Carpenter Tent",
+            "GV Storms Grotto"
+        ]
+    },
+    "GV Carpenter Tent": {
+        "type": "interior",
+        "locations": {}
+    },
+    "Gerudo Fortress": {
+        "type": "overworld",
+        "locations": {
+            "GF HBA 1000 Points": {
+                "type": "NPC"
+            },
+            "GF HBA 1500 Points": {
+                "type": "NPC"
+            },
+            "GF GS Archery Range": {
+                "type": "GS Token"
+            },
+            "GF Chest": {
+                "type": "Chest"
+            },
+            "GF GS Top Floor": {
+                "type": "GS Token"
+            },
+            "GF Above Jail Crate": {
+                "type": "Crate"
+            }
+        },
+        "sub_areas": [
+            "GF Storms Grotto"
+        ]
+    },
+    "Haunted Wasteland": {
+        "type": "overworld",
+        "locations": {
+            "Wasteland Crate Before Quicksand": {
+                "type": "Crate"
+            },
+            "Wasteland Chest": {
+                "type": "Chest"
+            },
+            "Wasteland Bombchu Salesman": {
+                "type": "NPC"
+            },
+            "Wasteland Near GS Pot 1": {
+                "type": "Pot"
+            },
+            "Wasteland Near GS Pot 2": {
+                "type": "Pot"
+            },
+            "Wasteland Near GS Pot 3": {
+                "type": "Pot"
+            },
+            "Wasteland Crate After Quicksand 1": {
+                "type": "Crate"
+            },
+            "Wasteland Crate After Quicksand 2": {
+                "type": "Crate"
+            },
+            "Wasteland Crate After Quicksand 3": {
+                "type": "Crate"
+            },
+            "Wasteland GS": {
+                "type": "GS Token"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            },
+            "Wasteland Crate Near Colossus": {
+                "type": "Crate"
+            }
+        }
+    },
+    "Desert Colossus": {
+        "type": "overworld",
+        "locations": {
+            "Colossus Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "Colossus GS Bean Patch": {
+                "type": "GS Token"
+            },
+            "Colossus GS Tree": {
+                "type": "GS Token"
+            },
+            "Colossus GS Hill": {
+                "type": "GS Token"
+            },
+            "Colossus Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Fairy Pond": {
+                "type": "Drop"
+            },
+            "Bug Rock": {
+                "type": "Drop"
+            },
+            "Sheik at Colossus": {
+                "type": "Song"
+            }
+        },
+        "sub_areas": [
+            "Colossus Great Fairy Fountain",
+            "Colossus Grotto"
+        ]
+    },
+    "Colossus Great Fairy Fountain": {
+        "type": "interior",
+        "locations": {
+            "Colossus Great Fairy Reward": {
+                "type": "Cutscene"
+            }
+        }
+    },
+    "Market Entrance": {
+        "type": "overworld",
+        "locations": {},
+        "sub_areas": [
+            "Market Guard House"
+        ]
+    },
+    "Market": {
+        "type": "overworld",
+        "locations": {
+            "Market Night Red Rupee Crate": {
+                "type": "Crate"
+            },
+            "Market Night Green Rupee Crate 1": {
+                "type": "Crate"
+            },
+            "Market Night Green Rupee Crate 2": {
+                "type": "Crate"
+            },
+            "Market Night Green Rupee Crate 3": {
+                "type": "Crate"
+            }
+        },
+        "sub_areas": [
+            "Market Bazaar",
+            "Market Mask Shop",
+            "Market Shooting Gallery",
+            "Market Bombchu Bowling",
+            "Market Potion Shop",
+            "Market Treasure Chest Game",
+            "Market Bombchu Shop",
+            "Market Dog Lady House",
+            "Market Man in Green House"
+        ]
+    },
+    "ToT Entrance": {
+        "type": "overworld",
+        "locations": {
+            "ToT Gossip Stone (Left)": {
+                "type": "HintStone"
+            },
+            "ToT Gossip Stone (Left-Center)": {
+                "type": "HintStone"
+            },
+            "ToT Gossip Stone (Right)": {
+                "type": "HintStone"
+            },
+            "ToT Gossip Stone (Right-Center)": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            }
+        },
+        "sub_areas": [
+            "Temple of Time"
+        ]
+    },
+    "Temple of Time": {
+        "type": "interior",
+        "locations": {
+            "ToT Light Arrows Cutscene": {
+                "type": "Cutscene"
+            },
+            "ToT Child Altar Hint": {
+                "type": "Hint"
+            },
+            "ToT Adult Altar Hint": {
+                "type": "Hint"
+            },
+            "Sheik at Temple": {
+                "type": "Song"
+            },
+            "Master Sword Pedestal": {
+                "type": "Event"
+            }
+        }
+    },
+    "Castle Grounds": {
+        "type": "overworld",
+        "locations": {
+            "HC Malon Egg": {
+                "type": "NPC"
+            },
+            "HC GS Tree": {
+                "type": "GS Token"
+            },
+            "HC Malon Gossip Stone": {
+                "type": "HintStone"
+            },
+            "HC Rock Wall Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Rock": {
+                "type": "Drop"
+            },
+            "HC Zeldas Letter": {
+                "type": "NPC"
+            },
+            "Song from Impa": {
+                "type": "Song"
+            },
+            "OGC GS": {
+                "type": "GS Token"
+            }
+        },
+        "sub_areas": [
+            "HC Great Fairy Fountain",
+            "HC Storms Grotto",
+            "OGC Great Fairy Fountain"
+        ]
+    },
+    "HC Great Fairy Fountain": {
+        "type": "interior",
+        "locations": {
+            "HC Great Fairy Reward": {
+                "type": "Cutscene"
+            }
+        }
+    },
+    "OGC Great Fairy Fountain": {
+        "type": "interior",
+        "locations": {
+            "OGC Great Fairy Reward": {
+                "type": "Cutscene"
+            }
+        }
+    },
+    "Market Guard House": {
+        "type": "interior",
+        "locations": {
+            "Market 10 Big Poes": {
+                "type": "NPC"
+            },
+            "Market Guard House Child Crate": {
+                "type": "Crate"
+            },
+            "Market Guard House Child Pot 1": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 2": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 3": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 4": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 5": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 6": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 7": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 8": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 9": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 10": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 11": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 12": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 13": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 14": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 15": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 16": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 17": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 18": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 19": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 20": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 21": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 22": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 23": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 24": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 25": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 26": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 27": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 28": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 29": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 30": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 31": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 32": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 33": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 34": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 35": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 36": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 37": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 38": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 39": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 40": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 41": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 42": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 43": {
+                "type": "Pot"
+            },
+            "Market Guard House Child Pot 44": {
+                "type": "Pot"
+            },
+            "Market Guard House Adult Pot 1": {
+                "type": "Pot"
+            },
+            "Market Guard House Adult Pot 2": {
+                "type": "Pot"
+            },
+            "Market Guard House Adult Pot 3": {
+                "type": "Pot"
+            },
+            "Market Guard House Adult Pot 4": {
+                "type": "Pot"
+            },
+            "Market Guard House Adult Pot 5": {
+                "type": "Pot"
+            },
+            "Market Guard House Adult Pot 6": {
+                "type": "Pot"
+            },
+            "Market Guard House Adult Pot 7": {
+                "type": "Pot"
+            },
+            "Market GS Guard House": {
+                "type": "GS Token"
+            }
+        }
+    },
+    "Market Bazaar": {
+        "type": "interior",
+        "locations": {
+            "Market Bazaar Item 1": {
+                "type": "Shop"
+            },
+            "Market Bazaar Item 2": {
+                "type": "Shop"
+            },
+            "Market Bazaar Item 3": {
+                "type": "Shop"
+            },
+            "Market Bazaar Item 4": {
+                "type": "Shop"
+            },
+            "Market Bazaar Item 5": {
+                "type": "Shop"
+            },
+            "Market Bazaar Item 6": {
+                "type": "Shop"
+            },
+            "Market Bazaar Item 7": {
+                "type": "Shop"
+            },
+            "Market Bazaar Item 8": {
+                "type": "Shop"
+            }
+        }
+    },
+    "Market Mask Shop": {
+        "type": "interior",
+        "locations": {}
+    },
+    "Market Shooting Gallery": {
+        "type": "interior",
+        "locations": {
+            "Market Shooting Gallery Reward": {
+                "type": "NPC"
+            }
+        }
+    },
+    "Market Bombchu Bowling": {
+        "type": "interior",
+        "locations": {
+            "Market Bombchu Bowling First Prize": {
+                "type": "NPC"
+            },
+            "Market Bombchu Bowling Second Prize": {
+                "type": "NPC"
+            },
+            "Market Bombchu Bowling Bombchus": {
+                "type": "Event"
+            }
+        }
+    },
+    "Market Potion Shop": {
+        "type": "interior",
+        "locations": {
+            "Market Potion Shop Item 1": {
+                "type": "Shop"
+            },
+            "Market Potion Shop Item 2": {
+                "type": "Shop"
+            },
+            "Market Potion Shop Item 3": {
+                "type": "Shop"
+            },
+            "Market Potion Shop Item 4": {
+                "type": "Shop"
+            },
+            "Market Potion Shop Item 5": {
+                "type": "Shop"
+            },
+            "Market Potion Shop Item 6": {
+                "type": "Shop"
+            },
+            "Market Potion Shop Item 7": {
+                "type": "Shop"
+            },
+            "Market Potion Shop Item 8": {
+                "type": "Shop"
+            }
+        }
+    },
+    "Market Treasure Chest Game": {
+        "type": "interior",
+        "locations": {
+            "Market Treasure Chest Game Reward": {
+                "type": "Chest"
+            }
+        }
+    },
+    "Market Bombchu Shop": {
+        "type": "interior",
+        "locations": {
+            "Market Bombchu Shop Item 1": {
+                "type": "Shop"
+            },
+            "Market Bombchu Shop Item 2": {
+                "type": "Shop"
+            },
+            "Market Bombchu Shop Item 3": {
+                "type": "Shop"
+            },
+            "Market Bombchu Shop Item 4": {
+                "type": "Shop"
+            },
+            "Market Bombchu Shop Item 5": {
+                "type": "Shop"
+            },
+            "Market Bombchu Shop Item 6": {
+                "type": "Shop"
+            },
+            "Market Bombchu Shop Item 7": {
+                "type": "Shop"
+            },
+            "Market Bombchu Shop Item 8": {
+                "type": "Shop"
+            }
+        }
+    },
+    "Market Dog Lady House": {
+        "type": "interior",
+        "locations": {
+            "Market Lost Dog": {
+                "type": "NPC"
+            },
+            "Market Dog Lady House Crate": {
+                "type": "Crate"
+            }
+        }
+    },
+    "Market Man in Green House": {
+        "type": "interior",
+        "locations": {
+            "Market Man in Green House Pot 1": {
+                "type": "Pot"
+            },
+            "Market Man in Green House Pot 2": {
+                "type": "Pot"
+            },
+            "Market Man in Green House Pot 3": {
+                "type": "Pot"
+            }
+        }
+    },
+    "Kakariko Village": {
+        "type": "overworld",
+        "locations": {
+            "Sheik in Kakariko": {
+                "type": "Song"
+            },
+            "Kak Anju as Adult": {
+                "type": "NPC"
+            },
+            "Kak Anju as Child": {
+                "type": "NPC"
+            },
+            "Kak Near Guards House Pot 1": {
+                "type": "Pot"
+            },
+            "Kak Near Guards House Pot 2": {
+                "type": "Pot"
+            },
+            "Kak Near Guards House Pot 3": {
+                "type": "Pot"
+            },
+            "Kak Near Potion Shop Pot 1": {
+                "type": "Pot"
+            },
+            "Kak Near Potion Shop Pot 2": {
+                "type": "Pot"
+            },
+            "Kak Near Potion Shop Pot 3": {
+                "type": "Pot"
+            },
+            "Kak Near Impas House Pot 1": {
+                "type": "Pot"
+            },
+            "Kak Near Impas House Pot 2": {
+                "type": "Pot"
+            },
+            "Kak Near Impas House Pot 3": {
+                "type": "Pot"
+            },
+            "Kak Adult Arrows Crate": {
+                "type": "Crate"
+            },
+            "Kak GS House Under Construction": {
+                "type": "GS Token"
+            },
+            "Kak GS Skulltula House": {
+                "type": "GS Token"
+            },
+            "Kak GS Near Gate Guard": {
+                "type": "GS Token"
+            },
+            "Kak GS Tree": {
+                "type": "GS Token"
+            },
+            "Kak GS Watchtower": {
+                "type": "GS Token"
+            },
+            "Bug Rock": {
+                "type": "Drop"
+            },
+            "Kak GS Above Impas House": {
+                "type": "GS Token"
+            },
+            "Kak Man on Roof": {
+                "type": "NPC"
+            },
+            "Kak Near Odd Medicine Building Pot 1": {
+                "type": "Pot"
+            },
+            "Kak Near Odd Medicine Building Pot 2": {
+                "type": "Pot"
+            },
+            "Kak Adult Red Rupee Crate": {
+                "type": "Crate"
+            }
+        },
+        "sub_areas": [
+            "Windmill",
+            "Kak Carpenter Boss House",
+            "Kak House of Skulltula",
+            "Kak Impas House",
+            "Kak Bazaar",
+            "Kak Shooting Gallery",
+            "Kak Redead Grotto",
+            "Kak Open Grotto",
+            "Kak Odd Medicine Building",
+            "Kak Potion Shop",
+            "Kak Potion Shop Rear"
+        ]
+    },
+    "Kak Carpenter Boss House": {
+        "type": "interior",
+        "locations": {}
+    },
+    "Kak House of Skulltula": {
+        "type": "interior",
+        "locations": {
+            "Kak 10 Gold Skulltula Reward": {
+                "type": "NPC"
+            },
+            "Kak 20 Gold Skulltula Reward": {
+                "type": "NPC"
+            },
+            "Kak 30 Gold Skulltula Reward": {
+                "type": "NPC"
+            },
+            "Kak 40 Gold Skulltula Reward": {
+                "type": "NPC"
+            },
+            "Kak 50 Gold Skulltula Reward": {
+                "type": "NPC"
+            },
+            "10 Skulltulas Reward Hint": {
+                "type": "Hint"
+            },
+            "20 Skulltulas Reward Hint": {
+                "type": "Hint"
+            },
+            "30 Skulltulas Reward Hint": {
+                "type": "Hint"
+            },
+            "40 Skulltulas Reward Hint": {
+                "type": "Hint"
+            },
+            "50 Skulltulas Reward Hint": {
+                "type": "Hint"
+            }
+        }
+    },
+    "Kak Impas House": {
+        "type": "interior",
+        "locations": {
+            "Kak Impas House Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "Kak Impas House Cow": {
+                "type": "NPC"
+            }
+        }
+    },
+    "Windmill": {
+        "type": "interior",
+        "locations": {
+            "Kak Windmill Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "Song from Windmill": {
+                "type": "Song"
+            }
+        }
+    },
+    "Dampes Grave": {
+        "type": "grave/grotto",
+        "locations": {
+            "Graveyard Dampe Race Hookshot Chest": {
+                "type": "Chest"
+            },
+            "Graveyard Dampe Race Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "Graveyard Dampe Race Rupee 1": {
+                "type": "Freestanding"
+            },
+            "Graveyard Dampe Race Rupee 2": {
+                "type": "Freestanding"
+            },
+            "Graveyard Dampe Race Rupee 3": {
+                "type": "Freestanding"
+            },
+            "Graveyard Dampe Race Rupee 4": {
+                "type": "Freestanding"
+            },
+            "Graveyard Dampe Race Rupee 5": {
+                "type": "Freestanding"
+            },
+            "Graveyard Dampe Race Rupee 6": {
+                "type": "Freestanding"
+            },
+            "Graveyard Dampe Race Rupee 7": {
+                "type": "Freestanding"
+            },
+            "Graveyard Dampe Race Rupee 8": {
+                "type": "Freestanding"
+            },
+            "Graveyard Dampe Pot 1": {
+                "type": "Pot"
+            },
+            "Graveyard Dampe Pot 2": {
+                "type": "Pot"
+            },
+            "Graveyard Dampe Pot 3": {
+                "type": "Pot"
+            },
+            "Graveyard Dampe Pot 4": {
+                "type": "Pot"
+            },
+            "Graveyard Dampe Pot 5": {
+                "type": "Pot"
+            },
+            "Graveyard Dampe Pot 6": {
+                "type": "Pot"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            }
+        }
+    },
+    "Kak Bazaar": {
+        "type": "interior",
+        "locations": {
+            "Kak Bazaar Item 1": {
+                "type": "Shop"
+            },
+            "Kak Bazaar Item 2": {
+                "type": "Shop"
+            },
+            "Kak Bazaar Item 3": {
+                "type": "Shop"
+            },
+            "Kak Bazaar Item 4": {
+                "type": "Shop"
+            },
+            "Kak Bazaar Item 5": {
+                "type": "Shop"
+            },
+            "Kak Bazaar Item 6": {
+                "type": "Shop"
+            },
+            "Kak Bazaar Item 7": {
+                "type": "Shop"
+            },
+            "Kak Bazaar Item 8": {
+                "type": "Shop"
+            }
+        }
+    },
+    "Kak Shooting Gallery": {
+        "type": "interior",
+        "locations": {
+            "Kak Shooting Gallery Reward": {
+                "type": "NPC"
+            }
+        }
+    },
+    "Kak Potion Shop": {
+        "type": "interior",
+        "locations": {
+            "Kak Potion Shop Item 1": {
+                "type": "Shop"
+            },
+            "Kak Potion Shop Item 2": {
+                "type": "Shop"
+            },
+            "Kak Potion Shop Item 3": {
+                "type": "Shop"
+            },
+            "Kak Potion Shop Item 4": {
+                "type": "Shop"
+            },
+            "Kak Potion Shop Item 5": {
+                "type": "Shop"
+            },
+            "Kak Potion Shop Item 6": {
+                "type": "Shop"
+            },
+            "Kak Potion Shop Item 7": {
+                "type": "Shop"
+            },
+            "Kak Potion Shop Item 8": {
+                "type": "Shop"
+            }
+        }
+    },
+    "Kak Potion Shop Rear": {
+        "type": "interior"
+    },
+    "Kak Odd Medicine Building": {
+        "type": "interior",
+        "locations": {}
+    },
+    "Graveyard": {
+        "type": "overworld",
+        "locations": {
+            "Graveyard Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "Graveyard Dampe Gravedigging Tour": {
+                "type": "Collectable"
+            },
+            "Graveyard GS Wall": {
+                "type": "GS Token"
+            },
+            "Graveyard GS Bean Patch": {
+                "type": "GS Token"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bean Plant Fairy": {
+                "type": "Drop"
+            },
+            "Bug Rock": {
+                "type": "Drop"
+            },
+            "Graveyard Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            }
+        },
+        "sub_areas": [
+            "Graveyard Shield Grave",
+            "Graveyard Royal Familys Tomb",
+            "Graveyard Heart Piece Grave",
+            "Dampes Grave",
+            "Graveyard Dampes House"
+        ]
+    },
+    "Graveyard Shield Grave": {
+        "type": "grave/grotto",
+        "locations": {
+            "Graveyard Shield Grave Chest": {
+                "type": "Chest"
+            },
+            "Free Fairies": {
+                "type": "Drop"
+            }
+        }
+    },
+    "Graveyard Heart Piece Grave": {
+        "type": "grave/grotto",
+        "locations": {
+            "Graveyard Heart Piece Grave Chest": {
+                "type": "Chest"
+            }
+        }
+    },
+    "Graveyard Royal Familys Tomb": {
+        "type": "grave/grotto",
+        "locations": {
+            "Graveyard Royal Familys Tomb Chest": {
+                "type": "Chest"
+            },
+            "Song from Royal Familys Tomb": {
+                "type": "Song"
+            }
+        }
+    },
+    "Graveyard Dampes House": {
+        "type": "interior",
+        "locations": {
+            "Dampe Diary Hint": {
+                "type": "Hint"
+            }
+        }
+    },
+    "Death Mountain": {
+        "type": "overworld",
+        "locations": {
+            "DMT Chest": {
+                "type": "Chest"
+            },
+            "DMT Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "DMT Rock Red Rupee": {
+                "type": "Freestanding"
+            },
+            "DMT Rock Blue Rupee": {
+                "type": "Freestanding"
+            },
+            "DMT GS Bean Patch": {
+                "type": "GS Token"
+            },
+            "DMT GS Near Kak": {
+                "type": "GS Token"
+            },
+            "DMT GS Above Dodongos Cavern": {
+                "type": "GS Token"
+            },
+            "Bean Plant Fairy": {
+                "type": "Drop"
+            },
+            "DMT Biggoron": {
+                "type": "NPC"
+            },
+            "DMT GS Falling Rocks Path": {
+                "type": "GS Token"
+            },
+            "DMT Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Bug Rock": {
+                "type": "Drop"
+            }
+        },
+        "sub_areas": [
+            "DMT Storms Grotto",
+            "DMT Cow Grotto",
+            "DMT Great Fairy Fountain"
+        ]
+    },
+    "Goron City": {
+        "type": "overworld",
+        "locations": {
+            "GC Maze Left Chest": {
+                "type": "Chest"
+            },
+            "GC Maze Center Chest": {
+                "type": "Chest"
+            },
+            "GC Maze Right Chest": {
+                "type": "Chest"
+            },
+            "GC Rolling Goron as Child": {
+                "type": "NPC"
+            },
+            "GC Medigoron": {
+                "type": "NPC"
+            },
+            "GC Rolling Goron as Adult": {
+                "type": "NPC"
+            },
+            "GC Lower Staircase Pot 1": {
+                "type": "Pot"
+            },
+            "GC Lower Staircase Pot 2": {
+                "type": "Pot"
+            },
+            "GC Upper Staircase Pot 1": {
+                "type": "Pot"
+            },
+            "GC Upper Staircase Pot 2": {
+                "type": "Pot"
+            },
+            "GC Upper Staircase Pot 3": {
+                "type": "Pot"
+            },
+            "GC Medigoron Pot": {
+                "type": "Pot"
+            },
+            "GC Boulder Maze Crate": {
+                "type": "Crate"
+            },
+            "GC GS Boulder Maze": {
+                "type": "GS Token"
+            },
+            "GC GS Center Platform": {
+                "type": "GS Token"
+            },
+            "GC Maze Gossip Stone": {
+                "type": "HintStone"
+            },
+            "GC Medigoron Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Bug Rock": {
+                "type": "Drop"
+            },
+            "Stick Pot": {
+                "type": "Drop"
+            },
+            "GC Darunias Joy": {
+                "type": "NPC"
+            },
+            "GC Darunia Pot 1": {
+                "type": "Pot"
+            },
+            "GC Darunia Pot 2": {
+                "type": "Pot"
+            },
+            "GC Darunia Pot 3": {
+                "type": "Pot"
+            },
+            "GC Pot Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "GC Spinning Pot Bomb Drop 1": {
+                "type": "RupeeTower"
+            },
+            "GC Spinning Pot Bomb Drop 2": {
+                "type": "RupeeTower"
+            },
+            "GC Spinning Pot Bomb Drop 3": {
+                "type": "RupeeTower"
+            },
+            "GC Spinning Pot Rupee Drop 1": {
+                "type": "RupeeTower"
+            },
+            "GC Spinning Pot Rupee Drop 2": {
+                "type": "RupeeTower"
+            },
+            "GC Spinning Pot Rupee Drop 3": {
+                "type": "RupeeTower"
+            },
+            "GC Spinning Pot PoH Drop Rupee 1": {
+                "type": "RupeeTower"
+            },
+            "GC Spinning Pot PoH Drop Rupee 2": {
+                "type": "RupeeTower"
+            }
+        },
+        "sub_areas": [
+            "GC Shop",
+            "GC Grotto"
+        ]
+    },
+    "GC Shop": {
+        "type": "interior",
+        "locations": {
+            "GC Shop Item 1": {
+                "type": "Shop"
+            },
+            "GC Shop Item 2": {
+                "type": "Shop"
+            },
+            "GC Shop Item 3": {
+                "type": "Shop"
+            },
+            "GC Shop Item 4": {
+                "type": "Shop"
+            },
+            "GC Shop Item 5": {
+                "type": "Shop"
+            },
+            "GC Shop Item 6": {
+                "type": "Shop"
+            },
+            "GC Shop Item 7": {
+                "type": "Shop"
+            },
+            "GC Shop Item 8": {
+                "type": "Shop"
+            }
+        }
+    },
+    "Death Mountain Crater": {
+        "type": "overworld",
+        "locations": {
+            "DMC Wall Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "DMC GS Crate": {
+                "type": "GS Token"
+            },
+            "DMC Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "DMC Adult Green Rupee 1": {
+                "type": "RupeeTower"
+            },
+            "DMC Adult Green Rupee 2": {
+                "type": "RupeeTower"
+            },
+            "DMC Adult Green Rupee 3": {
+                "type": "RupeeTower"
+            },
+            "DMC Adult Green Rupee 4": {
+                "type": "RupeeTower"
+            },
+            "DMC Adult Green Rupee 5": {
+                "type": "RupeeTower"
+            },
+            "DMC Adult Green Rupee 6": {
+                "type": "RupeeTower"
+            },
+            "DMC Adult Red Rupee": {
+                "type": "RupeeTower"
+            },
+            "DMC Deku Scrub": {
+                "type": "Scrub"
+            },
+            "DMC Near GC Pot 1": {
+                "type": "Pot"
+            },
+            "DMC Near GC Pot 2": {
+                "type": "Pot"
+            },
+            "DMC Near GC Pot 3": {
+                "type": "Pot"
+            },
+            "DMC Near GC Pot 4": {
+                "type": "Pot"
+            },
+            "DMC Volcano Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "Sheik in Crater": {
+                "type": "Song"
+            },
+            "DMC GS Bean Patch": {
+                "type": "GS Token"
+            },
+            "Bean Plant Fairy": {
+                "type": "Drop"
+            },
+            "DMC Child Red Rupee 1": {
+                "type": "Freestanding"
+            },
+            "DMC Child Red Rupee 2": {
+                "type": "Freestanding"
+            },
+            "DMC Child Blue Rupee 1": {
+                "type": "Freestanding"
+            },
+            "DMC Child Blue Rupee 2": {
+                "type": "Freestanding"
+            },
+            "DMC Child Blue Rupee 3": {
+                "type": "Freestanding"
+            },
+            "DMC Child Blue Rupee 4": {
+                "type": "Freestanding"
+            },
+            "DMC Child Blue Rupee 5": {
+                "type": "Freestanding"
+            },
+            "DMC Child Blue Rupee 6": {
+                "type": "Freestanding"
+            }
+        },
+        "sub_areas": [
+            "DMC Upper Grotto",
+            "DMC Great Fairy Fountain",
+            "DMC Hammer Grotto"
+        ]
+    },
+    "DMC Great Fairy Fountain": {
+        "type": "interior",
+        "locations": {
+            "DMC Great Fairy Reward": {
+                "type": "Cutscene"
+            }
+        }
+    },
+    "DMT Great Fairy Fountain": {
+        "type": "interior",
+        "locations": {
+            "DMT Great Fairy Reward": {
+                "type": "Cutscene"
+            }
+        }
+    },
+    "Zora River": {
+        "type": "overworld",
+        "locations": {
+            "ZR GS Tree": {
+                "type": "GS Token"
+            },
+            "ZR Magic Bean Salesman": {
+                "type": "NPC"
+            },
+            "ZR Frogs Ocarina Game": {
+                "type": "NPC"
+            },
+            "ZR Frogs Zeldas Lullaby": {
+                "type": "NPC"
+            },
+            "ZR Frogs Eponas Song": {
+                "type": "NPC"
+            },
+            "ZR Frogs Sarias Song": {
+                "type": "NPC"
+            },
+            "ZR Frogs Suns Song": {
+                "type": "NPC"
+            },
+            "ZR Frogs Song of Time": {
+                "type": "NPC"
+            },
+            "ZR Frogs in the Rain": {
+                "type": "NPC"
+            },
+            "ZR Near Open Grotto Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "ZR Near Domain Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "ZR Waterfall Red Rupee 1": {
+                "type": "Freestanding"
+            },
+            "ZR Waterfall Red Rupee 2": {
+                "type": "Freestanding"
+            },
+            "ZR Waterfall Red Rupee 3": {
+                "type": "Freestanding"
+            },
+            "ZR Waterfall Red Rupee 4": {
+                "type": "Freestanding"
+            },
+            "ZR GS Ladder": {
+                "type": "GS Token"
+            },
+            "ZR GS Near Raised Grottos": {
+                "type": "GS Token"
+            },
+            "ZR GS Above Bridge": {
+                "type": "GS Token"
+            },
+            "ZR Near Grottos Gossip Stone": {
+                "type": "HintStone"
+            },
+            "ZR Near Domain Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Bean Plant Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            }
+        },
+        "sub_areas": [
+            "ZR Open Grotto",
+            "ZR Fairy Grotto",
+            "ZR Storms Grotto"
+        ]
+    },
+    "Zoras Domain": {
+        "type": "overworld",
+        "locations": {
+            "ZD Diving Minigame": {
+                "type": "NPC"
+            },
+            "ZD Chest": {
+                "type": "Chest"
+            },
+            "Deliver Rutos Letter": {
+                "type": "Event"
+            },
+            "ZD King Zora Thawed": {
+                "type": "NPC"
+            },
+            "ZD Pot 1": {
+                "type": "Pot"
+            },
+            "ZD Pot 2": {
+                "type": "Pot"
+            },
+            "ZD Pot 3": {
+                "type": "Pot"
+            },
+            "ZD Pot 4": {
+                "type": "Pot"
+            },
+            "ZD Pot 5": {
+                "type": "Pot"
+            },
+            "ZD In Front of King Zora Beehive 1": {
+                "type": "Beehive"
+            },
+            "ZD In Front of King Zora Beehive 2": {
+                "type": "Beehive"
+            },
+            "ZD GS Frozen Waterfall": {
+                "type": "GS Token"
+            },
+            "ZD Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Fish Group": {
+                "type": "Drop"
+            },
+            "Stick Pot": {
+                "type": "Drop"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            },
+            "ZD Behind King Zora Beehive": {
+                "type": "Beehive"
+            }
+        },
+        "sub_areas": [
+            "ZD Shop",
+            "ZD Storms Grotto"
+        ]
+    },
+    "Zoras Fountain": {
+        "type": "overworld",
+        "locations": {
+            "ZF Iceberg Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "ZF Near Jabu Pot 1": {
+                "type": "Pot"
+            },
+            "ZF Near Jabu Pot 2": {
+                "type": "Pot"
+            },
+            "ZF Near Jabu Pot 3": {
+                "type": "Pot"
+            },
+            "ZF Near Jabu Pot 4": {
+                "type": "Pot"
+            },
+            "ZF GS Tree": {
+                "type": "GS Token"
+            },
+            "ZF GS Above the Log": {
+                "type": "GS Token"
+            },
+            "ZF Fairy Gossip Stone": {
+                "type": "HintStone"
+            },
+            "ZF Jabu Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "ZF Bottom Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "ZF Bottom Green Rupee 1": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 2": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 3": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 4": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 5": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 6": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 7": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 8": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 9": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 10": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 11": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 12": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 13": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 14": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 15": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 16": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 17": {
+                "type": "Freestanding"
+            },
+            "ZF Bottom Green Rupee 18": {
+                "type": "Freestanding"
+            },
+            "ZF Hidden Cave Pot 1": {
+                "type": "Pot"
+            },
+            "ZF Hidden Cave Pot 2": {
+                "type": "Pot"
+            },
+            "ZF Hidden Cave Pot 3": {
+                "type": "Pot"
+            },
+            "ZF GS Hidden Cave": {
+                "type": "GS Token"
+            }
+        },
+        "sub_areas": [
+            "ZF Great Fairy Fountain"
+        ]
+    },
+    "ZD Shop": {
+        "type": "interior",
+        "locations": {
+            "ZD Shop Item 1": {
+                "type": "Shop"
+            },
+            "ZD Shop Item 2": {
+                "type": "Shop"
+            },
+            "ZD Shop Item 3": {
+                "type": "Shop"
+            },
+            "ZD Shop Item 4": {
+                "type": "Shop"
+            },
+            "ZD Shop Item 5": {
+                "type": "Shop"
+            },
+            "ZD Shop Item 6": {
+                "type": "Shop"
+            },
+            "ZD Shop Item 7": {
+                "type": "Shop"
+            },
+            "ZD Shop Item 8": {
+                "type": "Shop"
+            }
+        }
+    },
+    "ZF Great Fairy Fountain": {
+        "type": "interior",
+        "locations": {
+            "ZF Great Fairy Reward": {
+                "type": "Cutscene"
+            }
+        }
+    },
+    "Lon Lon Ranch": {
+        "type": "overworld",
+        "locations": {
+            "Song from Malon": {
+                "type": "Song"
+            },
+            "LLR Front Pot 1": {
+                "type": "Pot"
+            },
+            "LLR Front Pot 2": {
+                "type": "Pot"
+            },
+            "LLR Front Pot 3": {
+                "type": "Pot"
+            },
+            "LLR Front Pot 4": {
+                "type": "Pot"
+            },
+            "LLR Rain Shed Pot 1": {
+                "type": "Pot"
+            },
+            "LLR Rain Shed Pot 2": {
+                "type": "Pot"
+            },
+            "LLR Rain Shed Pot 3": {
+                "type": "Pot"
+            },
+            "LLR Child Crate": {
+                "type": "Crate"
+            },
+            "LLR GS Tree": {
+                "type": "GS Token"
+            },
+            "LLR GS Rain Shed": {
+                "type": "GS Token"
+            },
+            "LLR GS House Window": {
+                "type": "GS Token"
+            },
+            "LLR GS Back Wall": {
+                "type": "GS Token"
+            }
+        },
+        "sub_areas": [
+            "LLR Talons House",
+            "LLR Stables",
+            "LLR Tower",
+            "LLR Grotto"
+        ]
+    },
+    "LLR Talons House": {
+        "type": "interior",
+        "locations": {
+            "LLR Talons Chickens": {
+                "type": "NPC"
+            },
+            "LLR Talons House Pot 1": {
+                "type": "Pot"
+            },
+            "LLR Talons House Pot 2": {
+                "type": "Pot"
+            },
+            "LLR Talons House Pot 3": {
+                "type": "Pot"
+            }
+        }
+    },
+    "LLR Stables": {
+        "type": "interior",
+        "locations": {
+            "LLR Stables Left Cow": {
+                "type": "NPC"
+            },
+            "LLR Stables Right Cow": {
+                "type": "NPC"
+            }
+        }
+    },
+    "LLR Tower": {
+        "type": "interior",
+        "locations": {
+            "LLR Freestanding PoH": {
+                "type": "Collectable"
+            },
+            "LLR Tower Left Cow": {
+                "type": "NPC"
+            },
+            "LLR Tower Right Cow": {
+                "type": "NPC"
+            }
+        }
+    },
+    "GF Storms Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "Free Fairies": {
+                "type": "Drop"
+            }
+        }
+    },
+    "ZD Storms Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "Free Fairies": {
+                "type": "Drop"
+            }
+        }
+    },
+    "KF Storms Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "KF Storms Grotto Chest": {
+                "type": "Chest"
+            },
+            "KF Storms Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "KF Storms Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "KF Storms Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "LW Near Shortcuts Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "LW Near Shortcuts Grotto Chest": {
+                "type": "Chest"
+            },
+            "LW Near Shortcuts Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "LW Near Shortcuts Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "LW Near Shortcuts Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "Deku Theater": {
+        "type": "grave/grotto",
+        "locations": {
+            "Deku Theater Skull Mask": {
+                "type": "NPC"
+            },
+            "Deku Theater Mask of Truth": {
+                "type": "NPC"
+            }
+        }
+    },
+    "LW Scrubs Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "LW Deku Scrub Grotto Rear": {
+                "type": "GrottoScrub"
+            },
+            "LW Deku Scrub Grotto Front": {
+                "type": "GrottoScrub"
+            },
+            "LW Scrubs Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "SFM Fairy Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "Free Fairies": {
+                "type": "Drop"
+            }
+        }
+    },
+    "SFM Storms Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "SFM Deku Scrub Grotto Rear": {
+                "type": "GrottoScrub"
+            },
+            "SFM Deku Scrub Grotto Front": {
+                "type": "GrottoScrub"
+            },
+            "SFM Storms Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "SFM Wolfos Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "SFM Wolfos Grotto Chest": {
+                "type": "Chest"
+            }
+        }
+    },
+    "LLR Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "LLR Deku Scrub Grotto Left": {
+                "type": "GrottoScrub"
+            },
+            "LLR Deku Scrub Grotto Right": {
+                "type": "GrottoScrub"
+            },
+            "LLR Deku Scrub Grotto Center": {
+                "type": "GrottoScrub"
+            },
+            "LLR Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "HF Southeast Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "HF Southeast Grotto Chest": {
+                "type": "Chest"
+            },
+            "HF Southeast Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "HF Southeast Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "HF Southeast Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "HF Open Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "HF Open Grotto Chest": {
+                "type": "Chest"
+            },
+            "HF Open Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "HF Open Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "HF Open Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "HF Inside Fence Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "HF Deku Scrub Grotto": {
+                "type": "GrottoScrub"
+            },
+            "HF Inside Fence Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "HF Cow Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "HF GS Cow Grotto": {
+                "type": "GS Token"
+            },
+            "HF Cow Grotto Cow": {
+                "type": "NPC"
+            },
+            "HF Cow Grotto Pot 1": {
+                "type": "Pot"
+            },
+            "HF Cow Grotto Pot 2": {
+                "type": "Pot"
+            },
+            "HF Cow Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            }
+        }
+    },
+    "HF Near Market Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "HF Near Market Grotto Chest": {
+                "type": "Chest"
+            },
+            "HF Near Market Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "HF Near Market Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "HF Near Market Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "HF Fairy Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "Free Fairies": {
+                "type": "Drop"
+            }
+        }
+    },
+    "HF Near Kak Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "HF GS Near Kak Grotto": {
+                "type": "GS Token"
+            }
+        }
+    },
+    "HF Tektite Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "HF Tektite Grotto Freestanding PoH": {
+                "type": "Collectable"
+            }
+        }
+    },
+    "HC Storms Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "HC GS Storms Grotto": {
+                "type": "GS Token"
+            },
+            "HC Storms Grotto Pot 1": {
+                "type": "Pot"
+            },
+            "HC Storms Grotto Pot 2": {
+                "type": "Pot"
+            },
+            "HC Storms Grotto Pot 3": {
+                "type": "Pot"
+            },
+            "HC Storms Grotto Pot 4": {
+                "type": "Pot"
+            },
+            "HC Storms Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Wandering Bugs": {
+                "type": "Drop"
+            },
+            "Nut Pot": {
+                "type": "Drop"
+            }
+        }
+    },
+    "Kak Redead Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "Kak Redead Grotto Chest": {
+                "type": "Chest"
+            }
+        }
+    },
+    "Kak Open Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "Kak Open Grotto Chest": {
+                "type": "Chest"
+            },
+            "Kak Open Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Kak Open Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "Kak Open Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "DMT Cow Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "DMT Cow Grotto Cow": {
+                "type": "NPC"
+            },
+            "DMT Cow Grotto Green Rupee 1": {
+                "type": "RupeeTower"
+            },
+            "DMT Cow Grotto Green Rupee 2": {
+                "type": "RupeeTower"
+            },
+            "DMT Cow Grotto Green Rupee 3": {
+                "type": "RupeeTower"
+            },
+            "DMT Cow Grotto Green Rupee 4": {
+                "type": "RupeeTower"
+            },
+            "DMT Cow Grotto Green Rupee 5": {
+                "type": "RupeeTower"
+            },
+            "DMT Cow Grotto Green Rupee 6": {
+                "type": "RupeeTower"
+            },
+            "DMT Cow Grotto Red Rupee": {
+                "type": "RupeeTower"
+            },
+            "DMT Cow Grotto Recovery Heart 1": {
+                "type": "Freestanding"
+            },
+            "DMT Cow Grotto Recovery Heart 2": {
+                "type": "Freestanding"
+            },
+            "DMT Cow Grotto Recovery Heart 3": {
+                "type": "Freestanding"
+            },
+            "DMT Cow Grotto Recovery Heart 4": {
+                "type": "Freestanding"
+            },
+            "DMT Cow Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "DMT Storms Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "DMT Storms Grotto Chest": {
+                "type": "Chest"
+            },
+            "DMT Storms Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "DMT Storms Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "DMT Storms Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "GC Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "GC Deku Scrub Grotto Left": {
+                "type": "GrottoScrub"
+            },
+            "GC Deku Scrub Grotto Right": {
+                "type": "GrottoScrub"
+            },
+            "GC Deku Scrub Grotto Center": {
+                "type": "GrottoScrub"
+            },
+            "GC Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "DMC Upper Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "DMC Upper Grotto Chest": {
+                "type": "Chest"
+            },
+            "DMC Upper Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "DMC Upper Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "DMC Upper Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "DMC Hammer Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "DMC Deku Scrub Grotto Left": {
+                "type": "GrottoScrub"
+            },
+            "DMC Deku Scrub Grotto Right": {
+                "type": "GrottoScrub"
+            },
+            "DMC Deku Scrub Grotto Center": {
+                "type": "GrottoScrub"
+            },
+            "DMC Hammer Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "ZR Open Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "ZR Open Grotto Chest": {
+                "type": "Chest"
+            },
+            "ZR Open Grotto Beehive 1": {
+                "type": "Beehive"
+            },
+            "ZR Open Grotto Beehive 2": {
+                "type": "Beehive"
+            },
+            "ZR Open Grotto Gossip Stone": {
+                "type": "HintStone"
+            },
+            "Gossip Stone Fairy": {
+                "type": "Drop"
+            },
+            "Butterfly Fairy": {
+                "type": "Drop"
+            },
+            "Bug Shrub": {
+                "type": "Drop"
+            },
+            "Lone Fish": {
+                "type": "Drop"
+            }
+        }
+    },
+    "ZR Fairy Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "Free Fairies": {
+                "type": "Drop"
+            }
+        }
+    },
+    "ZR Storms Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "ZR Deku Scrub Grotto Rear": {
+                "type": "GrottoScrub"
+            },
+            "ZR Deku Scrub Grotto Front": {
+                "type": "GrottoScrub"
+            },
+            "ZR Storms Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "LH Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "LH Deku Scrub Grotto Left": {
+                "type": "GrottoScrub"
+            },
+            "LH Deku Scrub Grotto Right": {
+                "type": "GrottoScrub"
+            },
+            "LH Deku Scrub Grotto Center": {
+                "type": "GrottoScrub"
+            },
+            "LH Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "Colossus Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "Colossus Deku Scrub Grotto Rear": {
+                "type": "GrottoScrub"
+            },
+            "Colossus Deku Scrub Grotto Front": {
+                "type": "GrottoScrub"
+            },
+            "Colossus Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "GV Octorok Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "GV Octorok Grotto Red Rupee": {
+                "type": "Freestanding"
+            },
+            "GV Octorok Grotto Blue Rupee 1": {
+                "type": "Freestanding"
+            },
+            "GV Octorok Grotto Blue Rupee 2": {
+                "type": "Freestanding"
+            },
+            "GV Octorok Grotto Blue Rupee 3": {
+                "type": "Freestanding"
+            },
+            "GV Octorok Grotto Green Rupee 1": {
+                "type": "Freestanding"
+            },
+            "GV Octorok Grotto Green Rupee 2": {
+                "type": "Freestanding"
+            },
+            "GV Octorok Grotto Green Rupee 3": {
+                "type": "Freestanding"
+            },
+            "GV Octorok Grotto Green Rupee 4": {
+                "type": "Freestanding"
+            }
+        }
+    },
+    "GV Storms Grotto": {
+        "type": "grave/grotto",
+        "locations": {
+            "GV Deku Scrub Grotto Rear": {
+                "type": "GrottoScrub"
+            },
+            "GV Deku Scrub Grotto Front": {
+                "type": "GrottoScrub"
+            },
+            "GV Storms Grotto Beehive": {
+                "type": "Beehive"
+            }
+        }
+    },
+    "Deku Tree Boss": {
+        "type": "boss",
+        "locations": {
+            "Deku Tree Queen Gohma Heart": {
+                "type": "BossHeart"
+            },
+            "Queen Gohma": {
+                "type": "Boss"
+            }
+        }
+    },
+    "Dodongos Cavern Boss": {
+        "type": "boss",
+        "locations": {
+            "Dodongos Cavern Boss Room Chest": {
+                "type": "Chest"
+            },
+            "Dodongos Cavern King Dodongo Heart": {
+                "type": "BossHeart"
+            },
+            "King Dodongo": {
+                "type": "Boss"
+            },
+            "Fairy Pot": {
+                "type": "Drop"
+            }
+        }
+    },
+    "Jabu Jabus Belly Boss": {
+        "type": "boss",
+        "locations": {
+            "Jabu Jabus Belly Barinade Heart": {
+                "type": "BossHeart"
+            },
+            "Barinade": {
+                "type": "Boss"
+            },
+            "Jabu Jabus Belly Barinade Pot 1": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Barinade Pot 2": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Barinade Pot 3": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Barinade Pot 4": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Barinade Pot 5": {
+                "type": "Pot"
+            },
+            "Jabu Jabus Belly Barinade Pot 6": {
+                "type": "Pot"
+            }
+        }
+    },
+    "Forest Temple Boss": {
+        "type": "boss",
+        "locations": {
+            "Forest Temple Phantom Ganon Heart": {
+                "type": "BossHeart"
+            },
+            "Phantom Ganon": {
+                "type": "Boss"
+            }
+        }
+    },
+    "Fire Temple Boss": {
+        "type": "boss",
+        "locations": {
+            "Fire Temple Volvagia Heart": {
+                "type": "BossHeart"
+            },
+            "Volvagia": {
+                "type": "Boss"
+            }
+        }
+    },
+    "Water Temple Boss": {
+        "type": "boss",
+        "locations": {
+            "Morpha": {
+                "type": "Boss"
+            },
+            "Water Temple Morpha Heart": {
+                "type": "BossHeart"
+            }
+        }
+    },
+    "Shadow Temple Boss": {
+        "type": "boss",
+        "locations": {
+            "Shadow Temple Bongo Bongo Heart": {
+                "type": "BossHeart"
+            },
+            "Bongo Bongo": {
+                "type": "Boss"
+            }
+        }
+    },
+    "Spirit Temple Boss": {
+        "type": "boss",
+        "locations": {
+            "Spirit Temple Twinrova Heart": {
+                "type": "BossHeart"
+            },
+            "Twinrova": {
+                "type": "Boss"
+            }
+        }
+    },
+    "Overworld": 
+    {
+        "type":"category",
+        "sub_areas": [
+            "Kokiri Forest",
+            "Lost Woods",
+            "Sacred Forest Meadow",
+            "Hyrule Field",
+            "Lon Lon Ranch",
+            "Kakariko Village",
+            "Graveyard",
+            "Death Mountain",
+            "Death Mountain Crater",
+            "Goron City",
+            "Zora River",
+            "Zoras Domain",
+            "Zoras Fountain",
+            "Lake Hylia",
+            "Castle Grounds",
+            "Market",
+            "ToT Entrance",
+            "Market Entrance",
+            "Gerudo Valley",
+            "Gerudo Fortress",
+            "Haunted Wasteland",
+            "Desert Colossus"
+        ]
+    },
+    "Dungeons":{
+        "type":"category",
+        "sub_areas": [
+            "Deku Tree",
+            "Dodongos Cavern",
+            "Jabu Jabus Belly",
+            "Bottom of the Well",
+            "Forest Temple",
+            "Fire Temple",
+            "Water Temple",
+            "Shadow Temple",
+            "Spirit Temple",
+            "Ice Cavern",
+            "Gerudo Training Ground",
+            "Theives Hideout",
+            "Ganons Castle"
+        ]
+    },
+    "root":{
+        "type":"root",
+        "sub_areas": [
+            "Overworld",
+            "Dungeons"
+        ]
+    }
+}
