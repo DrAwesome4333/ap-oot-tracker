@@ -3983,7 +3983,7 @@
             "Market Man in Green House"
         ]
     },
-    "ToT Entrance": {
+    "Temple of Time Entrance": {
         "type": "overworld",
         "locations": {
             "ToT Gossip Stone (Left)": {
@@ -4752,7 +4752,7 @@
             }
         }
     },
-    "Death Mountain": {
+    "Death Mountain Trail": {
         "type": "overworld",
         "locations": {
             "DMT Chest": {
@@ -6182,7 +6182,7 @@
             "Lon Lon Ranch",
             "Kakariko Village",
             "Graveyard",
-            "Death Mountain",
+            "Death Mountain Trail",
             "Death Mountain Crater",
             "Goron City",
             "Zora River",
@@ -6191,7 +6191,7 @@
             "Lake Hylia",
             "Castle Grounds",
             "Market",
-            "ToT Entrance",
+            "Temple of Time Entrance",
             "Market Entrance",
             "Gerudo Valley",
             "Gerudo Fortress",

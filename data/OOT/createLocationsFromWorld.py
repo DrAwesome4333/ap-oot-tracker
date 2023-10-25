@@ -197,3 +197,5 @@ print(json.dumps(scene_data))
 # Put theives hideout together as one overworld location
 # Added Ganon's Tower, not sure why they didn't get pulled in
 # Added OVerworld, dungeon and root groups.
+# Death Montain renamed to death mountain trail
+# ToT Entrance renamed to Temple of Time Entrance
