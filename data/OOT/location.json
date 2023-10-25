@@ -3240,7 +3240,7 @@
         ]
     },
     "Theives Hideout":{
-        "type":"overworld",
+        "type":"dungeon",
         "locations": {
             "Hideout 1 Torch Jail Gerudo Key": {
                 "type": "Collectable"

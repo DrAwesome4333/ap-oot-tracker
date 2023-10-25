@@ -123,7 +123,7 @@ body{
     grid-row: 1 /span 1;
 }
 
-#gameView {
+#gameViewContainer {
     display: grid;
     align-content: start;
     grid:
@@ -132,8 +132,14 @@ body{
     / 1fr;
 }
 
+#option_button{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
 @media only screen and (orientation: landscape) {
-    #gameView{
+    #gameViewContainer{
         grid:
         "inventory checklist" 1fr
         /1fr 1fr;

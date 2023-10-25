@@ -3,6 +3,7 @@ import { Screens } from "./screen.js";
 import { Popups, POPUP_TYPE} from "./popup.js";
 import { Checklist } from "./checklist.js";
 import { GameView } from "./gameScreen.js"
+import { OptionsView } from "./optionsView.js"
 import { GameData } from "./gameData.js";
 let generateId = (() => {
     let nextIdNumber = 0;

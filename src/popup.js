@@ -16,7 +16,7 @@ const POPUP_TYPE = {
     SUCCESS: 2,
 }
 let Popups = (()=>{
-    const POP_UP_DURATION_MS = 10_000;
+    const POP_UP_DURATION_MS = 3_000;
     const POP_UP_HEIGHT = 85;
     const POP_UP_LAYER = document.createElement('div');
     document.body.appendChild(POP_UP_LAYER);

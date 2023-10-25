@@ -228,7 +228,7 @@ let GameData = (()=>{
             for(let location of packet.checked_locations){
                 checkedLocations.add(location);
             }
-            // Checklist.refresh();
+            Checklist.refresh();
         }
     });
 
@@ -237,7 +237,7 @@ let GameData = (()=>{
     client.addListener(SERVER_PACKET_TYPE.SET_REPLY, (packet) => {
         if (packet.key === `_read_hints_${client.data.team}_${client.data.slot}`) {
             loadHintData();
-            // Checklist.refresh();
+            Checklist.refresh();
         }
     });
 
@@ -248,7 +248,7 @@ let GameData = (()=>{
             }
 
             loadHintData();
-            // Checklist.refresh();
+            Checklist.refresh();
         }
     });
 
@@ -311,8 +311,7 @@ let GameData = (()=>{
             .then(_ => {
                 loadHintData();
                 Checklist.build();
-                // Checklist.buildChecklist();
-                // Checklist.refresh();
+                Checklist.refresh();
                 Inventory.build();
                 Inventory.refresh();
             })

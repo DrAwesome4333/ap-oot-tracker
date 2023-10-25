@@ -30,11 +30,24 @@
 .category_container.hidden{
     display: none;
 }
-
+.check{
+    color: black;
+    list-style-type: disc;
+    font-size: medium;
+    font-weight: bold;
+}
+.check::before{
+    content:' • '
+}
 .check.checked{
     color:grey;
     text-decoration: line-through;
     list-style-type: none;
+    font-weight:lighter;
+
+}
+.check.checked::before{
+    content:''
 }
 
 .check.hinted {
@@ -49,11 +62,15 @@
     color: grey;
 }
 
-.check{
-    color: black;
-    list-style-type: disc;
-    font-size: medium;
+.check > .hint {
+    font-style: italic;
 }
+
+.hint.hidden {
+    display: none;
+}
+
+
 
 #checklist {
     grid-area:checklist;
