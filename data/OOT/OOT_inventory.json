@@ -1800,7 +1800,7 @@
                         "image":"giant_knife",
                         "tool_tip": "Giant's Knife",
                         "text_mode":"text",
-                        "text":"Kinfe",
+                        "text":"Knife",
                         "styles":[],
                         "priority": 1,
                         "condition":{
