@@ -105,9 +105,9 @@ let GameData = (()=>{
             finderString = 'your';
         }
 
-        let itemString = client.items.name(client.players.game(client.data.slot), hint.item);
+        let itemString = client.items.name(client.players.game(hint.receiving_player), hint.item);
         
-        let locationString = client.locations.name(client.players.game(client.data.slot), hint.location);
+        let locationString = client.locations.name(client.players.game(hint.finding_player), hint.location);
 
         let entranceString = hint.entrance ? `(${hint.entrance})` : '';
         return `${ownerString} ${itemString} is at ${locationString} in ${finderString} world. ${entranceString}`;

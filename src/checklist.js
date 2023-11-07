@@ -6,6 +6,7 @@ import { OptionsView } from "./optionsView.js";
 /**
  * @typedef CategoryCheck
  * @prop {boolean} checked
+ * @prop {boolean} hinted
  * @prop {number} id
  * @prop {HTMLDivElement} container
  * @prop {()=>void} update
@@ -40,6 +41,12 @@ let CategoryCheck = (id) => {
         let hint = GameData.hints.get(id);
         if(GameData.checkedLocations.has(id)){
             locContainer.classList.add("checked");
+            if(hint){
+                locContainer.classList.remove('hinted');   
+                locContainer.title = "";
+                hintContainer.classList.add('hidden');
+                locContainer.removeEventListener('click', toggleHintVisiblity);             
+            }
         }
         else if (hint){
             locContainer.classList.add('hinted');
@@ -54,6 +61,7 @@ let CategoryCheck = (id) => {
     return {
         id,
         get checked(){return GameData.checkedLocations.has(id)},
+        get hinted(){return GameData.hints.has(id)},
         container:locContainer,
         update,
     }
@@ -62,6 +70,7 @@ let CategoryCheck = (id) => {
 /**
  * @typedef Category
  * @prop {number} checkCount
+ * @prop {number} hintCount
  * @prop {number} checkedCount
  * @prop {HTMLDivElement} container
  * @prop {()=>void} update
@@ -88,6 +97,7 @@ let Category = (areaName, context) => {
     let categoryChecks = [];
     let checkCount = 0;
     let checkedCount = 0;
+    let hintedCount = 0;
     let container = document.createElement('div');
     let title = document.createElement('h3');
     title.classList.add("category_title")
@@ -168,18 +178,24 @@ let Category = (areaName, context) => {
 
     let update = () => {
         checkedCount = 0;
+        hintedCount = 0;
         for(let subArea of subAreas){
             if(subArea.flattened){
                 continue;
             }
             subArea.update();
             checkedCount += subArea.checkedCount;
+            hintedCount += subArea.hintCount;
         }
         for(let check of categoryChecks){
             check.update();
             checkedCount += check.checked ? 1 : 0;
+            hintedCount += check.hinted && !check.checked ? 1 : 0;
         }
         title.innerText = areaName == "root" ? `Total ${checkedCount}/${checkCount}` : `${areaName} ${checkedCount}/${checkCount}`;
+        if(hintedCount > 0){
+            title.classList.add('hinted');
+        }
         separateChecked();
     }
     update();
@@ -187,6 +203,7 @@ let Category = (areaName, context) => {
     return {
         container,
         get checkCount(){return checkCount},
+        get hintCount(){return hintedCount},
         get checkedCount(){return checkedCount},
         get flattened(){return context.flattenRules.has(area['type'])},
         categoryChecks,

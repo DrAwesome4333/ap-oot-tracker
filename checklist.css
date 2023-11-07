@@ -6,6 +6,12 @@
     font-size: medium;
 }
 
+.category_title.hinted::before{
+    color: red;
+    font-size: xx-large;
+    content: '\00B7';
+}
+
 .category_title::after{
     content: '▲'
 }
